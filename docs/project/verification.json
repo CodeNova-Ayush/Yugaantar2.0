@@ -20,13 +20,15 @@
     "status": "PASSED",
     "map_outcome": "exit",
     "steps": 408,
-    "init_seconds": 0.6,
-    "p99_ms": 0.5,
+    "init_seconds": 0.5,
+    "p99_ms": 0.4,
     "warnings": [
-      "uncommitted submission changes at validation time",
       "macOS cannot pin CPU",
       "macOS cannot measure /proc RAM"
-    ]
+    ],
+    "validated_source_commit": "0178321"
   },
-  "final_weight_sha256": "46a80d55620011625b6c8c7090427ce191f6173fb60c5d8acb2949879fa27fff"
+  "final_weight_sha256": "46a80d55620011625b6c8c7090427ce191f6173fb60c5d8acb2949879fa27fff",
+  "git_lfs_fsck": "OK",
+  "tracked_size_megabytes": 40.8
 }

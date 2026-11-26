@@ -19,3 +19,11 @@
 
 Publishing and sending the repository URL are external actions; they are not
 performed by local training or by a successful validator run.
+
+## Prepared local state
+
+The final implementation is committed locally. Git LFS integrity (`git lfs fsck`)
+passed; the prepared tree including LFS weights is approximately 40.8 MB. The
+committed local validator passed, reached the supplied-map exit, and reported only
+the two macOS CPU/RAM measurement warnings. Read `verification.json` for exact
+source commit and checks. No GitHub push or organizer submission has been performed.
