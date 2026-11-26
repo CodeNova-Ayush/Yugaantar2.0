@@ -1,0 +1,18 @@
+staged_checkpoint: training/results/curriculum_gru_s42/checkpoint.pt
+sha256: f2882996055701a4a84084206b14a03f7dcc55eeb9fa7ed66875869dc91cf920
+
+Validating /private/var/folders/8h/_0hvng0j41l_30jw7pryy7cr0000gn/T/doom-gru-s42-staging-cijepzri  (contract 1.0.0-draft)
+
+ [33m![0m Repository size: not a git repository; measuring all files (excluding .venv)
+ [32m✓[0m Repository size (tracked files): 661.4 KB of 1.0 GB
+ [32m✓[0m requirements.txt: no extra packages
+ [32m✓[0m DoomAgent interface: __init__, reset, act
+ [33m![0m CPU limit: could not pin the agent to 1 CPU here; evaluation gives it one CPU, so timings may look better than they will be
+ [32m✓[0m Initialization: 0.5s (limit 60s) on device 'cpu'
+ [32m✓[0m Episode on 'two_rooms.wad:MAP01': 525 steps, tick cap, agent time 0.2s of 21.0s budget, 0.3s wall-clock
+ [32m✓[0m Step latency 'two_rooms.wad:MAP01': first 1 ms, p50 0.3 ms, p99 0.4 ms, max 1 ms
+ [32m✓[0m Episode on 'val_pillar_bypass_e.wad:MAP01': 69 steps, exit reached, agent time 0.0s of 21.0s budget, 0.0s wall-clock
+ [32m✓[0m Step latency 'val_pillar_bypass_e.wad:MAP01': first 1 ms, p50 0.3 ms, p99 0.8 ms, max 1 ms
+ [33m![0m Peak RAM: could not be measured here (needs Linux /proc); the limit is 8192 MB
+
+[32mPASSED[0m with 3 warning(s).

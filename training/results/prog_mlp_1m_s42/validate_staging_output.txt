@@ -1,0 +1,18 @@
+staged_checkpoint: /Users/karanram/Documents/Doom Game/Yugaantar2.0/training/results/prog_mlp_1m_s42/checkpoints/ckpt_1024000.pt
+sha256: 10dbba3796666152f0c1d2a3afe9108409fa3c4cd49063ea784b345279553059
+
+Validating /private/var/folders/8h/_0hvng0j41l_30jw7pryy7cr0000gn/T/doom-mlp-1m-staging-4arufvrm  (contract 1.0.0-draft)
+
+ [33m![0m Repository size: not a git repository; measuring all files (excluding .venv)
+ [32m✓[0m Repository size (tracked files): 352.8 KB of 1.0 GB
+ [32m✓[0m requirements.txt: no extra packages
+ [32m✓[0m DoomAgent interface: __init__, reset, act
+ [33m![0m CPU limit: could not pin the agent to 1 CPU here; evaluation gives it one CPU, so timings may look better than they will be
+ [32m✓[0m Initialization: 0.6s (limit 60s) on device 'cpu'
+ [32m✓[0m Episode on 'two_rooms.wad:MAP01': 525 steps, tick cap, agent time 0.2s of 21.0s budget, 0.3s wall-clock
+ [32m✓[0m Step latency 'two_rooms.wad:MAP01': first 2 ms, p50 0.3 ms, p99 0.5 ms, max 2 ms
+ [32m✓[0m Episode on 'prog_val_t_branch_e.wad:MAP01': 525 steps, tick cap, agent time 0.2s of 21.0s budget, 0.3s wall-clock
+ [32m✓[0m Step latency 'prog_val_t_branch_e.wad:MAP01': first 1 ms, p50 0.3 ms, p99 0.5 ms, max 1 ms
+ [33m![0m Peak RAM: could not be measured here (needs Linux /proc); the limit is 8192 MB
+
+[32mPASSED[0m with 3 warning(s).

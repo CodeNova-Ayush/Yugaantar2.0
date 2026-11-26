@@ -1,0 +1,6 @@
+kill_bonus,damage_cost,exploration_bonus,kills,damage_taken,unique_cells,episode,layout,env_seed,decisions,nominal_action_ticks,outcome,env_reward,train_reward,key_bonus,door_passable_bonus,terminal_bonus,step_cost,key_picked_up,door_passable_after_key
+0.0,0.0,0.10999999999999999,0,0.0,12,0,train_bend_right_90_s,42,162,648,exit,1.0,0.7859999999999998,0.0,0.0,1.0,-0.32400000000000023,False,False
+0.0,0.0,0.15,0,0.0,16,1,train_staggered_rooms_e,43,274,1096,exit,1.0,0.6019999999999996,0.0,0.0,1.0,-0.5480000000000004,False,False
+0.0,0.0,0.09999999999999999,0,0.0,11,2,prog_train_side_north_e,44,525,2100,timeout,0.0,-0.20000000000000082,0.25,0.5,0.0,-1.0500000000000007,True,True
+0.3,-0.20400000000000001,0.09999999999999999,1,102.0,11,3,combat_train_staggered_rooms_e,45,525,2100,timeout,0.1,-0.8540000000000009,0.0,0.0,0.0,-1.0500000000000007,False,False
+0.0,0.0,0.13999999999999999,0,0.0,15,4,train_s_curve_e,46,525,2100,timeout,0.0,-0.9100000000000008,0.0,0.0,0.0,-1.0500000000000007,False,False

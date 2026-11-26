@@ -1,0 +1,8 @@
+[
+  {
+    "outcome": "exit",
+    "file": "val_hook_chamber_s_ep0_seed1000.lmp",
+    "decisions": 68,
+    "policy_seed": 1000
+  }
+]

@@ -1,0 +1,1434 @@
+{
+  "note": "Aggregated from existing Stage 3 episode CSVs. Training duration (51,200 vs 20,480) and map diversity (12 vs 1) both changed from Stage 2, so Stage 3 is not a controlled map-diversity ablation.",
+  "split_summary": {
+    "random": {
+      "train": {
+        "episodes": 240,
+        "exits": 145,
+        "exit_rate": 0.6041666666666666,
+        "deaths": 0,
+        "timeouts": 95,
+        "decisions_mean": 357.8875,
+        "decisions_std": 173.75502345855597,
+        "exit_decisions_mean": 248.4,
+        "exit_decisions_std": 140.30948059496046
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 50,
+        "exit_rate": 0.625,
+        "deaths": 0,
+        "timeouts": 30,
+        "decisions_mean": 377.325,
+        "decisions_std": 150.24885814873934,
+        "exit_decisions_mean": 288.72,
+        "exit_decisions_std": 123.22321859130282
+      },
+      "test": {
+        "episodes": 80,
+        "exits": 31,
+        "exit_rate": 0.3875,
+        "deaths": 0,
+        "timeouts": 49,
+        "decisions_mean": 423.3125,
+        "decisions_std": 151.89137514602336,
+        "exit_decisions_mean": 262.5806451612903,
+        "exit_decisions_std": 131.75313528583783
+      }
+    },
+    "untrained": {
+      "train": {
+        "episodes": 240,
+        "exits": 152,
+        "exit_rate": 0.6333333333333333,
+        "deaths": 0,
+        "timeouts": 88,
+        "decisions_mean": 359.43333333333334,
+        "decisions_std": 164.5063186898573,
+        "exit_decisions_mean": 263.57894736842104,
+        "exit_decisions_std": 132.9347151956746
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 53,
+        "exit_rate": 0.6625,
+        "deaths": 0,
+        "timeouts": 27,
+        "decisions_mean": 369.5125,
+        "decisions_std": 155.28055204612716,
+        "exit_decisions_mean": 290.3018867924528,
+        "exit_decisions_std": 133.43524822226746
+      },
+      "test": {
+        "episodes": 80,
+        "exits": 28,
+        "exit_rate": 0.35,
+        "deaths": 0,
+        "timeouts": 52,
+        "decisions_mean": 439.2,
+        "decisions_std": 141.64263129439527,
+        "exit_decisions_mean": 279.85714285714283,
+        "exit_decisions_std": 135.1297562360273
+      }
+    },
+    "ppo_s42": {
+      "train": {
+        "episodes": 240,
+        "exits": 196,
+        "exit_rate": 0.8166666666666667,
+        "deaths": 0,
+        "timeouts": 44,
+        "decisions_mean": 223.6875,
+        "decisions_std": 177.6695617630756,
+        "exit_decisions_mean": 156.04591836734693,
+        "exit_decisions_std": 117.03070822230268
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 63,
+        "exit_rate": 0.7875,
+        "deaths": 0,
+        "timeouts": 17,
+        "decisions_mean": 232.4,
+        "decisions_std": 179.57182407048163,
+        "exit_decisions_mean": 153.44444444444446,
+        "exit_decisions_std": 107.75424387146154
+      },
+      "test": {
+        "episodes": 80,
+        "exits": 47,
+        "exit_rate": 0.5875,
+        "deaths": 0,
+        "timeouts": 33,
+        "decisions_mean": 314.75,
+        "decisions_std": 197.87385501879726,
+        "exit_decisions_mean": 167.12765957446808,
+        "exit_decisions_std": 117.53833544328305
+      }
+    },
+    "ppo_s43": {
+      "train": {
+        "episodes": 240,
+        "exits": 171,
+        "exit_rate": 0.7125,
+        "deaths": 0,
+        "timeouts": 69,
+        "decisions_mean": 280.68333333333334,
+        "decisions_std": 189.7531942345694,
+        "exit_decisions_mean": 182.09941520467837,
+        "exit_decisions_std": 129.346972285493
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 62,
+        "exit_rate": 0.775,
+        "deaths": 0,
+        "timeouts": 18,
+        "decisions_mean": 250.2875,
+        "decisions_std": 176.50199671321002,
+        "exit_decisions_mean": 170.53225806451613,
+        "exit_decisions_std": 109.20943444739791
+      },
+      "test": {
+        "episodes": 80,
+        "exits": 56,
+        "exit_rate": 0.7,
+        "deaths": 0,
+        "timeouts": 24,
+        "decisions_mean": 319.6,
+        "decisions_std": 166.9837267520401,
+        "exit_decisions_mean": 231.57142857142858,
+        "exit_decisions_std": 118.33666518256551
+      }
+    },
+    "ppo_s44": {
+      "train": {
+        "episodes": 240,
+        "exits": 212,
+        "exit_rate": 0.8833333333333333,
+        "deaths": 0,
+        "timeouts": 28,
+        "decisions_mean": 137.5875,
+        "decisions_std": 167.19143422162315,
+        "exit_decisions_mean": 86.41981132075472,
+        "exit_decisions_std": 95.93614318793372
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 80,
+        "exit_rate": 1.0,
+        "deaths": 0,
+        "timeouts": 0,
+        "decisions_mean": 74.375,
+        "decisions_std": 71.37425568788791,
+        "exit_decisions_mean": 74.375,
+        "exit_decisions_std": 71.37425568788791
+      },
+      "test": {
+        "episodes": 80,
+        "exits": 64,
+        "exit_rate": 0.8,
+        "deaths": 0,
+        "timeouts": 16,
+        "decisions_mean": 233.175,
+        "decisions_std": 192.53563144259817,
+        "exit_decisions_mean": 160.21875,
+        "exit_decisions_std": 140.44354612597013
+      }
+    }
+  },
+  "ppo_seed_variation": {
+    "train": {
+      "exit_rate_mean": 0.8041666666666667,
+      "exit_rate_std": 0.07030028186024312,
+      "exit_rate_min": 0.7125,
+      "exit_rate_max": 0.8833333333333333,
+      "decisions_mean_across_seeds": 213.98611111111111,
+      "decisions_std_across_seeds": 58.820019772865145,
+      "exit_decisions_mean_across_seeds": 141.52171496425998,
+      "exit_decisions_std_across_seeds": 40.38862061865789
+    },
+    "val": {
+      "exit_rate_mean": 0.8541666666666666,
+      "exit_rate_std": 0.10324593077803224,
+      "exit_rate_min": 0.775,
+      "exit_rate_max": 1.0,
+      "decisions_mean_across_seeds": 185.6875,
+      "decisions_std_across_seeds": 79.04785536306473,
+      "exit_decisions_mean_across_seeds": 132.78390083632019,
+      "exit_decisions_std_across_seeds": 41.88633919118811
+    },
+    "test": {
+      "exit_rate_mean": 0.6958333333333334,
+      "exit_rate_std": 0.08680277773333192,
+      "exit_rate_min": 0.5875,
+      "exit_rate_max": 0.8,
+      "decisions_mean_across_seeds": 289.175,
+      "decisions_std_across_seeds": 39.64745157846424,
+      "exit_decisions_mean_across_seeds": 186.30594604863222,
+      "exit_decisions_std_across_seeds": 32.131564843034866
+    }
+  },
+  "per_layout": [
+    {
+      "layout": "train_straight_short_e",
+      "split": "train",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 19,
+          "exit_rate": 0.95,
+          "deaths": 0,
+          "timeouts": 1,
+          "decisions_mean": 211.15,
+          "decisions_std": 157.99249191021707,
+          "exit_decisions_mean": 194.6315789473684,
+          "exit_decisions_std": 144.28524764154028
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 18,
+          "exit_rate": 0.9,
+          "deaths": 0,
+          "timeouts": 2,
+          "decisions_mean": 228.05,
+          "decisions_std": 144.34489079977857,
+          "exit_decisions_mean": 195.05555555555554,
+          "exit_decisions_std": 110.7436841551107
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 69.1,
+          "decisions_std": 29.89966554996895,
+          "exit_decisions_mean": 69.1,
+          "exit_decisions_std": 29.89966554996895
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 103.2,
+          "decisions_std": 97.10128732411327,
+          "exit_decisions_mean": 103.2,
+          "exit_decisions_std": 97.10128732411327
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 19.35,
+          "decisions_std": 4.80910594601533,
+          "exit_decisions_mean": 19.35,
+          "exit_decisions_std": 4.80910594601533
+        }
+      }
+    },
+    {
+      "layout": "train_straight_long_w",
+      "split": "train",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 8,
+          "exit_rate": 0.4,
+          "deaths": 0,
+          "timeouts": 12,
+          "decisions_mean": 444.05,
+          "decisions_std": 129.2545840579745,
+          "exit_decisions_mean": 322.625,
+          "exit_decisions_std": 131.12392754566193
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 13,
+          "exit_rate": 0.65,
+          "deaths": 0,
+          "timeouts": 7,
+          "decisions_mean": 365.65,
+          "decisions_std": 146.57942386296926,
+          "exit_decisions_mean": 279.84615384615387,
+          "exit_decisions_std": 109.63354775295474
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 187.6,
+          "decisions_std": 100.82529444539202,
+          "exit_decisions_mean": 187.6,
+          "exit_decisions_std": 100.82529444539202
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 15,
+          "exit_rate": 0.75,
+          "deaths": 0,
+          "timeouts": 5,
+          "decisions_mean": 312.9,
+          "decisions_std": 152.96793781704713,
+          "exit_decisions_mean": 242.2,
+          "exit_decisions_std": 105.85348364602838
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 35.9,
+          "decisions_std": 21.419383744636537,
+          "exit_decisions_mean": 35.9,
+          "exit_decisions_std": 21.419383744636537
+        }
+      }
+    },
+    {
+      "layout": "train_wide_hall_n",
+      "split": "train",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 198.0,
+          "decisions_std": 139.91318736988305,
+          "exit_decisions_mean": 198.0,
+          "exit_decisions_std": 139.91318736988305
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 201.6,
+          "decisions_std": 103.41489254454602,
+          "exit_decisions_mean": 201.6,
+          "exit_decisions_std": 103.41489254454602
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 72.35,
+          "decisions_std": 31.098673605155575,
+          "exit_decisions_mean": 72.35,
+          "exit_decisions_std": 31.098673605155575
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 77.9,
+          "decisions_std": 68.13141712895747,
+          "exit_decisions_mean": 77.9,
+          "exit_decisions_std": 68.13141712895747
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 19.65,
+          "decisions_std": 6.702797923255631,
+          "exit_decisions_mean": 19.65,
+          "exit_decisions_std": 6.702797923255631
+        }
+      }
+    },
+    {
+      "layout": "train_bend_left_90_e",
+      "split": "train",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 18,
+          "exit_rate": 0.9,
+          "deaths": 0,
+          "timeouts": 2,
+          "decisions_mean": 222.5,
+          "decisions_std": 157.25345783161654,
+          "exit_decisions_mean": 188.88888888888889,
+          "exit_decisions_std": 127.19752307550336
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 18,
+          "exit_rate": 0.9,
+          "deaths": 0,
+          "timeouts": 2,
+          "decisions_mean": 220.0,
+          "decisions_std": 146.07361157991542,
+          "exit_decisions_mean": 186.11111111111111,
+          "exit_decisions_std": 110.5611388874896
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 69.3,
+          "decisions_std": 46.10108458594005,
+          "exit_decisions_mean": 69.3,
+          "exit_decisions_std": 46.10108458594005
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 19,
+          "exit_rate": 0.95,
+          "deaths": 0,
+          "timeouts": 1,
+          "decisions_mean": 213.0,
+          "decisions_std": 129.5387972771092,
+          "exit_decisions_mean": 196.57894736842104,
+          "exit_decisions_std": 110.77208264553308
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 97.15,
+          "decisions_std": 91.94469805268817,
+          "exit_decisions_mean": 97.15,
+          "exit_decisions_std": 91.94469805268817
+        }
+      }
+    },
+    {
+      "layout": "train_bend_right_90_s",
+      "split": "train",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 17,
+          "exit_rate": 0.85,
+          "deaths": 0,
+          "timeouts": 3,
+          "decisions_mean": 275.7,
+          "decisions_std": 142.2666861918137,
+          "exit_decisions_mean": 231.7058823529412,
+          "exit_decisions_std": 104.44292824081278
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 13,
+          "exit_rate": 0.65,
+          "deaths": 0,
+          "timeouts": 7,
+          "decisions_mean": 354.55,
+          "decisions_std": 166.23401426904184,
+          "exit_decisions_mean": 262.7692307692308,
+          "exit_decisions_std": 135.81500644748854
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 13,
+          "exit_rate": 0.65,
+          "deaths": 0,
+          "timeouts": 7,
+          "decisions_mean": 384.55,
+          "decisions_std": 159.30991023787567,
+          "exit_decisions_mean": 308.9230769230769,
+          "exit_decisions_std": 150.67972225294565
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 104.0,
+          "decisions_std": 59.484451750016156,
+          "exit_decisions_mean": 104.0,
+          "exit_decisions_std": 59.484451750016156
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 48.85,
+          "decisions_std": 19.98067816666892,
+          "exit_decisions_mean": 48.85,
+          "exit_decisions_std": 19.98067816666892
+        }
+      }
+    },
+    {
+      "layout": "train_bend_wide_left_n",
+      "split": "train",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 12,
+          "exit_rate": 0.6,
+          "deaths": 0,
+          "timeouts": 8,
+          "decisions_mean": 351.5,
+          "decisions_std": 178.32091857098538,
+          "exit_decisions_mean": 235.83333333333334,
+          "exit_decisions_std": 139.8224072012621
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 13,
+          "exit_rate": 0.65,
+          "deaths": 0,
+          "timeouts": 7,
+          "decisions_mean": 347.8,
+          "decisions_std": 158.85389513637995,
+          "exit_decisions_mean": 252.3846153846154,
+          "exit_decisions_std": 113.18435503572069
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 102.2,
+          "decisions_std": 61.118409665173715,
+          "exit_decisions_mean": 102.2,
+          "exit_decisions_std": 61.118409665173715
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 11,
+          "exit_rate": 0.55,
+          "deaths": 0,
+          "timeouts": 9,
+          "decisions_mean": 368.7,
+          "decisions_std": 172.08314850676112,
+          "exit_decisions_mean": 240.8181818181818,
+          "exit_decisions_std": 132.28537896382693
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 19,
+          "exit_rate": 0.95,
+          "deaths": 0,
+          "timeouts": 1,
+          "decisions_mean": 144.75,
+          "decisions_std": 136.35793889612734,
+          "exit_decisions_mean": 124.73684210526316,
+          "exit_decisions_std": 107.52470565814075
+        }
+      }
+    },
+    {
+      "layout": "train_s_curve_e",
+      "split": "train",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 8,
+          "exit_rate": 0.4,
+          "deaths": 0,
+          "timeouts": 12,
+          "decisions_mean": 436.4,
+          "decisions_std": 123.4128842544408,
+          "exit_decisions_mean": 303.5,
+          "exit_decisions_std": 92.94891069829706
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 7,
+          "exit_rate": 0.35,
+          "deaths": 0,
+          "timeouts": 13,
+          "decisions_mean": 457.9,
+          "decisions_std": 121.37046592973105,
+          "exit_decisions_mean": 333.2857142857143,
+          "exit_decisions_std": 134.89860137548212
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 11,
+          "exit_rate": 0.55,
+          "deaths": 0,
+          "timeouts": 9,
+          "decisions_mean": 356.2,
+          "decisions_std": 170.7947891476786,
+          "exit_decisions_mean": 218.0909090909091,
+          "exit_decisions_std": 103.20364206527398
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 15,
+          "exit_rate": 0.75,
+          "deaths": 0,
+          "timeouts": 5,
+          "decisions_mean": 314.95,
+          "decisions_std": 158.6970305330254,
+          "exit_decisions_mean": 244.93333333333334,
+          "exit_decisions_std": 118.19614582924812
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 81.4,
+          "decisions_std": 70.61260510702039,
+          "exit_decisions_mean": 81.4,
+          "exit_decisions_std": 70.61260510702039
+        }
+      }
+    },
+    {
+      "layout": "train_s_curve_long_s",
+      "split": "train",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 8,
+          "exit_rate": 0.4,
+          "deaths": 0,
+          "timeouts": 12,
+          "decisions_mean": 423.35,
+          "decisions_std": 141.09191153287279,
+          "exit_decisions_mean": 270.875,
+          "exit_decisions_std": 104.97432721861094
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 12,
+          "exit_rate": 0.6,
+          "deaths": 0,
+          "timeouts": 8,
+          "decisions_mean": 432.15,
+          "decisions_std": 113.33634677366304,
+          "exit_decisions_mean": 370.25,
+          "exit_decisions_std": 108.76360068209094
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 11,
+          "exit_rate": 0.55,
+          "deaths": 0,
+          "timeouts": 9,
+          "decisions_mean": 353.9,
+          "decisions_std": 175.92097657755312,
+          "exit_decisions_mean": 213.9090909090909,
+          "exit_decisions_std": 112.78092564827904
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 13,
+          "exit_rate": 0.65,
+          "deaths": 0,
+          "timeouts": 7,
+          "decisions_mean": 331.05,
+          "decisions_std": 180.7931068929344,
+          "exit_decisions_mean": 226.6153846153846,
+          "exit_decisions_std": 138.29207578473927
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 118.8,
+          "decisions_std": 108.8019301299384,
+          "exit_decisions_mean": 118.8,
+          "exit_decisions_std": 108.8019301299384
+        }
+      }
+    },
+    {
+      "layout": "train_u_turn_e",
+      "split": "train",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 12,
+          "exit_rate": 0.6,
+          "deaths": 0,
+          "timeouts": 8,
+          "decisions_mean": 418.75,
+          "decisions_std": 139.16101285920564,
+          "exit_decisions_mean": 347.9166666666667,
+          "exit_decisions_std": 140.47387558625348
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 10,
+          "exit_rate": 0.5,
+          "deaths": 0,
+          "timeouts": 10,
+          "decisions_mean": 435.55,
+          "decisions_std": 130.55247029451414,
+          "exit_decisions_mean": 346.1,
+          "exit_decisions_std": 134.48156007423472
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 125.8,
+          "decisions_std": 79.55350400830878,
+          "exit_decisions_mean": 125.8,
+          "exit_decisions_std": 79.55350400830878
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 1,
+          "exit_rate": 0.05,
+          "deaths": 0,
+          "timeouts": 19,
+          "decisions_mean": 509.65,
+          "decisions_std": 66.90909878334934,
+          "exit_decisions_mean": 218.0,
+          "exit_decisions_std": 0.0
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 0,
+          "exit_rate": 0.0,
+          "deaths": 0,
+          "timeouts": 20,
+          "decisions_mean": 525.0,
+          "decisions_std": 0.0,
+          "exit_decisions_mean": null,
+          "exit_decisions_std": null
+        }
+      }
+    },
+    {
+      "layout": "train_t_junction_n",
+      "split": "train",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 12,
+          "exit_rate": 0.6,
+          "deaths": 0,
+          "timeouts": 8,
+          "decisions_mean": 350.35,
+          "decisions_std": 167.9143457242412,
+          "exit_decisions_mean": 233.91666666666666,
+          "exit_decisions_std": 114.45629321079535
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 14,
+          "exit_rate": 0.7,
+          "deaths": 0,
+          "timeouts": 6,
+          "decisions_mean": 362.7,
+          "decisions_std": 153.4262363482856,
+          "exit_decisions_mean": 293.14285714285717,
+          "exit_decisions_std": 132.29018813786234
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 18,
+          "exit_rate": 0.9,
+          "deaths": 0,
+          "timeouts": 2,
+          "decisions_mean": 216.9,
+          "decisions_std": 152.12590180505094,
+          "exit_decisions_mean": 182.66666666666666,
+          "exit_decisions_std": 118.29811682543576
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 17,
+          "exit_rate": 0.85,
+          "deaths": 0,
+          "timeouts": 3,
+          "decisions_mean": 170.65,
+          "decisions_std": 157.30647634474556,
+          "exit_decisions_mean": 108.11764705882354,
+          "exit_decisions_std": 55.16806658687847
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 18,
+          "exit_rate": 0.9,
+          "deaths": 0,
+          "timeouts": 2,
+          "decisions_mean": 162.1,
+          "decisions_std": 161.85576912794923,
+          "exit_decisions_mean": 121.77777777777777,
+          "exit_decisions_std": 113.35468208511408
+        }
+      }
+    },
+    {
+      "layout": "train_staggered_rooms_e",
+      "split": "train",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 6,
+          "exit_rate": 0.3,
+          "deaths": 0,
+          "timeouts": 14,
+          "decisions_mean": 474.35,
+          "decisions_std": 106.89774319413857,
+          "exit_decisions_mean": 356.1666666666667,
+          "exit_decisions_std": 134.6741953341058
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 6,
+          "exit_rate": 0.3,
+          "deaths": 0,
+          "timeouts": 14,
+          "decisions_mean": 469.0,
+          "decisions_std": 102.05880657738459,
+          "exit_decisions_mean": 338.3333333333333,
+          "exit_decisions_std": 101.63114133418402
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 13,
+          "exit_rate": 0.65,
+          "deaths": 0,
+          "timeouts": 7,
+          "decisions_mean": 345.5,
+          "decisions_std": 149.860435072103,
+          "exit_decisions_mean": 248.84615384615384,
+          "exit_decisions_std": 88.65477222943645
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 9,
+          "exit_rate": 0.45,
+          "deaths": 0,
+          "timeouts": 11,
+          "decisions_mean": 445.55,
+          "decisions_std": 117.37694620324726,
+          "exit_decisions_mean": 348.44444444444446,
+          "exit_decisions_std": 116.06809410486503
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 16,
+          "exit_rate": 0.8,
+          "deaths": 0,
+          "timeouts": 4,
+          "decisions_mean": 260.2,
+          "decisions_std": 171.35536174861878,
+          "exit_decisions_mean": 194.0,
+          "exit_decisions_std": 121.61876911069278
+        }
+      }
+    },
+    {
+      "layout": "train_stepped_stair_n",
+      "split": "train",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 5,
+          "exit_rate": 0.25,
+          "deaths": 0,
+          "timeouts": 15,
+          "decisions_mean": 488.55,
+          "decisions_std": 75.23926833775033,
+          "exit_decisions_mean": 379.2,
+          "exit_decisions_std": 81.85694839169122
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 8,
+          "exit_rate": 0.4,
+          "deaths": 0,
+          "timeouts": 12,
+          "decisions_mean": 438.25,
+          "decisions_std": 134.6621234794699,
+          "exit_decisions_mean": 308.125,
+          "exit_decisions_std": 130.81995021784712
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 10,
+          "exit_rate": 0.5,
+          "deaths": 0,
+          "timeouts": 10,
+          "decisions_mean": 400.85,
+          "decisions_std": 143.31897117967318,
+          "exit_decisions_mean": 276.7,
+          "exit_decisions_std": 101.26307323007731
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 11,
+          "exit_rate": 0.55,
+          "deaths": 0,
+          "timeouts": 9,
+          "decisions_mean": 416.65,
+          "decisions_std": 112.6389253322314,
+          "exit_decisions_mean": 328.0,
+          "exit_decisions_std": 74.86108346919525
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 19,
+          "exit_rate": 0.95,
+          "deaths": 0,
+          "timeouts": 1,
+          "decisions_mean": 137.9,
+          "decisions_std": 134.36736955079533,
+          "exit_decisions_mean": 117.52631578947368,
+          "exit_decisions_std": 103.4557461562304
+        }
+      }
+    },
+    {
+      "layout": "val_narrow_long_n",
+      "split": "val",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 8,
+          "exit_rate": 0.4,
+          "deaths": 0,
+          "timeouts": 12,
+          "decisions_mean": 433.75,
+          "decisions_std": 130.87661173792665,
+          "exit_decisions_mean": 296.875,
+          "exit_decisions_std": 107.68987591691246
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 12,
+          "exit_rate": 0.6,
+          "deaths": 0,
+          "timeouts": 8,
+          "decisions_mean": 381.7,
+          "decisions_std": 153.96009223172086,
+          "exit_decisions_mean": 286.1666666666667,
+          "exit_decisions_std": 129.18838527084736
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 17,
+          "exit_rate": 0.85,
+          "deaths": 0,
+          "timeouts": 3,
+          "decisions_mean": 209.0,
+          "decisions_std": 162.40997506310995,
+          "exit_decisions_mean": 153.23529411764707,
+          "exit_decisions_std": 101.49096129662726
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 16,
+          "exit_rate": 0.8,
+          "deaths": 0,
+          "timeouts": 4,
+          "decisions_mean": 285.4,
+          "decisions_std": 168.52341083659564,
+          "exit_decisions_mean": 225.5,
+          "exit_decisions_std": 132.51462183472432
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 34.2,
+          "decisions_std": 21.45600149142426,
+          "exit_decisions_mean": 34.2,
+          "exit_decisions_std": 21.45600149142426
+        }
+      }
+    },
+    {
+      "layout": "val_l_asymmetric_w",
+      "split": "val",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 16,
+          "exit_rate": 0.8,
+          "deaths": 0,
+          "timeouts": 4,
+          "decisions_mean": 328.7,
+          "decisions_std": 154.15450042084402,
+          "exit_decisions_mean": 279.625,
+          "exit_decisions_std": 132.90122036685742
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 15,
+          "exit_rate": 0.75,
+          "deaths": 0,
+          "timeouts": 5,
+          "decisions_mean": 316.5,
+          "decisions_std": 158.45014988948418,
+          "exit_decisions_mean": 247.0,
+          "exit_decisions_std": 118.97170531965433
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 105.2,
+          "decisions_std": 65.57789261633832,
+          "exit_decisions_mean": 105.2,
+          "exit_decisions_std": 65.57789261633832
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 8,
+          "exit_rate": 0.4,
+          "deaths": 0,
+          "timeouts": 12,
+          "decisions_mean": 396.05,
+          "decisions_std": 166.6383734318119,
+          "exit_decisions_mean": 202.625,
+          "exit_decisions_std": 84.05643565486227
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 131.95,
+          "decisions_std": 109.36474523355322,
+          "exit_decisions_mean": 131.95,
+          "exit_decisions_std": 109.36474523355322
+        }
+      }
+    },
+    {
+      "layout": "val_pillar_bypass_e",
+      "split": "val",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 11,
+          "exit_rate": 0.55,
+          "deaths": 0,
+          "timeouts": 9,
+          "decisions_mean": 391.6,
+          "decisions_std": 149.39759034201322,
+          "exit_decisions_mean": 282.45454545454544,
+          "exit_decisions_std": 118.77891122613524
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 10,
+          "exit_rate": 0.5,
+          "deaths": 0,
+          "timeouts": 10,
+          "decisions_mean": 408.3,
+          "decisions_std": 156.0247095815275,
+          "exit_decisions_mean": 291.6,
+          "exit_decisions_std": 146.45695613387574
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 18,
+          "exit_rate": 0.9,
+          "deaths": 0,
+          "timeouts": 2,
+          "decisions_mean": 211.85,
+          "decisions_std": 155.77588869911798,
+          "exit_decisions_mean": 177.05555555555554,
+          "exit_decisions_std": 121.88449551486677
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 18,
+          "exit_rate": 0.9,
+          "deaths": 0,
+          "timeouts": 2,
+          "decisions_mean": 217.0,
+          "decisions_std": 141.11236657359268,
+          "exit_decisions_mean": 182.77777777777777,
+          "exit_decisions_std": 102.04713265913263
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 69.05,
+          "decisions_std": 49.291454634652446,
+          "exit_decisions_mean": 69.05,
+          "exit_decisions_std": 49.291454634652446
+        }
+      }
+    },
+    {
+      "layout": "val_hook_chamber_s",
+      "split": "val",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 15,
+          "exit_rate": 0.75,
+          "deaths": 0,
+          "timeouts": 5,
+          "decisions_mean": 355.25,
+          "decisions_std": 144.3872830272805,
+          "exit_decisions_mean": 298.6666666666667,
+          "exit_decisions_std": 122.43456302132263
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 16,
+          "exit_rate": 0.8,
+          "deaths": 0,
+          "timeouts": 4,
+          "decisions_mean": 371.55,
+          "decisions_std": 137.21095983921984,
+          "exit_decisions_mean": 333.1875,
+          "exit_decisions_std": 127.18157234344133
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 8,
+          "exit_rate": 0.4,
+          "deaths": 0,
+          "timeouts": 12,
+          "decisions_mean": 403.55,
+          "decisions_std": 166.12810568955513,
+          "exit_decisions_mean": 221.375,
+          "exit_decisions_std": 116.97642657817856
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 102.7,
+          "decisions_std": 56.221970794343385,
+          "exit_decisions_mean": 102.7,
+          "exit_decisions_std": 56.221970794343385
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 62.3,
+          "decisions_std": 20.57692882818036,
+          "exit_decisions_mean": 62.3,
+          "exit_decisions_std": 20.57692882818036
+        }
+      }
+    },
+    {
+      "layout": "test_chicane_e",
+      "split": "test",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 1,
+          "exit_rate": 0.05,
+          "deaths": 0,
+          "timeouts": 19,
+          "decisions_mean": 518.7,
+          "decisions_std": 27.461063344306243,
+          "exit_decisions_mean": 399.0,
+          "exit_decisions_std": 0.0
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 1,
+          "exit_rate": 0.05,
+          "deaths": 0,
+          "timeouts": 19,
+          "decisions_mean": 520.15,
+          "decisions_std": 21.14065987617227,
+          "exit_decisions_mean": 428.0,
+          "exit_decisions_std": 0.0
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 1,
+          "exit_rate": 0.05,
+          "deaths": 0,
+          "timeouts": 19,
+          "decisions_mean": 516.7,
+          "decisions_std": 36.17886123138759,
+          "exit_decisions_mean": 359.0,
+          "exit_decisions_std": 0.0
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 2,
+          "exit_rate": 0.1,
+          "deaths": 0,
+          "timeouts": 18,
+          "decisions_mean": 504.5,
+          "decisions_std": 63.74284273547894,
+          "exit_decisions_mean": 320.0,
+          "exit_decisions_std": 53.0
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 18,
+          "exit_rate": 0.9,
+          "deaths": 0,
+          "timeouts": 2,
+          "decisions_mean": 249.05,
+          "decisions_std": 158.7206587057904,
+          "exit_decisions_mean": 218.38888888888889,
+          "exit_decisions_std": 136.34642923609
+        }
+      }
+    },
+    {
+      "layout": "test_l_narrow_to_wide_s",
+      "split": "test",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 11,
+          "exit_rate": 0.55,
+          "deaths": 0,
+          "timeouts": 9,
+          "decisions_mean": 381.0,
+          "decisions_std": 160.7308308943869,
+          "exit_decisions_mean": 263.1818181818182,
+          "exit_decisions_std": 126.98304695854495
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 10,
+          "exit_rate": 0.5,
+          "deaths": 0,
+          "timeouts": 10,
+          "decisions_mean": 418.45,
+          "decisions_std": 136.6288677403132,
+          "exit_decisions_mean": 311.9,
+          "exit_decisions_std": 120.95077511119968
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 144.85,
+          "decisions_std": 87.2406298693447,
+          "exit_decisions_mean": 144.85,
+          "exit_decisions_std": 87.2406298693447
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 18,
+          "exit_rate": 0.9,
+          "deaths": 0,
+          "timeouts": 2,
+          "decisions_mean": 245.05,
+          "decisions_std": 135.33974841117444,
+          "exit_decisions_mean": 213.94444444444446,
+          "exit_decisions_std": 103.32713541747032
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 16,
+          "exit_rate": 0.8,
+          "deaths": 0,
+          "timeouts": 4,
+          "decisions_mean": 232.35,
+          "decisions_std": 192.12971529672342,
+          "exit_decisions_mean": 159.1875,
+          "exit_decisions_std": 139.20677908690368
+        }
+      }
+    },
+    {
+      "layout": "test_fork_deadend_w",
+      "split": "test",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 7,
+          "exit_rate": 0.35,
+          "deaths": 0,
+          "timeouts": 13,
+          "decisions_mean": 424.5,
+          "decisions_std": 154.66496047909493,
+          "exit_decisions_mean": 237.85714285714286,
+          "exit_decisions_std": 121.46302032356371
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 5,
+          "exit_rate": 0.25,
+          "deaths": 0,
+          "timeouts": 15,
+          "decisions_mean": 475.5,
+          "decisions_std": 110.71562671998926,
+          "exit_decisions_mean": 327.0,
+          "exit_decisions_std": 140.10281938633497
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 6,
+          "exit_rate": 0.3,
+          "deaths": 0,
+          "timeouts": 14,
+          "decisions_mean": 444.1,
+          "decisions_std": 138.78144688682275,
+          "exit_decisions_mean": 255.33333333333334,
+          "exit_decisions_std": 115.31213678051799
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 17,
+          "exit_rate": 0.85,
+          "deaths": 0,
+          "timeouts": 3,
+          "decisions_mean": 248.7,
+          "decisions_std": 168.3514478702218,
+          "exit_decisions_mean": 199.94117647058823,
+          "exit_decisions_std": 132.26598450637053
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 70.85,
+          "decisions_std": 82.2704533839458,
+          "exit_decisions_mean": 70.85,
+          "exit_decisions_std": 82.2704533839458
+        }
+      }
+    },
+    {
+      "layout": "test_spiral_inward_n",
+      "split": "test",
+      "policies": {
+        "random": {
+          "episodes": 20,
+          "exits": 12,
+          "exit_rate": 0.6,
+          "deaths": 0,
+          "timeouts": 8,
+          "decisions_mean": 369.05,
+          "decisions_std": 167.1503739152264,
+          "exit_decisions_mean": 265.0833333333333,
+          "exit_decisions_std": 139.79536135206902
+        },
+        "untrained": {
+          "episodes": 20,
+          "exits": 12,
+          "exit_rate": 0.6,
+          "deaths": 0,
+          "timeouts": 8,
+          "decisions_mean": 342.7,
+          "decisions_std": 176.81857934052064,
+          "exit_decisions_mean": 221.16666666666666,
+          "exit_decisions_std": 123.21582239667472
+        },
+        "ppo_s42": {
+          "episodes": 20,
+          "exits": 20,
+          "exit_rate": 1.0,
+          "deaths": 0,
+          "timeouts": 0,
+          "decisions_mean": 153.35,
+          "decisions_std": 126.51058256130196,
+          "exit_decisions_mean": 153.35,
+          "exit_decisions_std": 126.51058256130196
+        },
+        "ppo_s43": {
+          "episodes": 20,
+          "exits": 19,
+          "exit_rate": 0.95,
+          "deaths": 0,
+          "timeouts": 1,
+          "decisions_mean": 280.15,
+          "decisions_std": 120.34628162099567,
+          "exit_decisions_mean": 267.2631578947368,
+          "exit_decisions_std": 109.19747544086941
+        },
+        "ppo_s44": {
+          "episodes": 20,
+          "exits": 10,
+          "exit_rate": 0.5,
+          "deaths": 0,
+          "timeouts": 10,
+          "decisions_mean": 380.45,
+          "decisions_std": 176.38976019032398,
+          "exit_decisions_mean": 235.9,
+          "exit_decisions_std": 142.9590500807836
+        }
+      }
+    }
+  ]
+}

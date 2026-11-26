@@ -1,0 +1,29 @@
+......F.                                                                 [100%]
+=================================== FAILURES ===================================
+_____________________ test_cpu_and_ram_limits_are_emulated _____________________
+
+tmp_path = PosixPath('/private/tmp/pytest-of-karanram/pytest-3/test_cpu_and_ram_limits_are_em0')
+
+    def test_cpu_and_ram_limits_are_emulated(tmp_path):
+        """The agent runs on one core with single-threaded numeric libraries, and its RAM is measured."""
+        import os
+        import re
+
+        src = (
+            "import os\nimport numpy as np\n"
+            "class DoomAgent:\n"
+            "    def __init__(self, o, a, d):\n"
+            "        assert os.environ['OMP_NUM_THREADS'] == '1'\n"
+>           f"        assert len(os.sched_getaffinity(0)) == {1 if len(os.sched_getaffinity(0)) > 1 else len(os.sched_getaffinity(0))}\n"
+                                                                       ^^^^^^^^^^^^^^^^^^^^
+            "        self.buf = np.ones(300 * 2**20 // 8)  # 300 MB, touched\n"
+            "        self.a = a\n"
+            "    def reset(self): pass\n"
+            "    def act(self, obs): return self.a.sample()\n"
+        )
+E       AttributeError: module 'os' has no attribute 'sched_getaffinity'
+
+tests/test_validate.py:83: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_validate.py::test_cpu_and_ram_limits_are_emulated - Attribu...
+1 failed, 7 passed in 10.73s

@@ -1,0 +1,193 @@
+{
+  "cell_size": 64,
+  "door_mechanism": "UDMF Door_LockedRaise (special=13, arg3=129/130/131 for R/B/Y, playeruse=true)",
+  "exit_mechanism": "UDMF linedef special=243 (Exit_Normal), playercross=true",
+  "maps": [
+    {
+      "name": "prog_train_inline_red_e",
+      "wad_path": "training/progression/maps/prog_train_inline_red_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "key_color": "red",
+      "door_occluded_at_key": false,
+      "sha256": "9771064bc89b9efefb501860719b9d9593c9db350e87cdeb973a372b0e221a81",
+      "grid": [
+        "###########",
+        "#P.....R.E#",
+        "#..r...####",
+        "###########"
+      ],
+      "player_angle": 0
+    },
+    {
+      "name": "prog_train_side_north_e",
+      "wad_path": "training/progression/maps/prog_train_side_north_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "key_color": "red",
+      "door_occluded_at_key": true,
+      "sha256": "2c0b7604e05eca888ace7f7e7a0beb7614cb94dc2aff0f1beef27242e0a4ac25",
+      "grid": [
+        "#########",
+        "#..r#####",
+        "#..######",
+        "#P..R..E#",
+        "#...#####",
+        "#########"
+      ],
+      "player_angle": 0
+    },
+    {
+      "name": "prog_train_side_south_w",
+      "wad_path": "training/progression/maps/prog_train_side_south_w.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "key_color": "blue",
+      "door_occluded_at_key": true,
+      "sha256": "5608062d5ea6f5490a1b2b1bd5fd71b52683702a970343c333d46f1151e18c4d",
+      "grid": [
+        "##########",
+        "#E..B...P#",
+        "#####....#",
+        "#####..###",
+        "#####b.###",
+        "##########"
+      ],
+      "player_angle": 180
+    },
+    {
+      "name": "prog_train_hook_yellow_n",
+      "wad_path": "training/progression/maps/prog_train_hook_yellow_n.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "key_color": "yellow",
+      "door_occluded_at_key": false,
+      "sha256": "2393b6503c5758a859b613be98b5c4e4796d6a0deded30bda3ca8ddba474f603",
+      "grid": [
+        "########",
+        "#E######",
+        "#Y######",
+        "#...####",
+        "#P.....#",
+        "####..y#",
+        "########"
+      ],
+      "player_angle": 90
+    },
+    {
+      "name": "prog_train_wide_hall_red_s",
+      "wad_path": "training/progression/maps/prog_train_wide_hall_red_s.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "key_color": "red",
+      "door_occluded_at_key": false,
+      "sha256": "9656e41655b0327b768a1027f5169c5d1a502d0ce8549c3cf66e4a189332da14",
+      "grid": [
+        "#########",
+        "#r.######",
+        "#..######",
+        "#....P..#",
+        "#.......#",
+        "####R####",
+        "####E####",
+        "#########"
+      ],
+      "player_angle": 270
+    },
+    {
+      "name": "prog_train_deep_branch_blue_e",
+      "wad_path": "training/progression/maps/prog_train_deep_branch_blue_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "key_color": "blue",
+      "door_occluded_at_key": true,
+      "sha256": "df1ef492368b231953c70482589e22d9e8e694091a7e38c8222d65502084fa89",
+      "grid": [
+        "############",
+        "#b.....#####",
+        "######.#####",
+        "######.#####",
+        "#P......B.E#",
+        "#.......####",
+        "############"
+      ],
+      "player_angle": 0
+    },
+    {
+      "name": "prog_val_t_branch_e",
+      "wad_path": "training/progression/maps/prog_val_t_branch_e.wad",
+      "map_name": "MAP01",
+      "split": "val",
+      "key_color": "blue",
+      "door_occluded_at_key": true,
+      "sha256": "e73fcb8930493b0b8fa2e606bb2ac7ebe31c7b6a19e7185f33d052bdb0e324ef",
+      "grid": [
+        "############",
+        "###b..######",
+        "#####.######",
+        "#####.######",
+        "#P......B.E#",
+        "############"
+      ],
+      "player_angle": 0
+    },
+    {
+      "name": "prog_val_u_detour_s",
+      "wad_path": "training/progression/maps/prog_val_u_detour_s.wad",
+      "map_name": "MAP01",
+      "split": "val",
+      "key_color": "yellow",
+      "door_occluded_at_key": true,
+      "sha256": "b5e8ca0cfc13718d6af8507ec628107f00bfe71bcbfdb23a849a1261420a2df4",
+      "grid": [
+        "#########",
+        "#####..y#",
+        "#P..#...#",
+        "#.......#",
+        "#..######",
+        "#Y#######",
+        "#E#######",
+        "#########"
+      ],
+      "player_angle": 270
+    },
+    {
+      "name": "prog_test_cross_branch_w",
+      "wad_path": "training/progression/maps/prog_test_cross_branch_w.wad",
+      "map_name": "MAP01",
+      "split": "test",
+      "key_color": "red",
+      "door_occluded_at_key": true,
+      "sha256": "fd8450ef3dc030850ecd4d6f53a102cab4d7516e6d329d37865a68c834f1662f",
+      "grid": [
+        "###########",
+        "#E.R....P.#",
+        "######...##",
+        "######.####",
+        "######...r#",
+        "###########"
+      ],
+      "player_angle": 180
+    },
+    {
+      "name": "prog_test_long_loop_n",
+      "wad_path": "training/progression/maps/prog_test_long_loop_n.wad",
+      "map_name": "MAP01",
+      "split": "test",
+      "key_color": "blue",
+      "door_occluded_at_key": true,
+      "sha256": "126160c22a3d66f7e9bec94bccdfc0cd1f98ef70ed6b3b57c4fa6e8b12b7d6fe",
+      "grid": [
+        "##########",
+        "#####E####",
+        "#####B####",
+        "#....P...#",
+        "#.########",
+        "#.########",
+        "#.....b###",
+        "##########"
+      ],
+      "player_angle": 90
+    }
+  ]
+}

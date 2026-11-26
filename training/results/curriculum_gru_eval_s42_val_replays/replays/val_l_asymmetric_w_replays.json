@@ -1,0 +1,8 @@
+[
+  {
+    "outcome": "exit",
+    "file": "val_l_asymmetric_w_ep0_seed1000.lmp",
+    "decisions": 147,
+    "policy_seed": 1000
+  }
+]

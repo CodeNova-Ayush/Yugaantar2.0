@@ -1,0 +1,18 @@
+[
+  {
+    "outcome": "death",
+    "file": "two_rooms_ep0_seed1000.lmp",
+    "decisions": 518,
+    "kills": 0,
+    "damage_taken": 123.0,
+    "door_passable": true
+  },
+  {
+    "outcome": "timeout",
+    "file": "two_rooms_ep1_seed1001.lmp",
+    "decisions": 525,
+    "kills": 0,
+    "damage_taken": 0.0,
+    "door_passable": false
+  }
+]

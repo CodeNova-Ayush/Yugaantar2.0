@@ -1,0 +1,22 @@
+[
+  {
+    "lmp": "two_rooms_ep0_seed1000.lmp",
+    "wad": "maps/two_rooms.wad",
+    "replay_steps": 173,
+    "nominal_action_ticks": 692,
+    "outcome": "exit",
+    "exit_reached": true,
+    "dead": false,
+    "timeout": false
+  },
+  {
+    "lmp": "two_rooms_ep1_seed1001.lmp",
+    "wad": "maps/two_rooms.wad",
+    "replay_steps": 525,
+    "nominal_action_ticks": 2100,
+    "outcome": "timeout",
+    "exit_reached": false,
+    "dead": false,
+    "timeout": true
+  }
+]

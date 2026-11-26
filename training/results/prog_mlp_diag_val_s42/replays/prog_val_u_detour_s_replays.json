@@ -1,0 +1,14 @@
+[
+  {
+    "outcome": "timeout",
+    "file": "prog_val_u_detour_s_ep0_seed1000.lmp",
+    "decisions": 525,
+    "policy_seed": 1000
+  },
+  {
+    "outcome": "exit",
+    "file": "prog_val_u_detour_s_ep6_seed1006.lmp",
+    "decisions": 345,
+    "policy_seed": 1006
+  }
+]

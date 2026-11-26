@@ -1,0 +1,188 @@
+{
+  "selected": {
+    "decisions": 921600,
+    "checkpoint": "training/results/mixed_1m_s43/checkpoints/ckpt_921600.pt",
+    "sha256": "46a80d55620011625b6c8c7090427ce191f6173fb60c5d8acb2949879fa27fff",
+    "rank": [
+      0.9958333333333332,
+      0.6375,
+      -41.14,
+      -921600
+    ],
+    "tasks": {
+      "combat": {
+        "episodes": 80,
+        "exit": 79,
+        "death": 1,
+        "timeout": 0,
+        "kills": 51,
+        "key": 0,
+        "passable_after_key": 0,
+        "exit_rate": 0.9875,
+        "mean_decisions": 28.5125
+      },
+      "navigation": {
+        "episodes": 80,
+        "exit": 80,
+        "death": 0,
+        "timeout": 0,
+        "kills": 0,
+        "key": 0,
+        "passable_after_key": 0,
+        "exit_rate": 1.0,
+        "mean_decisions": 17.25
+      },
+      "progression": {
+        "episodes": 40,
+        "exit": 40,
+        "death": 0,
+        "timeout": 0,
+        "kills": 0,
+        "key": 40,
+        "passable_after_key": 40,
+        "exit_rate": 1.0,
+        "mean_decisions": 114.175
+      }
+    }
+  },
+  "candidates": [
+    {
+      "decisions": 512000,
+      "checkpoint": "training/results/mixed_1m_s42/checkpoints/ckpt_512000.pt",
+      "sha256": "c34aa16135236605b62e2f23a78391ab9bd7cbec0d7cd3a60e4f80b33a28d436",
+      "rank": [
+        0.9208333333333334,
+        0.425,
+        -83.515,
+        -512000
+      ],
+      "tasks": {
+        "combat": {
+          "episodes": 80,
+          "exit": 61,
+          "death": 10,
+          "timeout": 9,
+          "kills": 34,
+          "key": 0,
+          "passable_after_key": 0,
+          "exit_rate": 0.7625,
+          "mean_decisions": 119.325
+        },
+        "navigation": {
+          "episodes": 80,
+          "exit": 80,
+          "death": 0,
+          "timeout": 0,
+          "kills": 0,
+          "key": 0,
+          "passable_after_key": 0,
+          "exit_rate": 1.0,
+          "mean_decisions": 20.925
+        },
+        "progression": {
+          "episodes": 40,
+          "exit": 40,
+          "death": 0,
+          "timeout": 0,
+          "kills": 0,
+          "key": 40,
+          "passable_after_key": 40,
+          "exit_rate": 1.0,
+          "mean_decisions": 137.075
+        }
+      }
+    },
+    {
+      "decisions": 921600,
+      "checkpoint": "training/results/mixed_1m_s43/checkpoints/ckpt_921600.pt",
+      "sha256": "46a80d55620011625b6c8c7090427ce191f6173fb60c5d8acb2949879fa27fff",
+      "rank": [
+        0.9958333333333332,
+        0.6375,
+        -41.14,
+        -921600
+      ],
+      "tasks": {
+        "combat": {
+          "episodes": 80,
+          "exit": 79,
+          "death": 1,
+          "timeout": 0,
+          "kills": 51,
+          "key": 0,
+          "passable_after_key": 0,
+          "exit_rate": 0.9875,
+          "mean_decisions": 28.5125
+        },
+        "navigation": {
+          "episodes": 80,
+          "exit": 80,
+          "death": 0,
+          "timeout": 0,
+          "kills": 0,
+          "key": 0,
+          "passable_after_key": 0,
+          "exit_rate": 1.0,
+          "mean_decisions": 17.25
+        },
+        "progression": {
+          "episodes": 40,
+          "exit": 40,
+          "death": 0,
+          "timeout": 0,
+          "kills": 0,
+          "key": 40,
+          "passable_after_key": 40,
+          "exit_rate": 1.0,
+          "mean_decisions": 114.175
+        }
+      }
+    },
+    {
+      "checkpoint": "training/results/prog_mlp_1m_s42/checkpoints/ckpt_1024000.pt",
+      "sha256": "10dbba3796666152f0c1d2a3afe9108409fa3c4cd49063ea784b345279553059",
+      "tasks": {
+        "combat": {
+          "episodes": 80,
+          "exit": 65,
+          "death": 15,
+          "timeout": 0,
+          "kills": 15,
+          "key": 0,
+          "passable_after_key": 0,
+          "exit_rate": 0.8125,
+          "mean_decisions": 55.825
+        },
+        "navigation": {
+          "episodes": 80,
+          "exit": 80,
+          "death": 0,
+          "timeout": 0,
+          "kills": 0,
+          "key": 0,
+          "passable_after_key": 0,
+          "exit_rate": 1.0,
+          "mean_decisions": 21.575
+        },
+        "progression": {
+          "episodes": 40,
+          "exit": 26,
+          "death": 0,
+          "timeout": 14,
+          "kills": 0,
+          "key": 26,
+          "passable_after_key": 26,
+          "exit_rate": 0.65,
+          "mean_decisions": 289.675
+        }
+      },
+      "rank": [
+        0.8208333333333333,
+        0.1875,
+        -88.895,
+        -1024000
+      ],
+      "decisions": 1024000
+    }
+  ]
+}

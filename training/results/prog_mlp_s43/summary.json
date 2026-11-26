@@ -1,0 +1,101 @@
+{
+  "contract_version": "1.0.0-draft",
+  "command": "training/train_ppo.py --manifest training/progression/manifest.json --arch mlp --key-reward 0.25 --door-passable-reward 0.5 --total-decisions 102400 --seed 43 --out-dir training/results/prog_mlp_s43",
+  "git": {
+    "commit": "4c1acfdb62e105d5b8df7bc2884f2384c75489a5",
+    "dirty": true
+  },
+  "versions": {
+    "python": "3.13.18",
+    "doom-env": "1.0.0.dev0",
+    "vizdoom": "1.3.3",
+    "gymnasium": "1.4.0",
+    "numpy": "2.5.5",
+    "torch": "2.15.0"
+  },
+  "config": {
+    "total_decisions": 102400,
+    "rollout_steps": 512,
+    "minibatch_size": 128,
+    "update_epochs": 4,
+    "lr": 0.0003,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_coef": 0.2,
+    "vf_coef": 0.5,
+    "ent_coef": 0.01,
+    "max_grad_norm": 0.5,
+    "exit_reward": 1.0,
+    "death_penalty": -1.0,
+    "step_cost": -0.002,
+    "key_reward": 0.25,
+    "door_passable_reward": 0.5,
+    "episode_ticks": 2100,
+    "seed": 43,
+    "num_threads": 1,
+    "arch": "mlp",
+    "seq_len": 64
+  },
+  "param_count": 77450,
+  "manifest_path": "training/progression/manifest.json",
+  "train_maps": [
+    {
+      "name": "prog_train_inline_red_e",
+      "sha256": "9771064bc89b9efefb501860719b9d9593c9db350e87cdeb973a372b0e221a81"
+    },
+    {
+      "name": "prog_train_side_north_e",
+      "sha256": "2c0b7604e05eca888ace7f7e7a0beb7614cb94dc2aff0f1beef27242e0a4ac25"
+    },
+    {
+      "name": "prog_train_side_south_w",
+      "sha256": "5608062d5ea6f5490a1b2b1bd5fd71b52683702a970343c333d46f1151e18c4d"
+    },
+    {
+      "name": "prog_train_hook_yellow_n",
+      "sha256": "2393b6503c5758a859b613be98b5c4e4796d6a0deded30bda3ca8ddba474f603"
+    },
+    {
+      "name": "prog_train_wide_hall_red_s",
+      "sha256": "9656e41655b0327b768a1027f5169c5d1a502d0ce8549c3cf66e4a189332da14"
+    },
+    {
+      "name": "prog_train_deep_branch_blue_e",
+      "sha256": "df1ef492368b231953c70482589e22d9e8e694091a7e38c8222d65502084fa89"
+    }
+  ],
+  "truncation_bootstrap_note": "doom_env returns self._last_obs on episode end; on time-limit truncation, GAE bootstraps from V(obs_t, h_t) using the pre-truncation observation and matching recurrent state rather than a post-step state or next episode reset.",
+  "stored_hidden_state_note": "Recurrent PPO preserves each sequence's initial hidden state h0 from rollout collection and holds h0 fixed across minibatches/epochs within the PPO update.",
+  "decisions_done": 102400,
+  "completed_episodes": 236,
+  "completed_exits": 83,
+  "completed_exit_rate": 0.3516949152542373,
+  "total_optimizer_steps": 3200,
+  "mean_sequence_count_per_update": 512.0,
+  "mean_valid_transitions_per_minibatch": 128.0,
+  "wall_seconds": 36.932776791014476,
+  "throughput_decisions_per_sec": 2772.604956822887,
+  "param_l2_delta": 5.0253746414363,
+  "checkpoint_bytes": 314615,
+  "final_update": {
+    "update": 200,
+    "decisions": 102400,
+    "completed_episodes": 236,
+    "throughput_dps": 2776.143782277239,
+    "wall_s": 36.885697582998546,
+    "mean_env_reward_20": 0.35,
+    "mean_train_reward_20": -0.09260000000000054,
+    "exit_rate_20": 0.35,
+    "policy_loss": -0.008704117964953184,
+    "value_loss": 0.00025004656345117837,
+    "entropy": 4.6693761348724365,
+    "approx_kl": 0.009671650652308017,
+    "clip_fraction": 0.16748046875,
+    "grad_norm": 0.7928356193006039,
+    "optimizer_steps": 16,
+    "sequence_count": 512,
+    "mean_valid_transitions_per_minibatch": 128.0
+  },
+  "checkpoint_path": "training/results/prog_mlp_s43/checkpoint.pt",
+  "saved_weights_path": null
+}

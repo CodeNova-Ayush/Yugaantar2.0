@@ -1,0 +1,13 @@
+Validating /Users/karanram/Documents/Doom Game/Yugaantar2.0  (contract 1.0.0-draft)
+
+ [32m✓[0m Repository size (tracked files): 40.5 MB of 1.0 GB
+ [33m![0m Uncommitted changes in submission/: submission/agent.py, submission/model.py, submission/weights/ppo_pilot.pt (the scorer uses your last pushed commit)
+ [32m✓[0m requirements.txt: no extra packages
+ [32m✓[0m DoomAgent interface: __init__, reset, act
+ [33m![0m CPU limit: could not pin the agent to 1 CPU here; evaluation gives it one CPU, so timings may look better than they will be
+ [32m✓[0m Initialization: 0.6s (limit 60s) on device 'cpu'
+ [32m✓[0m Episode on 'two_rooms.wad:MAP01': 408 steps, exit reached, agent time 0.1s of 21.0s budget, 0.3s wall-clock
+ [32m✓[0m Step latency 'two_rooms.wad:MAP01': first 18 ms, p50 0.3 ms, p99 0.5 ms, max 18 ms
+ [33m![0m Peak RAM: could not be measured here (needs Linux /proc); the limit is 8192 MB
+
+[32mPASSED[0m with 3 warning(s).

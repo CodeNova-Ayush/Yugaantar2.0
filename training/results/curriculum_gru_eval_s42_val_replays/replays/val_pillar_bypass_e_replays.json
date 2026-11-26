@@ -1,0 +1,8 @@
+[
+  {
+    "outcome": "exit",
+    "file": "val_pillar_bypass_e_ep0_seed1000.lmp",
+    "decisions": 51,
+    "policy_seed": 1000
+  }
+]

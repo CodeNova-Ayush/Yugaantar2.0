@@ -1,0 +1,42 @@
+[
+  {
+    "label": "representative_success",
+    "layout": "val_narrow_long_n",
+    "split": "val",
+    "episode_idx": 0,
+    "policy_seed": 1000,
+    "recorded_decisions": 70,
+    "recorded_outcome": "exit",
+    "sample_file": "training/results/stage3_replay_sample/val_narrow_long_n_ep0_seed1000.lmp",
+    "playback": {
+      "lmp": "val_narrow_long_n_ep0_seed1000.lmp",
+      "wad": "training/curriculum/maps/val_narrow_long_n.wad",
+      "replay_steps": 70,
+      "nominal_action_ticks": 280,
+      "outcome": "exit",
+      "exit_reached": true,
+      "dead": false,
+      "timeout": false
+    }
+  },
+  {
+    "label": "representative_failure",
+    "layout": "val_narrow_long_n",
+    "split": "val",
+    "episode_idx": 5,
+    "policy_seed": 1005,
+    "recorded_decisions": 525,
+    "recorded_outcome": "timeout",
+    "sample_file": "training/results/stage3_replay_sample/val_narrow_long_n_ep5_seed1005.lmp",
+    "playback": {
+      "lmp": "val_narrow_long_n_ep5_seed1005.lmp",
+      "wad": "training/curriculum/maps/val_narrow_long_n.wad",
+      "replay_steps": 525,
+      "nominal_action_ticks": 2100,
+      "outcome": "timeout",
+      "exit_reached": false,
+      "dead": false,
+      "timeout": true
+    }
+  }
+]

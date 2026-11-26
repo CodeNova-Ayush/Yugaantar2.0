@@ -1,0 +1,8 @@
+[
+  {
+    "outcome": "timeout",
+    "file": "prog_train_side_north_e_ep0_seed1000.lmp",
+    "decisions": 525,
+    "policy_seed": 1000
+  }
+]

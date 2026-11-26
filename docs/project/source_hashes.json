@@ -1,0 +1,11 @@
+{
+  "submission/agent.py": "1ab590f1e9f339af2ad1acf80db4f994051ed4579063431f0d0017f95e648ff4",
+  "submission/model.py": "c65f5bbfb1025d5858625c3cd62348ab565150eabdfbcede6dcc321b40367e33",
+  "training/train_ppo.py": "1388189419593b82650fc9fb6960f036de0ce0adfe27ee5773c593ef2f6ae917",
+  "training/ppo.py": "d1df8028574f5023c926fa2afb74a52a85321a7118d6a219a18e4da42fd9e977",
+  "training/task_rewards.py": "6bf0b77acd7051a52e9f666d8ec1224d25e2f1e7faa51b95583c67f074b5f467",
+  "training/mixed/manifest.json": "913f7845c50ae8d57cac5310642d3fa7985655cf261867dbeb3ecc55764944d0",
+  "training/mixed/generate.py": "d279e1b0e0e054d09ab37762effa267ec0d1f1f98afe00f5a0ebdc8cb8a43c8c",
+  "training/mixed/evaluate.py": "35d6cf02f0f253dd02020bf6b8299a8c6789f27dfe5aa37387fc2e4c60b9a83d",
+  "training/mixed/select.py": "b51139241debca4107768ebf13f8910fb54910c5cb06f1c0ad00ddd1f6025a2b"
+}

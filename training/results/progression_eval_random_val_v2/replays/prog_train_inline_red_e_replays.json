@@ -1,0 +1,14 @@
+[
+  {
+    "outcome": "exit",
+    "file": "prog_train_inline_red_e_ep0_seed1000.lmp",
+    "decisions": 335,
+    "policy_seed": 1000
+  },
+  {
+    "outcome": "timeout",
+    "file": "prog_train_inline_red_e_ep1_seed1001.lmp",
+    "decisions": 525,
+    "policy_seed": 1001
+  }
+]

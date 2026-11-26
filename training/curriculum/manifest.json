@@ -1,0 +1,360 @@
+{
+  "cell_size": 64,
+  "exit_mechanism": "UDMF linedef special=243 (Exit_Normal), playercross=true",
+  "note": "Rays do not explicitly identify exits; exits are walk-over linedefs into GATE3.",
+  "maps": [
+    {
+      "name": "train_straight_short_e",
+      "wad_path": "training/curriculum/maps/train_straight_short_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "straight_5x2",
+      "sha256": "db44ca8045f8582c84a33011bced71a1529b1792483a9022045b4da3c1699cf0",
+      "grid": [
+        "#######",
+        "#P...E#",
+        "#....E#",
+        "#######"
+      ],
+      "player_angle": 0
+    },
+    {
+      "name": "train_straight_long_w",
+      "wad_path": "training/curriculum/maps/train_straight_long_w.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "straight_8x2",
+      "sha256": "5a540f5f29fb97a87f6d614b1fa4b867975b6b7f06a94d4da3cd6e55a3b5d924",
+      "grid": [
+        "##########",
+        "#E......P#",
+        "#E.......#",
+        "##########"
+      ],
+      "player_angle": 180
+    },
+    {
+      "name": "train_wide_hall_n",
+      "wad_path": "training/curriculum/maps/train_wide_hall_n.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "wide_hall_4x5",
+      "sha256": "5380d38da35845c91b2099e7ef8fa3a7ea6a18c14984420ad127bf87dbfd4872",
+      "grid": [
+        "######",
+        "#EEEE#",
+        "#....#",
+        "#....#",
+        "#....#",
+        "#..P.#",
+        "######"
+      ],
+      "player_angle": 90
+    },
+    {
+      "name": "train_bend_left_90_e",
+      "wad_path": "training/curriculum/maps/train_bend_left_90_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "l_bend_5x4",
+      "sha256": "268f23480ecad05531653caf07888a3f2b2582ed293e3a34d23cb77ca481245e",
+      "grid": [
+        "#######",
+        "###EEE#",
+        "###...#",
+        "#P....#",
+        "#.....#",
+        "#######"
+      ],
+      "player_angle": 0
+    },
+    {
+      "name": "train_bend_right_90_s",
+      "wad_path": "training/curriculum/maps/train_bend_right_90_s.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "l_bend_5x4",
+      "sha256": "40eb72204f7fbed567242b1936828af087c944413b3082eed86f6521a3e38eb4",
+      "grid": [
+        "#######",
+        "###.P.#",
+        "###...#",
+        "#E....#",
+        "#E....#",
+        "#######"
+      ],
+      "player_angle": 270
+    },
+    {
+      "name": "train_bend_wide_left_n",
+      "wad_path": "training/curriculum/maps/train_bend_wide_left_n.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "l_bend_wide_3cell",
+      "sha256": "adf9b11e31af8f4593aab01f7a8afb2d3001ecfd67211a7ed733f80c8e1973ad",
+      "grid": [
+        "########",
+        "#E.....#",
+        "#E.....#",
+        "#E.....#",
+        "####...#",
+        "####.P.#",
+        "########"
+      ],
+      "player_angle": 90
+    },
+    {
+      "name": "train_s_curve_e",
+      "wad_path": "training/curriculum/maps/train_s_curve_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "s_curve_compact",
+      "sha256": "df1efdc1b29cd2ed7903458893ac1cd05adc24e2f8fabe61e023cf820bf4863e",
+      "grid": [
+        "#########",
+        "###....E#",
+        "###....E#",
+        "#P...####",
+        "#....####",
+        "#########"
+      ],
+      "player_angle": 0
+    },
+    {
+      "name": "train_s_curve_long_s",
+      "wad_path": "training/curriculum/maps/train_s_curve_long_s.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "s_curve_long",
+      "sha256": "4f565af51a0e24244cf1856c6d84247a8b7824acee5e4b51f7efa17123153922",
+      "grid": [
+        "#######",
+        "#P.####",
+        "#..####",
+        "#.....#",
+        "#.....#",
+        "####..#",
+        "####EE#",
+        "#######"
+      ],
+      "player_angle": 270
+    },
+    {
+      "name": "train_u_turn_e",
+      "wad_path": "training/curriculum/maps/train_u_turn_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "u_turn_2cell",
+      "sha256": "7be0cebb8c6522b14d7ef9c1d9ae13f8b24f16a20c4628830c31b1db91e1b15c",
+      "grid": [
+        "#######",
+        "#E....#",
+        "#E....#",
+        "###...#",
+        "#P....#",
+        "#.....#",
+        "#######"
+      ],
+      "player_angle": 0
+    },
+    {
+      "name": "train_t_junction_n",
+      "wad_path": "training/curriculum/maps/train_t_junction_n.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "t_junction_deadend",
+      "sha256": "35ee3891abff929efef2e3c3ca828ea7c992fbfa7779732796fc53381733c445",
+      "grid": [
+        "#########",
+        "#..#....#",
+        "#..#...E#",
+        "#......E#",
+        "###..####",
+        "###P.####",
+        "#########"
+      ],
+      "player_angle": 90
+    },
+    {
+      "name": "train_staggered_rooms_e",
+      "wad_path": "training/curriculum/maps/train_staggered_rooms_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "two_rooms_chokepoint",
+      "sha256": "7e641704175693378cb8f0a73324947d795a7a2fa0c78e226c0b7567f4fc14e2",
+      "grid": [
+        "#########",
+        "#...#..E#",
+        "#P......#",
+        "#...#...#",
+        "#########"
+      ],
+      "player_angle": 0
+    },
+    {
+      "name": "train_stepped_stair_n",
+      "wad_path": "training/curriculum/maps/train_stepped_stair_n.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "stepped_stair_3turn",
+      "sha256": "0ca0f7b9190f6d4480c4350765dbbde159d21f1cbc17d4fbdd0f3e8793262659",
+      "grid": [
+        "########",
+        "####..E#",
+        "####..E#",
+        "##....##",
+        "##....##",
+        "#..#####",
+        "#P.#####",
+        "########"
+      ],
+      "player_angle": 90
+    },
+    {
+      "name": "val_narrow_long_n",
+      "wad_path": "training/curriculum/maps/val_narrow_long_n.wad",
+      "map_name": "MAP01",
+      "split": "val",
+      "geometry_family": "narrow_1cell_7",
+      "sha256": "6ed39c476009bef6b2f05412db932fa7982b3bb4219cc688ef6c6b09d90f6dfb",
+      "grid": [
+        "###",
+        "#E#",
+        "#.#",
+        "#.#",
+        "#.#",
+        "#.#",
+        "#.#",
+        "#P#",
+        "###"
+      ],
+      "player_angle": 90
+    },
+    {
+      "name": "val_l_asymmetric_w",
+      "wad_path": "training/curriculum/maps/val_l_asymmetric_w.wad",
+      "map_name": "MAP01",
+      "split": "val",
+      "geometry_family": "l_asymmetric_3x6",
+      "sha256": "c88adf3100a589766617c2d16b3b019d7b4bc1f865888ce02891d6cbfe72a15a",
+      "grid": [
+        "#####",
+        "#..P#",
+        "#...#",
+        "#..##",
+        "#..##",
+        "#..##",
+        "#EE##",
+        "#####"
+      ],
+      "player_angle": 180
+    },
+    {
+      "name": "val_pillar_bypass_e",
+      "wad_path": "training/curriculum/maps/val_pillar_bypass_e.wad",
+      "map_name": "MAP01",
+      "split": "val",
+      "geometry_family": "pillar_bypass_loop",
+      "sha256": "57a3a7a5c713add481a21c0f7c4444c1eb1ca08cdd5275de86777287cd496ffb",
+      "grid": [
+        "########",
+        "#......#",
+        "#P.##.E#",
+        "#..##.E#",
+        "#......#",
+        "########"
+      ],
+      "player_angle": 0
+    },
+    {
+      "name": "val_hook_chamber_s",
+      "wad_path": "training/curriculum/maps/val_hook_chamber_s.wad",
+      "map_name": "MAP01",
+      "split": "val",
+      "geometry_family": "hook_chamber_3x2",
+      "sha256": "9a67131db93a7d0cd9064ca174a83f5afc3540433eb648d94ef88f25c3e3d5b3",
+      "grid": [
+        "#######",
+        "####.P#",
+        "####..#",
+        "#..#..#",
+        "#E....#",
+        "#.....#",
+        "#######"
+      ],
+      "player_angle": 270
+    },
+    {
+      "name": "test_chicane_e",
+      "wad_path": "training/curriculum/maps/test_chicane_e.wad",
+      "map_name": "MAP01",
+      "split": "test",
+      "geometry_family": "double_chicane",
+      "sha256": "9823d4ba8539e04ec690c6554a8fc55dfd5326bee22835ecbfaae53848b4f64a",
+      "grid": [
+        "##########",
+        "###....###",
+        "###.##.###",
+        "#P..##..E#",
+        "#...##..E#",
+        "##########"
+      ],
+      "player_angle": 0
+    },
+    {
+      "name": "test_l_narrow_to_wide_s",
+      "wad_path": "training/curriculum/maps/test_l_narrow_to_wide_s.wad",
+      "map_name": "MAP01",
+      "split": "test",
+      "geometry_family": "l_narrow_to_wide",
+      "sha256": "7567eb0fbb244a4a35b2b8a58b8ecc351829bfd36c70e1018cc76bd420e52518",
+      "grid": [
+        "#######",
+        "#P#####",
+        "#.#####",
+        "#.#####",
+        "#....E#",
+        "#....E#",
+        "#....E#",
+        "#######"
+      ],
+      "player_angle": 270
+    },
+    {
+      "name": "test_fork_deadend_w",
+      "wad_path": "training/curriculum/maps/test_fork_deadend_w.wad",
+      "map_name": "MAP01",
+      "split": "test",
+      "geometry_family": "fork_deadend_y",
+      "sha256": "f59c1a7efd025d2c6298141e94ce59ff21f62d053d4b759ea5daf50cfa07d9d2",
+      "grid": [
+        "########",
+        "#..#####",
+        "#......#",
+        "####..P#",
+        "#E.....#",
+        "#E.#####",
+        "########"
+      ],
+      "player_angle": 180
+    },
+    {
+      "name": "test_spiral_inward_n",
+      "wad_path": "training/curriculum/maps/test_spiral_inward_n.wad",
+      "map_name": "MAP01",
+      "split": "test",
+      "geometry_family": "spiral_inward",
+      "sha256": "af4ed704f501c3f6b0efe8d469e713b8015c25a4a53ec9bc73c4f9c9413e6615",
+      "grid": [
+        "#######",
+        "#.....#",
+        "#.##..#",
+        "#.#E..#",
+        "#.#.#.#",
+        "#P..#.#",
+        "#######"
+      ],
+      "player_angle": 90
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+Validating /Users/karanram/Documents/Doom Game/Yugaantar2.0  (contract 1.0.0-draft)
+
+ [32m✓[0m Repository size (tracked files): 288.6 KB of 1.0 GB
+ [33m![0m Untracked files in submission/: submission/model.py, submission/weights/ppo_pilot.pt (not part of your submission until committed)
+ [33m![0m Uncommitted changes in submission/: submission/agent.py (the scorer uses your last pushed commit)
+ [32m✓[0m requirements.txt: no extra packages
+ [32m✓[0m DoomAgent interface: __init__, reset, act
+ [33m![0m CPU limit: could not pin the agent to 1 CPU here; evaluation gives it one CPU, so timings may look better than they will be
+ [32m✓[0m Initialization: 0.5s (limit 60s) on device 'cpu'
+ [32m✓[0m Episode on 'two_rooms.wad:MAP01': 525 steps, tick cap, agent time 0.2s of 21.0s budget, 0.3s wall-clock
+ [32m✓[0m Step latency 'two_rooms.wad:MAP01': first 1 ms, p50 0.3 ms, p99 0.4 ms, max 1 ms
+ [32m✓[0m Episode on 'practice_corridor.wad:MAP01': 16 steps, exit reached, agent time 0.0s of 21.0s budget, 0.0s wall-clock
+ [32m✓[0m Step latency 'practice_corridor.wad:MAP01': first 1 ms, p50 0.4 ms, p99 1.0 ms, max 1 ms
+ [32m✓[0m Episode on 'heldout_lshape.wad:MAP01': 525 steps, tick cap, agent time 0.2s of 21.0s budget, 0.3s wall-clock
+ [32m✓[0m Step latency 'heldout_lshape.wad:MAP01': first 1 ms, p50 0.3 ms, p99 0.5 ms, max 1 ms
+ [33m![0m Peak RAM: could not be measured here (needs Linux /proc); the limit is 8192 MB
+
+[32mPASSED[0m with 4 warning(s).

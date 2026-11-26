@@ -1,0 +1,14 @@
+[
+  {
+    "outcome": "timeout",
+    "file": "prog_val_t_branch_e_ep0_seed1000.lmp",
+    "decisions": 525,
+    "policy_seed": 1000
+  },
+  {
+    "outcome": "exit",
+    "file": "prog_val_t_branch_e_ep3_seed1003.lmp",
+    "decisions": 214,
+    "policy_seed": 1003
+  }
+]

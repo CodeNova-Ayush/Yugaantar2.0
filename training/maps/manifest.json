@@ -1,0 +1,38 @@
+{
+  "cell_size": 64,
+  "exit_mechanism": "UDMF linedef special=243 (Exit_Normal), playercross=true",
+  "maps": [
+    {
+      "name": "practice_corridor",
+      "wad_path": "training/maps/practice_corridor.wad",
+      "map_name": "MAP01",
+      "split": "practice",
+      "sha256": "db44ca8045f8582c84a33011bced71a1529b1792483a9022045b4da3c1699cf0",
+      "grid": [
+        "#######",
+        "#P...E#",
+        "#....E#",
+        "#######"
+      ],
+      "player_angle": 0,
+      "description": "Straight 2-cell-wide corridor from West to East; no enemies or doors; walk-over Exit_Normal (special 243, playercross=true)."
+    },
+    {
+      "name": "heldout_lshape",
+      "wad_path": "training/maps/heldout_lshape.wad",
+      "map_name": "MAP01",
+      "split": "heldout",
+      "sha256": "268f23480ecad05531653caf07888a3f2b2582ed293e3a34d23cb77ca481245e",
+      "grid": [
+        "#######",
+        "###EEE#",
+        "###...#",
+        "#P....#",
+        "#.....#",
+        "#######"
+      ],
+      "player_angle": 0,
+      "description": "L-shaped 2-cell-wide corridor (East then North 90-degree turn); no enemies or doors; walk-over Exit_Normal (special 243, playercross=true)."
+    }
+  ]
+}

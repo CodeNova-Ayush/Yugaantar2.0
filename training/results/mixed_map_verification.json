@@ -1,0 +1,102 @@
+[
+  {
+    "layout": "combat_train_straight_short_e",
+    "enemies": 1,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_train_straight_long_w",
+    "enemies": 2,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_train_wide_hall_n",
+    "enemies": 1,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_train_bend_left_90_e",
+    "enemies": 2,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_train_bend_right_90_s",
+    "enemies": 1,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_train_bend_wide_left_n",
+    "enemies": 2,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_train_s_curve_e",
+    "enemies": 1,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_train_s_curve_long_s",
+    "enemies": 2,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_train_u_turn_e",
+    "enemies": 1,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_train_t_junction_n",
+    "enemies": 2,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_train_staggered_rooms_e",
+    "enemies": 1,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_train_stepped_stair_n",
+    "enemies": 2,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_val_narrow_long_n",
+    "enemies": 1,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_val_l_asymmetric_w",
+    "enemies": 2,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_val_pillar_bypass_e",
+    "enemies": 1,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_val_hook_chamber_s",
+    "enemies": 2,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_test_chicane_e",
+    "enemies": 1,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_test_l_narrow_to_wide_s",
+    "enemies": 2,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_test_fork_deadend_w",
+    "enemies": 1,
+    "geometric_exit_reachable": true
+  },
+  {
+    "layout": "combat_test_spiral_inward_n",
+    "enemies": 2,
+    "geometric_exit_reachable": true
+  }
+]

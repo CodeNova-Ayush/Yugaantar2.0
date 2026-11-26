@@ -1,0 +1,6 @@
+episode,layout,env_seed,decisions,nominal_action_ticks,outcome,env_reward,train_reward
+0,train_u_turn_e,42,395,1580,exit,1.0,0.2099999999999994
+1,train_straight_long_w,43,88,352,exit,1.0,0.8239999999999998
+2,train_t_junction_n,44,525,2100,timeout,0.0,-1.0500000000000007
+3,train_bend_left_90_e,45,300,1200,exit,1.0,0.3999999999999996
+4,train_s_curve_long_s,46,279,1116,exit,1.0,0.4419999999999996

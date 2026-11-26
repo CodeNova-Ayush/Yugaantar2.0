@@ -1,0 +1,32 @@
+{
+  "focused_tests": {
+    "passed": 47,
+    "command": ".venv/bin/python -m pytest tests/test_task_rewards.py tests/test_mixed_evaluation.py tests/test_key_memory.py tests/test_progression.py tests/test_ppo.py tests/test_recurrent_ppo.py tests/test_env.py -q -p no:cacheprovider"
+  },
+  "additional_validator_unit_tests": {
+    "passed": 4,
+    "failed": 1,
+    "cause": "Sandbox denied IPC socket bind in optional signature test; separate elevated validator preflight passed."
+  },
+  "combat_maps_checked": 20,
+  "compileall": "passed",
+  "git_diff_check": "passed",
+  "validator_regression_tests": {
+    "passed": 7,
+    "failed": 1,
+    "failure": "Official test_cpu_and_ram_limits_are_emulated requires Linux os.sched_getaffinity, absent on macOS. Tests were rerun with socket permission; earlier IPC error resolved."
+  },
+  "final_local_validator": {
+    "status": "PASSED",
+    "map_outcome": "exit",
+    "steps": 408,
+    "init_seconds": 0.6,
+    "p99_ms": 0.5,
+    "warnings": [
+      "uncommitted submission changes at validation time",
+      "macOS cannot pin CPU",
+      "macOS cannot measure /proc RAM"
+    ]
+  },
+  "final_weight_sha256": "46a80d55620011625b6c8c7090427ce191f6173fb60c5d8acb2949879fa27fff"
+}

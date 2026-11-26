@@ -1,0 +1,4 @@
+episode,layout,env_seed,decisions,nominal_action_ticks,outcome,env_reward,train_reward,key_bonus,door_passable_bonus,terminal_bonus,step_cost,key_picked_up,door_passable_after_key
+0,prog_train_wide_hall_red_s,42,525,2100,timeout,0.0,-1.0500000000000007,0.0,0.0,0.0,-1.0500000000000007,False,False
+1,prog_train_inline_red_e,43,525,2100,timeout,0.0,-0.3000000000000008,0.25,0.5,0.0,-1.0500000000000007,True,True
+2,prog_train_wide_hall_red_s,44,525,2100,timeout,0.0,-0.3000000000000008,0.25,0.5,0.0,-1.0500000000000007,True,True

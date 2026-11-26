@@ -1,0 +1,218 @@
+{
+  "note": "Equal game experience (51,200 decisions), NOT equal compute. Test split excluded.",
+  "staged_gru_s42_sha256": "f2882996055701a4a84084206b14a03f7dcc55eeb9fa7ed66875869dc91cf920",
+  "split_stats": {
+    "random": {
+      "train": {
+        "episodes": 240,
+        "exits": 145,
+        "exit_rate": 0.6041666666666666,
+        "timeouts": 95,
+        "decisions_mean": 357.8875,
+        "exit_decisions_mean": 248.4
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 50,
+        "exit_rate": 0.625,
+        "timeouts": 30,
+        "decisions_mean": 377.325,
+        "exit_decisions_mean": 288.72
+      }
+    },
+    "untrained": {
+      "train": {
+        "episodes": 240,
+        "exits": 152,
+        "exit_rate": 0.6333333333333333,
+        "timeouts": 88,
+        "decisions_mean": 359.43333333333334,
+        "exit_decisions_mean": 263.57894736842104
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 53,
+        "exit_rate": 0.6625,
+        "timeouts": 27,
+        "decisions_mean": 369.5125,
+        "exit_decisions_mean": 290.3018867924528
+      }
+    },
+    "mlp_s42": {
+      "train": {
+        "episodes": 240,
+        "exits": 196,
+        "exit_rate": 0.8166666666666667,
+        "timeouts": 44,
+        "decisions_mean": 223.6875,
+        "exit_decisions_mean": 156.04591836734693
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 63,
+        "exit_rate": 0.7875,
+        "timeouts": 17,
+        "decisions_mean": 232.4,
+        "exit_decisions_mean": 153.44444444444446
+      }
+    },
+    "mlp_s43": {
+      "train": {
+        "episodes": 240,
+        "exits": 171,
+        "exit_rate": 0.7125,
+        "timeouts": 69,
+        "decisions_mean": 280.68333333333334,
+        "exit_decisions_mean": 182.09941520467837
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 62,
+        "exit_rate": 0.775,
+        "timeouts": 18,
+        "decisions_mean": 250.2875,
+        "exit_decisions_mean": 170.53225806451613
+      }
+    },
+    "mlp_s44": {
+      "train": {
+        "episodes": 240,
+        "exits": 212,
+        "exit_rate": 0.8833333333333333,
+        "timeouts": 28,
+        "decisions_mean": 137.5875,
+        "exit_decisions_mean": 86.41981132075472
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 80,
+        "exit_rate": 1.0,
+        "timeouts": 0,
+        "decisions_mean": 74.375,
+        "exit_decisions_mean": 74.375
+      }
+    },
+    "gru_s42": {
+      "train": {
+        "episodes": 240,
+        "exits": 216,
+        "exit_rate": 0.9,
+        "timeouts": 24,
+        "decisions_mean": 155.15416666666667,
+        "exit_decisions_mean": 114.06018518518519
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 80,
+        "exit_rate": 1.0,
+        "timeouts": 0,
+        "decisions_mean": 108.4,
+        "exit_decisions_mean": 108.4
+      }
+    },
+    "gru_s43": {
+      "train": {
+        "episodes": 240,
+        "exits": 191,
+        "exit_rate": 0.7958333333333333,
+        "timeouts": 49,
+        "decisions_mean": 235.05833333333334,
+        "exit_decisions_mean": 160.67539267015707
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 73,
+        "exit_rate": 0.9125,
+        "timeouts": 7,
+        "decisions_mean": 201.6625,
+        "exit_decisions_mean": 170.65753424657535
+      }
+    },
+    "gru_s44": {
+      "train": {
+        "episodes": 240,
+        "exits": 149,
+        "exit_rate": 0.6208333333333333,
+        "timeouts": 91,
+        "decisions_mean": 248.70833333333334,
+        "exit_decisions_mean": 79.96644295302013
+      },
+      "val": {
+        "episodes": 80,
+        "exits": 59,
+        "exit_rate": 0.7375,
+        "timeouts": 21,
+        "decisions_mean": 199.275,
+        "exit_decisions_mean": 83.33898305084746
+      }
+    }
+  },
+  "train_stats": {
+    "mlp_s42": {
+      "decisions_done": 51200,
+      "completed_episodes": 189,
+      "completed_exit_rate": 0.746031746031746,
+      "wall_seconds": 18.47200412498205,
+      "throughput_dps": 2771.7620488594252,
+      "param_count": 77706,
+      "total_optimizer_steps": 1600,
+      "mean_sequence_count_per_update": null,
+      "mean_valid_transitions_per_minibatch": 128.0
+    },
+    "mlp_s43": {
+      "decisions_done": 51200,
+      "completed_episodes": 196,
+      "completed_exit_rate": 0.7346938775510204,
+      "wall_seconds": 17.352190208010143,
+      "throughput_dps": 2950.6361667453934,
+      "param_count": 77706,
+      "total_optimizer_steps": 1600,
+      "mean_sequence_count_per_update": null,
+      "mean_valid_transitions_per_minibatch": 128.0
+    },
+    "mlp_s44": {
+      "decisions_done": 51200,
+      "completed_episodes": 266,
+      "completed_exit_rate": 0.8383458646616542,
+      "wall_seconds": 17.421560207993025,
+      "throughput_dps": 2938.887182820136,
+      "param_count": 77706,
+      "total_optimizer_steps": 1600,
+      "mean_sequence_count_per_update": null,
+      "mean_valid_transitions_per_minibatch": 128.0
+    },
+    "gru_s42": {
+      "decisions_done": 51200,
+      "completed_episodes": 210,
+      "completed_exit_rate": 0.8,
+      "wall_seconds": 29.857351125014247,
+      "throughput_dps": 1714.820574190356,
+      "param_count": 160010,
+      "total_optimizer_steps": 2020,
+      "mean_sequence_count_per_update": 9.45,
+      "mean_valid_transitions_per_minibatch": 101.80266666666667
+    },
+    "gru_s43": {
+      "decisions_done": 51200,
+      "completed_episodes": 236,
+      "completed_exit_rate": 0.809322033898305,
+      "wall_seconds": 30.06508133400348,
+      "throughput_dps": 1702.9722764159967,
+      "param_count": 160010,
+      "total_optimizer_steps": 2060,
+      "mean_sequence_count_per_update": 9.61,
+      "mean_valid_transitions_per_minibatch": 100.27885714285712
+    },
+    "gru_s44": {
+      "decisions_done": 51200,
+      "completed_episodes": 210,
+      "completed_exit_rate": 0.7238095238095238,
+      "wall_seconds": 31.815014791005524,
+      "throughput_dps": 1609.3030393459014,
+      "param_count": 160010,
+      "total_optimizer_steps": 2064,
+      "mean_sequence_count_per_update": 9.63,
+      "mean_valid_transitions_per_minibatch": 99.97409523809523
+    }
+  }
+}

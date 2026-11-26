@@ -1,0 +1,8 @@
+[
+  {
+    "outcome": "timeout",
+    "file": "prog_train_wide_hall_red_s_ep0_seed1000.lmp",
+    "decisions": 525,
+    "policy_seed": 1000
+  }
+]

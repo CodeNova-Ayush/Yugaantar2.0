@@ -1,3 +1,25 @@
+# Yugaantar2.0 - trained DOOM agent
+
+A sensor-only PyTorch agent trained with custom PPO across navigation, key progression,
+and combat. The final selected weights are in `submission/weights/ppo_pilot.pt`.
+
+- [Measured results and limitations](docs/project/RESULTS.md)
+- [Two-page project brief](output/pdf/project_brief.pdf)
+- [Reproduce training](docs/project/REPRODUCE.md)
+- [Inference and live demo](docs/project/INFERENCE.md)
+- [Judge preparation](docs/project/JUDGE_PREP.md)
+- [Publication checklist](docs/project/SUBMISSION_CHECKLIST.md)
+
+Generated-test exits: navigation **80/80**, key progression **37/40**, combat **78/80**.
+The supplied `two_rooms.wad` result is **7/20**. These are measured local results,
+not hidden-organizer-map performance. See the report for historical test exposure
+and benchmark limitations. Local validator passes; resource-check caveats are in
+`docs/project/validator_output.txt`.
+
+---
+
+## Official starter documentation (preserved below)
+
 # devforge-doom-template
 
 Starter template for **Yugaantar 2026 · DevForge — Track 1: "Can It Play DOOM?"**
