@@ -14,7 +14,7 @@ no additional submission dependencies are required.
 .venv/bin/python validate.py --device cpu
 # Headless live agent demonstration
 .venv/bin/python -m training.demo --record /tmp/doom-demo.lmp
-# Optional display, requires a desktop OpenCV build
+# Native ViZDoom window; no OpenCV installation needed
 .venv/bin/python -m training.demo --show
 # Repeatable 20-episode gameplay comparison; use a new output directory
 .venv/bin/python training/eval_two_rooms.py --weights submission/weights/ppo_pilot.pt --out-dir /tmp/doom-final-eval
@@ -23,3 +23,5 @@ no additional submission dependencies are required.
 The agent samples actions. Different policy seeds can yield different outcomes.
 Fixed environment and policy seeds make local comparisons reproducible, but CPU/GPU
 floating-point differences can change trajectories. No CUDA equivalence claim is made.
+
+The visible demo runs at game speed. Stop it with Ctrl+C in Terminal.

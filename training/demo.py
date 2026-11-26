@@ -2,6 +2,7 @@
 Usage: python -m training.demo --show --record /tmp/demo.lmp
 """
 import argparse
+import time
 from pathlib import Path
 from doom_env import make_env
 from submission.agent import DoomAgent
@@ -17,19 +18,26 @@ def main():
     if a.record:a.record.parent.mkdir(parents=True,exist_ok=True)
     env=make_env(a.map,a.map_name,episode_ticks=2100)
     try:
+        if a.show:
+            # Window visibility is a pre-init ViZDoom option. Reinitialize only
+            # this demo's engine, before reset creates any geometry/sensor state.
+            # Keep the official resolution, observations, buttons and tick rate.
+            env._game.close()
+            env._game.set_window_visible(True)
+            env._game.init()
         policy=DoomAgent(env.observation_space,env.action_space,'cpu',weights_path=a.weights,seed=a.policy_seed)
         obs,_=env.reset(seed=a.seed,options={'record_path':str(a.record.resolve())} if a.record else None);policy.reset()
-        if a.show:import cv2
         done=False;steps=0
         while not done:
-            if a.show:
-                cv2.imshow('DOOM - learned PPO policy',cv2.resize(obs['rgb'][...,::-1],(800,600)))
-                if cv2.waitKey(100)&255==ord('q'):break
+            started=time.monotonic()
             obs,_,term,trunc,info=env.step(policy.act(obs));steps+=1;done=term or trunc
+            if a.show:
+                time.sleep(max(0., 4 / 35 - (time.monotonic() - started)))
         st=env.privileged_state()
         print({'decisions':steps,'exit':st['exit_reached'],'dead':st['dead'],'timeout':st['timeout'],'kills':st['kills']})
+    except KeyboardInterrupt:
+        print('Demo stopped. This interrupted episode is not a measured win or loss.')
     finally:
         env.close()
-        if a.show:cv2.destroyAllWindows()
 
 if __name__=='__main__':main()

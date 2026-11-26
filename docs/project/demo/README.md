@@ -15,4 +15,5 @@ Live demonstration of the successful fixed seed:
 .venv/bin/python -m training.demo --seed 0 --policy-seed 1000 --show
 ```
 
-Without a desktop OpenCV build, omit `--show` for headless execution.
+The viewer uses ViZDoom's native window; OpenCV is not required.
+Stop the demo with Ctrl+C in Terminal. Omit `--show` for headless execution.
