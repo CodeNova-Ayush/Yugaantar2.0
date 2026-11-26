@@ -1,0 +1,24 @@
+Optional official Linux build: stopped during dependency downloads; exit 130.
+No Linux validation result claimed.
+
+Last build output:
+#12 67.09  Downloaded uvloop
+#12 69.73  Downloaded cryptography
+#12 80.69  Downloaded tensorboard
+#12 88.42  Downloaded sympy
+#12 90.34  Downloaded tensorboard-data-server
+#12 98.83  Downloaded pillow
+#12 99.49  Downloaded grpcio
+#12 110.1  Downloaded cuda-bindings
+#12 132.3  Downloaded nvidia-cuda-cupti-cu12
+#12 141.2  Downloaded jax-cuda12-plugin
+#12 141.9  Downloaded nvidia-cuda-cupti
+#12 143.7  Downloaded pygame-ce
+#12 174.9  Downloaded numpy
+#12 223.8  Downloaded tensorstore
+#12 334.6  Downloaded scipy
+#12 359.8  Downloaded vizdoom
+#12 361.4  Downloaded nvidia-nvjitlink-cu12
+#12 366.5  Downloaded nvidia-cuda-nvcc-cu12
+#12 CANCELED
+ERROR: failed to build: failed to solve: Canceled: context canceled

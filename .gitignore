@@ -228,3 +228,6 @@ training/results/**/checkpoints/train_state_*.pt
 
 # Two small representative demo replays are submission evidence.
 !docs/project/demo/*.lmp
+
+# Event rules prohibit submitting a Dockerfile; keep starter recipe locally only.
+/Dockerfile

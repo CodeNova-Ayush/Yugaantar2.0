@@ -13,9 +13,10 @@
   and push normally to the default branch before the deadline. Never force-push.
 - Verify GitHub displays the source and LFS weight pointer, then submit the PUBLIC
   repository URL and the maximum-two-page PDF to the organizers.
-- The inherited Dockerfile belongs to the official starter runtime, not a custom
-  agent runtime. The pasted event rules say not to submit a Dockerfile; clarify
-  whether they require removal of the inherited official file before publication.
+- The supplied event rules say not to submit a Dockerfile. The inherited official
+  recipe is preserved locally but removed from Git tracking and ignored. Use the
+  organizer-provided image for external Linux validation; no custom Dockerfile is
+  included in the prepared submission.
 
 Publishing and sending the repository URL are external actions; they are not
 performed by local training or by a successful validator run.
@@ -27,3 +28,7 @@ passed; the prepared tree including LFS weights is approximately 40.8 MB. The
 committed local validator passed, reached the supplied-map exit, and reported only
 the two macOS CPU/RAM measurement warnings. Read `verification.json` for exact
 source commit and checks. No GitHub push or organizer submission has been performed.
+
+The optional official Linux image build was stopped during large dependency downloads.
+Linux RAM/CPU enforcement and CUDA behavior remain unverified. The inherited recipe
+is still available locally if you choose to resume the build.

@@ -30,5 +30,11 @@
   },
   "final_weight_sha256": "46a80d55620011625b6c8c7090427ce191f6173fb60c5d8acb2949879fa27fff",
   "git_lfs_fsck": "OK",
-  "tracked_size_megabytes": 40.8
+  "tracked_size_megabytes": 40.8,
+  "linux_docker_verification": {
+    "status": "not completed",
+    "command": "docker build --platform linux/amd64 -t devforge-doom .",
+    "reason": "Bounded optional attempt stopped during multi-gigabyte official CUDA dependency downloads. No Linux runtime validation or resource claim.",
+    "build_exit_code": 130
+  }
 }
