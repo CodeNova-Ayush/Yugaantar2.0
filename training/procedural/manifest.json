@@ -1,0 +1,3820 @@
+{
+  "generator_version": "proc_v1",
+  "task_probabilities": {
+    "navigation": 0.2,
+    "unlocked_door": 0.25,
+    "progression": 0.3,
+    "combat": 0.25
+  },
+  "counts": {
+    "train_per_task": 16,
+    "val_per_task": 4,
+    "test_per_task": 4,
+    "total": 96
+  },
+  "maps": [
+    {
+      "name": "proc_train_navigation_00",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1000,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 11
+      },
+      "player_angle": 0,
+      "grid": [
+        "############",
+        "#######...##",
+        "#######.E.##",
+        "########.###",
+        "####.P.#.###",
+        "####...#.###",
+        "####.#.#.###",
+        "####.....###",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_00.wad",
+      "sha256": "a4f249930485aff3f0c5a8899b9fef2057d0b56dd9252b1024978322c6e3ac4e",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_01",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1001,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 13,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 11
+      },
+      "player_angle": 90,
+      "grid": [
+        "#############",
+        "#############",
+        "##.##########",
+        "##.##########",
+        "##.......####",
+        "##..###..####",
+        "##..###.E####",
+        "##P.#########",
+        "#############",
+        "#############",
+        "#############",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_01.wad",
+      "sha256": "1dda64f78ef31e82351d61f3a711db2a527e872e0668f22ed314befa039f9041",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_02",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1002,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 11,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 6
+      },
+      "player_angle": 270,
+      "grid": [
+        "###########",
+        "##.....####",
+        "####.E.####",
+        "####...####",
+        "####...####",
+        "#####.#####",
+        "#####..P.##",
+        "#####....##",
+        "#####..#.##",
+        "#####....##",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_02.wad",
+      "sha256": "9a2c12ad7c3bc7386b692f594c9f8b1f082827cdc8ea9a9edeb5674cb316f50c",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_03",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1003,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 7
+      },
+      "player_angle": 90,
+      "grid": [
+        "##########",
+        "##########",
+        "####..####",
+        "###...####",
+        "###.P.####",
+        "###.######",
+        "###.######",
+        "##....####",
+        "##...E####",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_03.wad",
+      "sha256": "4fb9592bd473863500e7ca00dc39bdaa9ee53fe2466481289903d9be110a3ac3",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_04",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1004,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 7
+      },
+      "player_angle": 180,
+      "grid": [
+        "##########",
+        "##########",
+        "#.P...####",
+        "#......###",
+        "####...###",
+        "####..E###",
+        "####...###",
+        "##########",
+        "##########",
+        "##########",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_04.wad",
+      "sha256": "40245c6a0d0c02215ddb95ed470fb9bf569887ed806d49f7774ca3a40d51d800",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_05",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1005,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 5
+      },
+      "player_angle": 0,
+      "grid": [
+        "##########",
+        "##########",
+        "##########",
+        "##....#..#",
+        "##..P.#E.#",
+        "##......##",
+        "##....####",
+        "##########",
+        "##########",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_05.wad",
+      "sha256": "6650595ba6852ed640b4fa54cf64d5718d04d14859f7ba8884276758e670cccd",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_06",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1006,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 11,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 4
+      },
+      "player_angle": 90,
+      "grid": [
+        "###########",
+        "###########",
+        "###########",
+        "####.######",
+        "####.##..##",
+        "####...E.##",
+        "###...#..##",
+        "###..P#####",
+        "###########",
+        "###########",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_06.wad",
+      "sha256": "04096818d3c865050350638a703d01a7a9fd39c32febe305a9fdd6399b70f13b",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_07",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1007,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 4
+      },
+      "player_angle": 270,
+      "grid": [
+        "##########",
+        "##########",
+        "##########",
+        "####....##",
+        "####....##",
+        "#.....#.##",
+        "#.E#P...##",
+        "##########",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_07.wad",
+      "sha256": "f29da9672dd0b583f66d26c5dbaa9e08f7b9e86850d3a3420ec39e1dbe493677",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_08",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1008,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 10,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 6
+      },
+      "player_angle": 0,
+      "grid": [
+        "##########",
+        "######...#",
+        "#...##.#.#",
+        "#........#",
+        "#...##.###",
+        "#.P.##.###",
+        "##.###.###",
+        "##.....###",
+        "##...E####",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_08.wad",
+      "sha256": "072124c742a043432f15d762741d7215a61236a4291d42693b5c8abab733b957",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_09",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1009,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 10,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 12
+      },
+      "player_angle": 180,
+      "grid": [
+        "##########",
+        "####..P###",
+        "##.....###",
+        "##....####",
+        "##....####",
+        "##...#####",
+        "####.#####",
+        "####....##",
+        "#..#....##",
+        "#.E..#####",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_09.wad",
+      "sha256": "5d36cf9887c3077679ce93cfdb4b60d9f59a22c7fa700eb721ce0718bad05f4b",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_10",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1010,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 10,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 15
+      },
+      "player_angle": 270,
+      "grid": [
+        "##########",
+        "#........#",
+        "#...###.E#",
+        "#...###..#",
+        "#..####..#",
+        "#..#######",
+        "#..#######",
+        "#......###",
+        "#P.#...###",
+        "#..#...###",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_10.wad",
+      "sha256": "e17c0cf0125387555c09dd4f26e20411ebd6b0b59878df9738f047e29aecfdee",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_11",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1011,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 11,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 7
+      },
+      "player_angle": 90,
+      "grid": [
+        "###########",
+        "#..E#######",
+        "#...#..P###",
+        "#.#.....###",
+        "#.......###",
+        "####.######",
+        "####...####",
+        "####...####",
+        "####...####",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_11.wad",
+      "sha256": "2bf7b253b27e6f3d67ecb284780d536b23545dd82c6270f2e829a179d7b8c5d0",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_12",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1012,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 11,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 6
+      },
+      "player_angle": 0,
+      "grid": [
+        "###########",
+        "###########",
+        "####P.#####",
+        "####....###",
+        "####..#.###",
+        "####..#...#",
+        "####.##...#",
+        "##.E......#",
+        "##....#####",
+        "##....#####",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_12.wad",
+      "sha256": "3a05ff2386b2b530061b77583ddab1777076794a210dfabc853080c6f9373433",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_13",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1013,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 13,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 7
+      },
+      "player_angle": 90,
+      "grid": [
+        "#############",
+        "#####....####",
+        "#####E...####",
+        "######.######",
+        "####...######",
+        "####.....P..#",
+        "####...#....#",
+        "#############",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_13.wad",
+      "sha256": "1029c1d64fb4f3c0d9164829eb2d098744c0133a3e5a2defd635fc1c5bb6ef3a",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_14",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1014,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 12,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 11
+      },
+      "player_angle": 270,
+      "grid": [
+        "############",
+        "#########.##",
+        "##....###.##",
+        "##........E#",
+        "##....##...#",
+        "##....##...#",
+        "####.#######",
+        "##....######",
+        "##..P.######",
+        "##....######",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_14.wad",
+      "sha256": "38e590708e765caea2c5d978497eacfa537d39886c0df6f13d5a775867f05ad3",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_navigation_15",
+      "split": "train",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 1015,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 11,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 6
+      },
+      "player_angle": 180,
+      "grid": [
+        "###########",
+        "###########",
+        "##...######",
+        "##...######",
+        "####.######",
+        "###.P.....#",
+        "###.#.##.E#",
+        "###...##..#",
+        "###########",
+        "###########",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_navigation_15.wad",
+      "sha256": "6f09134de9f72674b523f43f3edf1181d44bd483ee57f6fa90d00495c04f0055",
+      "sampling_weight": 0.0125
+    },
+    {
+      "name": "proc_train_unlocked_door_00",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2000,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 6
+      },
+      "player_angle": 90,
+      "grid": [
+        "############",
+        "###.########",
+        "#P..D....###",
+        "#...##E..###",
+        "######.#.###",
+        "######...###",
+        "############",
+        "############",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_00.wad",
+      "sha256": "8d6d84a68f79973c65c388ba6682e0685b37c5fdd1287662dfb197f152f2107d",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_01",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2001,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 8
+      },
+      "player_angle": 180,
+      "grid": [
+        "############",
+        "############",
+        "############",
+        "#####....###",
+        "#####P.#####",
+        "#####.##..E#",
+        "#####..D...#",
+        "############",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_01.wad",
+      "sha256": "617062de6a2835e0c7b2f6e6a5d063db760d27e7bf520b8d8b0665303ea3adde",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_02",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2002,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 14,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 7
+      },
+      "player_angle": 270,
+      "grid": [
+        "##############",
+        "##############",
+        "##############",
+        "##############",
+        "##############",
+        "##############",
+        "######...E####",
+        "######D#..####",
+        "######.#######",
+        "######....####",
+        "######P...####",
+        "##############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_02.wad",
+      "sha256": "1e64d4f37aec9ef4252ec55d22d17a967b383ab6253a0bde58a05efd94491a84",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_03",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2003,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 11,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 6
+      },
+      "player_angle": 90,
+      "grid": [
+        "###########",
+        "###########",
+        "###########",
+        "###########",
+        "####....###",
+        "####P...###",
+        "###.....###",
+        "###.....###",
+        "###D##.####",
+        "###..#.####",
+        "###E.######",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_03.wad",
+      "sha256": "a0b45500d9e7d587d5f8e190882335b8d86e45d7d5ebf615e7c06386d07cbd6d",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_04",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2004,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 13,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 5
+      },
+      "player_angle": 180,
+      "grid": [
+        "#############",
+        "#############",
+        "#############",
+        "#############",
+        "#############",
+        "#####...#####",
+        "#####...D.P.#",
+        "#####.E.##..#",
+        "#####...##..#",
+        "#############",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_04.wad",
+      "sha256": "5e06869d05a8eeb53732520154794cc494587b94cc0ab344fac5850606ef0d32",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_05",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2005,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 13,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 9
+      },
+      "player_angle": 0,
+      "grid": [
+        "#############",
+        "######..#####",
+        "######E..####",
+        "########.####",
+        "########.####",
+        "########D####",
+        "########...##",
+        "########...##",
+        "########.P.##",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_05.wad",
+      "sha256": "a52fd00fcd1c8577eacf2eb4518c379108180860325b20d2becd4827ebdd7a8e",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_06",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2006,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 14,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 11
+      },
+      "player_angle": 270,
+      "grid": [
+        "##############",
+        "####...D....##",
+        "####P#.####.##",
+        "####...####.E#",
+        "###########..#",
+        "###########..#",
+        "###########..#",
+        "##############",
+        "##############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_06.wad",
+      "sha256": "dedfd3e85bfdd7a81c7c16b7bd4de650bec7e2f5897e7927c11e17e1c07a2dda",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_07",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2007,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 13,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 8
+      },
+      "player_angle": 90,
+      "grid": [
+        "#############",
+        "#############",
+        "##..P...#####",
+        "##...##D#####",
+        "#######.#####",
+        "#######.#####",
+        "#######.E..##",
+        "#######...###",
+        "#############",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_07.wad",
+      "sha256": "b9e015d417bd764f6293e396ee755dfe929402277e809d55cedf0e1fa4b8baca",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_08",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2008,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 14,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 10
+      },
+      "player_angle": 90,
+      "grid": [
+        "##############",
+        "#....##....###",
+        "#.E#.##....###",
+        "#....##....###",
+        "####D##....###",
+        "####.###.#####",
+        "#....###.#####",
+        "#P.........###",
+        "#.#.#####..###",
+        "#...##########",
+        "##############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_08.wad",
+      "sha256": "91dc0e1ef23c0a01193927fe68a90d257c48b09acf4233764d407782afd4e062",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_09",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2009,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 11,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 11
+      },
+      "player_angle": 270,
+      "grid": [
+        "###########",
+        "###########",
+        "######..###",
+        "##...#..###",
+        "#...E...###",
+        "#..#.######",
+        "#....######",
+        "#D#########",
+        "#....######",
+        "#..#P######",
+        "#....######",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_09.wad",
+      "sha256": "592dd7ad9de98bdebacd443395860fddf36ed54c472d1f793ecf33bf5506642a",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_10",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2010,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 11,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 8
+      },
+      "player_angle": 270,
+      "grid": [
+        "###########",
+        "###########",
+        "###########",
+        "##........#",
+        "##...#....#",
+        "######P...#",
+        "######.####",
+        "######..###",
+        "##.E##..###",
+        "##..D...###",
+        "######..###",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_10.wad",
+      "sha256": "ad545df49037a4cf950cd9de199ec708083cd29810d7bb0ba72ecfa3521f82bf",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_11",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2011,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 13,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 8
+      },
+      "player_angle": 270,
+      "grid": [
+        "#############",
+        "##....#######",
+        "##....###..##",
+        "##....#.D.E##",
+        "##.####.#####",
+        "##......#####",
+        "###...#....##",
+        "###...#.P..##",
+        "####.########",
+        "#############",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_11.wad",
+      "sha256": "bff73d7ab59b61ed1d429e4f0d871f6ef0d78cc18ee68befbfb19b22aeb546e3",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_12",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2012,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 11,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 18
+      },
+      "player_angle": 0,
+      "grid": [
+        "###########",
+        "#...#######",
+        "#..E....###",
+        "#######.###",
+        "####..#.###",
+        "####P.#.###",
+        "####.##.###",
+        "####.##.###",
+        "####D#...##",
+        "####.....##",
+        "###########",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_12.wad",
+      "sha256": "c18006d5da66efd65806c734d8e045e6edf16bfb84d743001f261f3106f2c222",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_13",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2013,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 11,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 11
+      },
+      "player_angle": 180,
+      "grid": [
+        "###########",
+        "###########",
+        "####P...###",
+        "####....###",
+        "#######D###",
+        "####......#",
+        "####......#",
+        "####E#....#",
+        "####......#",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_13.wad",
+      "sha256": "5866d3bbef5d527427a6325b25662c89728de3c79e4bbaa8508a65997b597e86",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_14",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2014,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 14,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 10
+      },
+      "player_angle": 0,
+      "grid": [
+        "##############",
+        "##############",
+        "##...P..######",
+        "##.##...######",
+        "##.##...######",
+        "#..##...#.E###",
+        "#.......D..###",
+        "#..######..###",
+        "#########..###",
+        "##############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_14.wad",
+      "sha256": "111503988312077f6af1843222ea5bef95b46326fde4bb939182eab49ba49727",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_unlocked_door_15",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 2015,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 12,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 8
+      },
+      "player_angle": 90,
+      "grid": [
+        "############",
+        "############",
+        "#...########",
+        "#...########",
+        "#...########",
+        "#...########",
+        "#.##########",
+        "#......D..P#",
+        "#.#E...##..#",
+        "#......#####",
+        "######.#####",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_unlocked_door_15.wad",
+      "sha256": "cd391dffac52a626f565890f794792190a97c177e8d679b5b2c27bad8848d0dc",
+      "sampling_weight": 0.015625
+    },
+    {
+      "name": "proc_train_progression_00",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3000,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 9,
+        "key_color": "blue",
+        "key_dist": 2
+      },
+      "player_angle": 270,
+      "grid": [
+        "############",
+        "####.b######",
+        "####P.######",
+        "#####B######",
+        "#####.######",
+        "#####.######",
+        "###...######",
+        "###..#######",
+        "###E.#######",
+        "###..#######",
+        "############",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_00.wad",
+      "sha256": "4649a14d488a436a5a881bd5429deefe25feebb1754408ad7e634bdda3f71b72",
+      "sampling_weight": 0.01875,
+      "key_color": "blue"
+    },
+    {
+      "name": "proc_train_progression_01",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3001,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 14,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 5,
+        "key_color": "yellow",
+        "key_dist": 4
+      },
+      "player_angle": 90,
+      "grid": [
+        "##############",
+        "##############",
+        "##############",
+        "########y...##",
+        "########....##",
+        "####...Y..P.##",
+        "####..E###.###",
+        "##########.###",
+        "##############",
+        "##############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_01.wad",
+      "sha256": "3cfba26a275647c869b6a1a83187ceb86d2f18ee3ae0ac722e81dcb46b88f6f0",
+      "sampling_weight": 0.01875,
+      "key_color": "yellow"
+    },
+    {
+      "name": "proc_train_progression_02",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3002,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 9,
+        "key_color": "red",
+        "key_dist": 3
+      },
+      "player_angle": 270,
+      "grid": [
+        "##########",
+        "##########",
+        "#...######",
+        "#E..######",
+        "#...######",
+        "#...######",
+        "###R######",
+        "###r...###",
+        "####.P.###",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_02.wad",
+      "sha256": "9ba29ac47f0cd7b0413c770dbce4e6cd325a9d7a8f8a97b644a8b7207bdfb204",
+      "sampling_weight": 0.01875,
+      "key_color": "red"
+    },
+    {
+      "name": "proc_train_progression_03",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3003,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 5,
+        "key_color": "yellow",
+        "key_dist": 4
+      },
+      "player_angle": 270,
+      "grid": [
+        "##########",
+        "###...####",
+        "###.E.####",
+        "####.#####",
+        "####Y#####",
+        "####.#####",
+        "###P...###",
+        "###...y###",
+        "##########",
+        "##########",
+        "##########",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_03.wad",
+      "sha256": "8dbff8822824c1efa6b3856aa828d0dd56e2e465d3cc07aa43e9756d8729ca67",
+      "sampling_weight": 0.01875,
+      "key_color": "yellow"
+    },
+    {
+      "name": "proc_train_progression_04",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3004,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 14,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 10,
+        "key_color": "yellow",
+        "key_dist": 3
+      },
+      "player_angle": 270,
+      "grid": [
+        "##############",
+        "##########..##",
+        "##########..##",
+        "##########.E##",
+        "###########.##",
+        "###########.##",
+        "###########.##",
+        "#####..P.##.##",
+        "#####y....Y.##",
+        "##############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_04.wad",
+      "sha256": "bbd05e2ba594ac4f507c42102c2509fc7008c34b58b8bc43e3b1c1232ad8310a",
+      "sampling_weight": 0.01875,
+      "key_color": "yellow"
+    },
+    {
+      "name": "proc_train_progression_05",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3005,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 14,
+        "key_color": "blue",
+        "key_dist": 9
+      },
+      "player_angle": 270,
+      "grid": [
+        "##########",
+        "##....####",
+        "##..P.####",
+        "##....####",
+        "##....####",
+        "##.#######",
+        "##.#######",
+        "##.##....#",
+        "##.bB...E#",
+        "##########",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_05.wad",
+      "sha256": "f7cb7ffe17a4c6a0eb80ad52c3e6e25dac96714d55c73e86a3bc9873a6602bd1",
+      "sampling_weight": 0.01875,
+      "key_color": "blue"
+    },
+    {
+      "name": "proc_train_progression_06",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3006,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 6,
+        "key_color": "red",
+        "key_dist": 3
+      },
+      "player_angle": 0,
+      "grid": [
+        "##########",
+        "##########",
+        "##########",
+        "#...#.P###",
+        "#..E#..###",
+        "#...Rr.###",
+        "#...######",
+        "#.########",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_06.wad",
+      "sha256": "f06c855fb85b86088679fc2323506714dcdbe142753c7762b8d52ccbb64ca13a",
+      "sampling_weight": 0.01875,
+      "key_color": "red"
+    },
+    {
+      "name": "proc_train_progression_07",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3007,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 8,
+        "key_color": "red",
+        "key_dist": 4
+      },
+      "player_angle": 0,
+      "grid": [
+        "############",
+        "###...######",
+        "###E..######",
+        "####.#######",
+        "####R#######",
+        "####r##....#",
+        "####...P...#",
+        "############",
+        "############",
+        "############",
+        "############",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_07.wad",
+      "sha256": "8f06b6934b2d57750afafea4c0d8ab9219be9ed03a349e1dfbf609748c6e23fb",
+      "sampling_weight": 0.01875,
+      "key_color": "red"
+    },
+    {
+      "name": "proc_train_progression_08",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3008,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 14,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 8,
+        "key_color": "red",
+        "key_dist": 9
+      },
+      "player_angle": 0,
+      "grid": [
+        "##############",
+        "##############",
+        "##############",
+        "#####....#..r#",
+        "#####....#...#",
+        "##...P.......#",
+        "##.##....#####",
+        "##R###########",
+        "#....#########",
+        "#E...#########",
+        "##############",
+        "##############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_08.wad",
+      "sha256": "96f4b96e382bb8ea64f11ea7cc70dd338a873b504671c7c5a7f77ce51a40331d",
+      "sampling_weight": 0.01875,
+      "key_color": "red"
+    },
+    {
+      "name": "proc_train_progression_09",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3009,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 14,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 6,
+        "key_color": "yellow",
+        "key_dist": 3
+      },
+      "player_angle": 270,
+      "grid": [
+        "##############",
+        "##############",
+        "####.........#",
+        "####E.#.#..#.#",
+        "####....####.#",
+        "####Y#######.#",
+        "####y...#....#",
+        "####..P.#....#",
+        "##############",
+        "##############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_09.wad",
+      "sha256": "f753f4091461f4c19d33f948600a08ec7e1997b57f63d86530961e4b1d29a4fb",
+      "sampling_weight": 0.01875,
+      "key_color": "yellow"
+    },
+    {
+      "name": "proc_train_progression_10",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3010,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 10,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 14,
+        "key_color": "red",
+        "key_dist": 2
+      },
+      "player_angle": 180,
+      "grid": [
+        "##########",
+        "##########",
+        "##...#####",
+        "##.......#",
+        "##.#R###.#",
+        "##.#.P##.#",
+        "##.#r.##.#",
+        "##.#####.#",
+        "#.....##.#",
+        "#...#....#",
+        "#...#...E#",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_10.wad",
+      "sha256": "bc341af1faa0099b6c21477238c8bb34f1c04441c538a9164bb1a06ba8418832",
+      "sampling_weight": 0.01875,
+      "key_color": "red"
+    },
+    {
+      "name": "proc_train_progression_11",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3011,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 14,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 6,
+        "key_color": "blue",
+        "key_dist": 12
+      },
+      "player_angle": 270,
+      "grid": [
+        "##############",
+        "##############",
+        "#####....#####",
+        "#####....#####",
+        "#####...P#####",
+        "#####.##.#.E##",
+        "#........B..##",
+        "#.###.##.#..##",
+        "#.b.#.##.#####",
+        "#.....#..#####",
+        "#######..#####",
+        "##############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_11.wad",
+      "sha256": "70e909b3a8add89dbc6256f1bb78f84d9f64ff737ec1f0d4d0a5ec4c5bbbda51",
+      "sampling_weight": 0.01875,
+      "key_color": "blue"
+    },
+    {
+      "name": "proc_train_progression_12",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3012,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 10,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 6,
+        "key_color": "yellow",
+        "key_dist": 2
+      },
+      "player_angle": 270,
+      "grid": [
+        "##########",
+        "#######y.#",
+        "#######.P#",
+        "#######Y##",
+        "#######.##",
+        "#######.##",
+        "##...#E.##",
+        "##......##",
+        "##...#..##",
+        "######..##",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_12.wad",
+      "sha256": "471b66c243456e85c394e4b4a7284496ef18eede2e41be2f7fbd76aa89ac4b3f",
+      "sampling_weight": 0.01875,
+      "key_color": "yellow"
+    },
+    {
+      "name": "proc_train_progression_13",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3013,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 10,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 7,
+        "key_color": "red",
+        "key_dist": 7
+      },
+      "player_angle": 0,
+      "grid": [
+        "##########",
+        "###..r####",
+        "###...#.E#",
+        "###.###..#",
+        "###.####R#",
+        "##..P....#",
+        "##...#...#",
+        "##...#####",
+        "##########",
+        "##########",
+        "##########",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_13.wad",
+      "sha256": "a76bc2a5551868ade7384c5662e9a5d4f3a3002cf7fdfca9a6f5dc2a2aa2dad4",
+      "sampling_weight": 0.01875,
+      "key_color": "red"
+    },
+    {
+      "name": "proc_train_progression_14",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3016,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 13,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 10,
+        "key_color": "yellow",
+        "key_dist": 11
+      },
+      "player_angle": 0,
+      "grid": [
+        "#############",
+        "##........###",
+        "##.##.#..y###",
+        "##.##.#######",
+        "##P...#######",
+        "##....#######",
+        "##....#######",
+        "#####Y#######",
+        "#####...#####",
+        "#####..E#####",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_14.wad",
+      "sha256": "34d45b9510b23cb7073992f158a7a11fae75deead8aed2e11d40bd748e02f518",
+      "sampling_weight": 0.01875,
+      "key_color": "yellow"
+    },
+    {
+      "name": "proc_train_progression_15",
+      "split": "train",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 3017,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 11,
+        "num_rooms": 2,
+        "tier": 1,
+        "route_len": 6,
+        "key_color": "red",
+        "key_dist": 4
+      },
+      "player_angle": 90,
+      "grid": [
+        "###########",
+        "###########",
+        "###r.###..#",
+        "###..###..#",
+        "###...R..E#",
+        "###.P###..#",
+        "###########",
+        "###########",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_train_progression_15.wad",
+      "sha256": "90012627563ff87e57e9914955166e7bb89e242548dc1c2affbb121fc1e453e5",
+      "sampling_weight": 0.01875,
+      "key_color": "red"
+    },
+    {
+      "name": "proc_train_combat_00",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4000,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 4,
+        "enemies": 1,
+        "has_door": true
+      },
+      "player_angle": 180,
+      "grid": [
+        "############",
+        "############",
+        "############",
+        "#....#######",
+        "#....#######",
+        "#.E..#######",
+        "##D#########",
+        "##....######",
+        "##....######",
+        "##P...######",
+        "##....######",
+        "############"
+      ],
+      "things": [
+        {
+          "r": 3,
+          "c": 4,
+          "type": 3004,
+          "angle": 0
+        },
+        {
+          "r": 8,
+          "c": 2,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 10,
+          "c": 2,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_00.wad",
+      "sha256": "8b00e136b6d4425dc5f6baeae8501677f105c3e5c6dd789497e9c90b42072c1a",
+      "sampling_weight": 0.015625,
+      "enemies": 1,
+      "has_door": true
+    },
+    {
+      "name": "proc_train_combat_01",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4001,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 6,
+        "enemies": 1,
+        "has_door": false
+      },
+      "player_angle": 0,
+      "grid": [
+        "##########",
+        "#..#######",
+        "#.E#######",
+        "##.#######",
+        "##.#######",
+        "##.#######",
+        "##.#######",
+        "##...#####",
+        "##P#.#####",
+        "##...#####",
+        "##########",
+        "##########"
+      ],
+      "things": [
+        {
+          "r": 1,
+          "c": 1,
+          "type": 3004,
+          "angle": 180
+        },
+        {
+          "r": 7,
+          "c": 2,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 9,
+          "c": 2,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_01.wad",
+      "sha256": "4e9712867c76c08095478662934c2abc13e1c781e971c21bd1c0e8503cb2371c",
+      "sampling_weight": 0.015625,
+      "enemies": 1,
+      "has_door": false
+    },
+    {
+      "name": "proc_train_combat_02",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4002,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 7,
+        "enemies": 1,
+        "has_door": true
+      },
+      "player_angle": 180,
+      "grid": [
+        "############",
+        "############",
+        "############",
+        "######..E.##",
+        "#...P#....##",
+        "#....D....##",
+        "#....#######",
+        "############",
+        "############"
+      ],
+      "things": [
+        {
+          "r": 3,
+          "c": 9,
+          "type": 3004,
+          "angle": 0
+        },
+        {
+          "r": 5,
+          "c": 4,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 4,
+          "c": 3,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_02.wad",
+      "sha256": "d3ef75b021cc61774d76aa8cf9d6d774d0914ea7a0b6573cf95de4cf9e638171",
+      "sampling_weight": 0.015625,
+      "enemies": 1,
+      "has_door": true
+    },
+    {
+      "name": "proc_train_combat_03",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4003,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 7,
+        "enemies": 1,
+        "has_door": false
+      },
+      "player_angle": 90,
+      "grid": [
+        "##########",
+        "#....E.###",
+        "#.##...###",
+        "#.########",
+        "#P.#######",
+        "#..#######",
+        "#..#######",
+        "#..#######",
+        "##########"
+      ],
+      "things": [
+        {
+          "r": 2,
+          "c": 6,
+          "type": 3004,
+          "angle": 270
+        },
+        {
+          "r": 3,
+          "c": 1,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 5,
+          "c": 1,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_03.wad",
+      "sha256": "13ed90befa07c17b1e81931bbcb09e9cb543ea925269ed6544ddecf009e1e9a3",
+      "sampling_weight": 0.015625,
+      "enemies": 1,
+      "has_door": false
+    },
+    {
+      "name": "proc_train_combat_04",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4004,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 14,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 11,
+        "enemies": 1,
+        "has_door": true
+      },
+      "player_angle": 180,
+      "grid": [
+        "##############",
+        "######....####",
+        "###......P####",
+        "###D##########",
+        "###.##########",
+        "###.##########",
+        "##E.##########",
+        "##..##########",
+        "##..##########",
+        "##..##########",
+        "##############",
+        "##############"
+      ],
+      "things": [
+        {
+          "r": 9,
+          "c": 2,
+          "type": 3004,
+          "angle": 0
+        },
+        {
+          "r": 1,
+          "c": 9,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 2,
+          "c": 8,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_04.wad",
+      "sha256": "71b8921f8eec235c096465c7ab2d85f20ffc7f297df4d6e90869760aa38b623f",
+      "sampling_weight": 0.015625,
+      "enemies": 1,
+      "has_door": true
+    },
+    {
+      "name": "proc_train_combat_05",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4005,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 14,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 8,
+        "enemies": 1,
+        "has_door": false
+      },
+      "player_angle": 270,
+      "grid": [
+        "##############",
+        "########...E##",
+        "########....##",
+        "########.#####",
+        "########.#####",
+        "########.#####",
+        "########P.####",
+        "########..####",
+        "########..####",
+        "##############",
+        "##############",
+        "##############"
+      ],
+      "things": [
+        {
+          "r": 1,
+          "c": 10,
+          "type": 3004,
+          "angle": 90
+        },
+        {
+          "r": 5,
+          "c": 8,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 7,
+          "c": 8,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_05.wad",
+      "sha256": "068257efcd28348f30f2efc3f48e35dea85ba87c26a6c2c30b49cd4170a33e13",
+      "sampling_weight": 0.015625,
+      "enemies": 1,
+      "has_door": false
+    },
+    {
+      "name": "proc_train_combat_06",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4006,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 5,
+        "enemies": 1,
+        "has_door": false
+      },
+      "player_angle": 180,
+      "grid": [
+        "############",
+        "############",
+        "###........#",
+        "###.P....E.#",
+        "#########..#",
+        "#########..#",
+        "############",
+        "############",
+        "############"
+      ],
+      "things": [
+        {
+          "r": 5,
+          "c": 10,
+          "type": 3004,
+          "angle": 0
+        },
+        {
+          "r": 2,
+          "c": 4,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 3,
+          "c": 3,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_06.wad",
+      "sha256": "546448ca13b4415c9e02d2cfb8a9d64f190bd71005d2639de078f7356fb6edff",
+      "sampling_weight": 0.015625,
+      "enemies": 1,
+      "has_door": false
+    },
+    {
+      "name": "proc_train_combat_07",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4007,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 7,
+        "enemies": 1,
+        "has_door": false
+      },
+      "player_angle": 0,
+      "grid": [
+        "############",
+        "############",
+        "############",
+        "############",
+        "###E.#######",
+        "###.....####",
+        "#######....#",
+        "#######P.#.#",
+        "#######....#",
+        "############",
+        "############"
+      ],
+      "things": [
+        {
+          "r": 4,
+          "c": 4,
+          "type": 3004,
+          "angle": 180
+        },
+        {
+          "r": 6,
+          "c": 7,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 8,
+          "c": 7,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_07.wad",
+      "sha256": "0d3782855d27887c183cc7606976909fa254a668e6b24703311cfafd9e41414d",
+      "sampling_weight": 0.015625,
+      "enemies": 1,
+      "has_door": false
+    },
+    {
+      "name": "proc_train_combat_08",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4008,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 11,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 10,
+        "enemies": 1,
+        "has_door": true
+      },
+      "player_angle": 180,
+      "grid": [
+        "###########",
+        "####...D.##",
+        "####E..#.##",
+        "####...#.##",
+        "####...#.##",
+        "########..#",
+        "####....P.#",
+        "#.........#",
+        "#..#...####",
+        "###########",
+        "###########"
+      ],
+      "things": [
+        {
+          "r": 4,
+          "c": 4,
+          "type": 3004,
+          "angle": 0
+        },
+        {
+          "r": 5,
+          "c": 8,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 7,
+          "c": 8,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_08.wad",
+      "sha256": "83b277648fd0a05ed092465248f948ed14cf36abcc53f688493dc69e5d85c299",
+      "sampling_weight": 0.015625,
+      "enemies": 1,
+      "has_door": true
+    },
+    {
+      "name": "proc_train_combat_09",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4009,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 11,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 7,
+        "enemies": 1,
+        "has_door": false
+      },
+      "player_angle": 180,
+      "grid": [
+        "###########",
+        "#....#..E.#",
+        "#.P.......#",
+        "#....#..#.#",
+        "######....#",
+        "######.####",
+        "####....###",
+        "####....###",
+        "####....###",
+        "###########",
+        "###########",
+        "###########"
+      ],
+      "things": [
+        {
+          "r": 8,
+          "c": 4,
+          "type": 3004,
+          "angle": 0
+        },
+        {
+          "r": 1,
+          "c": 2,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 3,
+          "c": 2,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_09.wad",
+      "sha256": "8f35e63a9d090cb58e0ad2bbf32c8dae7c8907623afc6918092ba77ce07fbd64",
+      "sampling_weight": 0.015625,
+      "enemies": 1,
+      "has_door": false
+    },
+    {
+      "name": "proc_train_combat_10",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4010,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 10,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 6,
+        "enemies": 2,
+        "has_door": false
+      },
+      "player_angle": 0,
+      "grid": [
+        "##########",
+        "######..##",
+        "###..#..##",
+        "###.E#..##",
+        "#....#..##",
+        "#.#.###.##",
+        "#P..#...##",
+        "#.......##",
+        "#####...##",
+        "##########"
+      ],
+      "things": [
+        {
+          "r": 1,
+          "c": 6,
+          "type": 3004,
+          "angle": 180
+        },
+        {
+          "r": 1,
+          "c": 7,
+          "type": 3004,
+          "angle": 180
+        },
+        {
+          "r": 5,
+          "c": 1,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 7,
+          "c": 1,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_10.wad",
+      "sha256": "792456b82c28c891bad37976db2b2761d2b368f9133701993e18416bca0590ce",
+      "sampling_weight": 0.015625,
+      "enemies": 2,
+      "has_door": false
+    },
+    {
+      "name": "proc_train_combat_11",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4011,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 10,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 9,
+        "enemies": 2,
+        "has_door": false
+      },
+      "player_angle": 90,
+      "grid": [
+        "##########",
+        "##########",
+        "#.E.######",
+        "#...#.P.##",
+        "##.##...##",
+        "##......##",
+        "##..#...##",
+        "##..######",
+        "##..######",
+        "##########"
+      ],
+      "things": [
+        {
+          "r": 2,
+          "c": 1,
+          "type": 3004,
+          "angle": 270
+        },
+        {
+          "r": 2,
+          "c": 3,
+          "type": 3004,
+          "angle": 270
+        },
+        {
+          "r": 4,
+          "c": 6,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 3,
+          "c": 5,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_11.wad",
+      "sha256": "334d71ea1bd069a7eee761f39327557bcc6e953a1e695b2055be71412bb26352",
+      "sampling_weight": 0.015625,
+      "enemies": 2,
+      "has_door": false
+    },
+    {
+      "name": "proc_train_combat_12",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4012,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 14,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 8,
+        "enemies": 1,
+        "has_door": false
+      },
+      "player_angle": 0,
+      "grid": [
+        "##############",
+        "##############",
+        "##############",
+        "#######....###",
+        "#######E...###",
+        "#######....###",
+        "########.#.###",
+        "#####....#.###",
+        "#####....#..##",
+        "#####.P......#",
+        "##############",
+        "##############"
+      ],
+      "things": [
+        {
+          "r": 3,
+          "c": 10,
+          "type": 3004,
+          "angle": 180
+        },
+        {
+          "r": 8,
+          "c": 6,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 9,
+          "c": 5,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_12.wad",
+      "sha256": "86469c739d53ec76b371172320136530244b882ab8642e6e16ddafeb19f3239a",
+      "sampling_weight": 0.015625,
+      "enemies": 1,
+      "has_door": false
+    },
+    {
+      "name": "proc_train_combat_13",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4013,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 12,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 13,
+        "enemies": 2,
+        "has_door": false
+      },
+      "player_angle": 180,
+      "grid": [
+        "############",
+        "############",
+        "#..#########",
+        "#.E###.....#",
+        "#..###..P..#",
+        "#.####.#####",
+        "#.......####",
+        "###.....####",
+        "###..#..####",
+        "############"
+      ],
+      "things": [
+        {
+          "r": 2,
+          "c": 2,
+          "type": 3004,
+          "angle": 0
+        },
+        {
+          "r": 2,
+          "c": 1,
+          "type": 3004,
+          "angle": 0
+        },
+        {
+          "r": 3,
+          "c": 8,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 4,
+          "c": 7,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_13.wad",
+      "sha256": "ea7279a1b6c713cbc54cb8eb3806cdafdee6c5b93519edd626d9180cab7f555c",
+      "sampling_weight": 0.015625,
+      "enemies": 2,
+      "has_door": false
+    },
+    {
+      "name": "proc_train_combat_14",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4014,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 11,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 6,
+        "enemies": 1,
+        "has_door": true
+      },
+      "player_angle": 270,
+      "grid": [
+        "###########",
+        "#....#E.###",
+        "#..###..###",
+        "#..###D####",
+        "#........##",
+        "#####....##",
+        "#####....##",
+        "#####.P..##",
+        "###########"
+      ],
+      "things": [
+        {
+          "r": 1,
+          "c": 4,
+          "type": 3004,
+          "angle": 90
+        },
+        {
+          "r": 6,
+          "c": 6,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 7,
+          "c": 5,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_14.wad",
+      "sha256": "cef1dbe939b90610bd7539e2930ba5f39c81884e7e4bdece6ab8c33e8447d7df",
+      "sampling_weight": 0.015625,
+      "enemies": 1,
+      "has_door": true
+    },
+    {
+      "name": "proc_train_combat_15",
+      "split": "train",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 4015,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 14,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 13,
+        "enemies": 2,
+        "has_door": false
+      },
+      "player_angle": 90,
+      "grid": [
+        "##############",
+        "#..######.####",
+        "#.P######.####",
+        "#..#####...###",
+        "##.#.....E.###",
+        "##.#...#...###",
+        "##.........###",
+        "####...#######",
+        "##############",
+        "##############"
+      ],
+      "things": [
+        {
+          "r": 1,
+          "c": 9,
+          "type": 3004,
+          "angle": 270
+        },
+        {
+          "r": 2,
+          "c": 9,
+          "type": 3001,
+          "angle": 270
+        },
+        {
+          "r": 1,
+          "c": 2,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 3,
+          "c": 2,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_train_combat_15.wad",
+      "sha256": "f13f6dbc7a140e58357e8a2e51f51fbce148acb1adfb9db16a79c3997727b26b",
+      "sampling_weight": 0.015625,
+      "enemies": 2,
+      "has_door": false
+    },
+    {
+      "name": "proc_val_navigation_00",
+      "split": "val",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 10000,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 6
+      },
+      "player_angle": 90,
+      "grid": [
+        "############",
+        "##..########",
+        "##E.########",
+        "###....P####",
+        "#####.#.####",
+        "#####...####",
+        "############",
+        "############",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_val_navigation_00.wad",
+      "sha256": "dbc4bc8c8c78faf4771c91b35294b05fd8d9d7824b80e82de348197306d8bb3c",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_val_navigation_01",
+      "split": "val",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 10001,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 13,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 5
+      },
+      "player_angle": 180,
+      "grid": [
+        "#############",
+        "#############",
+        "###...#######",
+        "###E..#######",
+        "####.########",
+        "####.########",
+        "####.########",
+        "####P..######",
+        "####...######",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_val_navigation_01.wad",
+      "sha256": "da7371fb47a75bf27958e25d8789b1faaf5f5baff7eb60f3827b60fcce1d59d8",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_val_navigation_02",
+      "split": "val",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 10002,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 13,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 8
+      },
+      "player_angle": 90,
+      "grid": [
+        "#############",
+        "#############",
+        "#############",
+        "#############",
+        "###.#########",
+        "#.P.#########",
+        "#...###..####",
+        "###......####",
+        "##....#######",
+        "##....#######",
+        "##...E#######",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_val_navigation_02.wad",
+      "sha256": "6d83152e4b9bbc0137a347e773aa0acca88f6d99998a70a2250aa6b5816b8bbe",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_val_navigation_03",
+      "split": "val",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 10003,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 13,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 7
+      },
+      "player_angle": 180,
+      "grid": [
+        "#############",
+        "######E..####",
+        "######.#.####",
+        "######...####",
+        "######.######",
+        "####...######",
+        "####P.......#",
+        "####...#....#",
+        "####...######",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_val_navigation_03.wad",
+      "sha256": "7b977a89b7f6df4dcfb61dd4870604fdc2f2651824ae1e5853b25bee1540094c",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_val_unlocked_door_00",
+      "split": "val",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 11000,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 13,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 12
+      },
+      "player_angle": 0,
+      "grid": [
+        "#############",
+        "#P...########",
+        "#..#...D.####",
+        "#....###.####",
+        "#######..####",
+        "#######E.####",
+        "#############",
+        "#############",
+        "#############",
+        "#############",
+        "#############",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_val_unlocked_door_00.wad",
+      "sha256": "454fe4f6c0f74908dd8fda7140dd2aaba677145fd723a5988acf2ce4ec95c1eb",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_val_unlocked_door_01",
+      "split": "val",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 11001,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 14,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 9
+      },
+      "player_angle": 270,
+      "grid": [
+        "##############",
+        "##############",
+        "##############",
+        "##############",
+        "########...###",
+        "##..####.#.###",
+        "##E.####.P.###",
+        "##....D....###",
+        "##..##########",
+        "##############",
+        "##############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_val_unlocked_door_01.wad",
+      "sha256": "2c781d3ab8a0d553acc633632b490a97233a9123d85117430e96a08484fe661f",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_val_unlocked_door_02",
+      "split": "val",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 11002,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 12,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 6
+      },
+      "player_angle": 270,
+      "grid": [
+        "############",
+        "#####..#####",
+        "#####.E..###",
+        "##..#..#####",
+        "##..#D######",
+        "###.#.######",
+        "###.P...####",
+        "###.....####",
+        "############",
+        "############",
+        "############",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_val_unlocked_door_02.wad",
+      "sha256": "7e2717473ce12cd7f5453647e9026df0924f3118973d09001c89e35e150dbdfc",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_val_unlocked_door_03",
+      "split": "val",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 11003,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 13,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 6
+      },
+      "player_angle": 180,
+      "grid": [
+        "#############",
+        "#############",
+        "##..#..######",
+        "##..#..######",
+        "##E.#..######",
+        "##..#..######",
+        "###.#.#######",
+        "###D#.#######",
+        "###.#.#######",
+        "###P...######",
+        "###....######",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_val_unlocked_door_03.wad",
+      "sha256": "61f6ded21497e3a46d2bbd54bd38259d7fa152cac4d1ecc87322e652e0c0ed0e",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_val_progression_00",
+      "split": "val",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 12000,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 13,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 8,
+        "key_color": "red",
+        "key_dist": 4
+      },
+      "player_angle": 90,
+      "grid": [
+        "#############",
+        "##..###r...##",
+        "##E...R....##",
+        "##..###..P.##",
+        "#############",
+        "#############",
+        "#############",
+        "#############",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_val_progression_00.wad",
+      "sha256": "545d2c20f91be33b40d327a51f771b4087e36262fefa9c549c36e365f40aa47b",
+      "sampling_weight": 1.0,
+      "key_color": "red"
+    },
+    {
+      "name": "proc_val_progression_01",
+      "split": "val",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 12001,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 11,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 7,
+        "key_color": "yellow",
+        "key_dist": 5
+      },
+      "player_angle": 0,
+      "grid": [
+        "###########",
+        "###########",
+        "###.E.#####",
+        "###...#####",
+        "#####.#####",
+        "#####.#####",
+        "#####Y#####",
+        "####P..####",
+        "####....###",
+        "####.#.####",
+        "####..y####",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_val_progression_01.wad",
+      "sha256": "e3256dac84e883f4fcedf603381a51a3853d137f646f40e7e968c5456dec5103",
+      "sampling_weight": 1.0,
+      "key_color": "yellow"
+    },
+    {
+      "name": "proc_val_progression_02",
+      "split": "val",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 12002,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 10,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 11,
+        "key_color": "yellow",
+        "key_dist": 4
+      },
+      "player_angle": 180,
+      "grid": [
+        "##########",
+        "####....##",
+        "####....##",
+        "####....##",
+        "####....##",
+        "####.#####",
+        "####.#..P#",
+        "#....Y...#",
+        "#....#y..#",
+        "#..#.#####",
+        "#E...#####",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_val_progression_02.wad",
+      "sha256": "9a4ae5d210d30eb935227f8a8ab719b1bcbb6598970a715824b8e5cab1c38dfd",
+      "sampling_weight": 1.0,
+      "key_color": "yellow"
+    },
+    {
+      "name": "proc_val_progression_03",
+      "split": "val",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 12003,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 11,
+        "num_rooms": 2,
+        "tier": 1,
+        "route_len": 6,
+        "key_color": "blue",
+        "key_dist": 3
+      },
+      "player_angle": 270,
+      "grid": [
+        "###########",
+        "###########",
+        "###########",
+        "##E..######",
+        "##...B.P###",
+        "######..###",
+        "######b.###",
+        "###########",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_val_progression_03.wad",
+      "sha256": "6580554652122d36297870dbfdf4d59c80728c2f5899693fd4056bc2ecfd1278",
+      "sampling_weight": 1.0,
+      "key_color": "blue"
+    },
+    {
+      "name": "proc_val_combat_00",
+      "split": "val",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 13000,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 11,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 8,
+        "enemies": 1,
+        "has_door": true
+      },
+      "player_angle": 0,
+      "grid": [
+        "###########",
+        "###########",
+        "####..E####",
+        "####...####",
+        "######.#..#",
+        "######.#..#",
+        "######.#P.#",
+        "######.D..#",
+        "###########",
+        "###########",
+        "###########",
+        "###########"
+      ],
+      "things": [
+        {
+          "r": 2,
+          "c": 4,
+          "type": 3004,
+          "angle": 180
+        },
+        {
+          "r": 5,
+          "c": 8,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 7,
+          "c": 8,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_val_combat_00.wad",
+      "sha256": "9d0ec1dc872449c2a4d843cc75e5033626c594c234473644d9ada4710b98dcb9",
+      "sampling_weight": 1.0,
+      "enemies": 1,
+      "has_door": true
+    },
+    {
+      "name": "proc_val_combat_01",
+      "split": "val",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 13001,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 9,
+        "enemies": 1,
+        "has_door": false
+      },
+      "player_angle": 0,
+      "grid": [
+        "##########",
+        "#..#######",
+        "#..#######",
+        "#E.#######",
+        "#...######",
+        "###.######",
+        "###.######",
+        "###...P###",
+        "###....###",
+        "##########",
+        "##########"
+      ],
+      "things": [
+        {
+          "r": 1,
+          "c": 1,
+          "type": 3004,
+          "angle": 180
+        },
+        {
+          "r": 8,
+          "c": 6,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 7,
+          "c": 5,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_val_combat_01.wad",
+      "sha256": "b57e610e8815a05e7795bd08a0a0beeb5477691dd8625087664a74f291b19f9c",
+      "sampling_weight": 1.0,
+      "enemies": 1,
+      "has_door": false
+    },
+    {
+      "name": "proc_val_combat_02",
+      "split": "val",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 13002,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 12,
+        "num_rooms": 4,
+        "tier": 1,
+        "route_len": 8,
+        "enemies": 2,
+        "has_door": false
+      },
+      "player_angle": 0,
+      "grid": [
+        "############",
+        "#....#######",
+        "#........###",
+        "#......E..##",
+        "###.#.#...##",
+        "###...##.###",
+        "###...##.###",
+        "###...##.###",
+        "###...#..###",
+        "###....P.###",
+        "############",
+        "############"
+      ],
+      "things": [
+        {
+          "r": 1,
+          "c": 1,
+          "type": 3004,
+          "angle": 180
+        },
+        {
+          "r": 1,
+          "c": 2,
+          "type": 3004,
+          "angle": 180
+        },
+        {
+          "r": 8,
+          "c": 7,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 9,
+          "c": 6,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_val_combat_02.wad",
+      "sha256": "f507b11c72b64fdd8c4e6f47d08526de25f06ae8f458d9939fdb57e2bc3685c6",
+      "sampling_weight": 1.0,
+      "enemies": 2,
+      "has_door": false
+    },
+    {
+      "name": "proc_val_combat_03",
+      "split": "val",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 13004,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 14,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 18,
+        "enemies": 2,
+        "has_door": true
+      },
+      "player_angle": 180,
+      "grid": [
+        "##############",
+        "##E.##########",
+        "##..##########",
+        "##.........###",
+        "##########..##",
+        "####.....D..##",
+        "####.P#.######",
+        "####....######",
+        "##############"
+      ],
+      "things": [
+        {
+          "r": 1,
+          "c": 3,
+          "type": 3004,
+          "angle": 0
+        },
+        {
+          "r": 2,
+          "c": 2,
+          "type": 3001,
+          "angle": 0
+        },
+        {
+          "r": 5,
+          "c": 5,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 7,
+          "c": 5,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_val_combat_03.wad",
+      "sha256": "c588b482ed88873002100227de8db8fd1d272e7ea04889638c67f50205034cfd",
+      "sampling_weight": 1.0,
+      "enemies": 2,
+      "has_door": true
+    },
+    {
+      "name": "proc_test_navigation_00",
+      "split": "test",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 20000,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 12
+      },
+      "player_angle": 180,
+      "grid": [
+        "############",
+        "############",
+        "############",
+        "##........##",
+        "##.####E..##",
+        "##.#########",
+        "##.#########",
+        "#....#######",
+        "#..P.#######",
+        "#....#######",
+        "#....#######",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_test_navigation_00.wad",
+      "sha256": "31922a41138377c77cdf50219f4983d93a20a524dcc443dd6790e623b0e94a84",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_test_navigation_01",
+      "split": "test",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 20001,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 6
+      },
+      "player_angle": 90,
+      "grid": [
+        "##########",
+        "####....##",
+        "####.E..##",
+        "######.###",
+        "######.###",
+        "#####...P#",
+        "#####..#.#",
+        "#####....#",
+        "##########",
+        "##########",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_test_navigation_01.wad",
+      "sha256": "af62173b3a81c61b204a75995c6b7a3f8282477cdb26a776b6ecbb3949870769",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_test_navigation_02",
+      "split": "test",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 20002,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 13,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 21
+      },
+      "player_angle": 270,
+      "grid": [
+        "#############",
+        "##.........##",
+        "##.##..###.##",
+        "##.#######.##",
+        "##.#######.##",
+        "#..#######.##",
+        "#..######P.##",
+        "#E.######..##",
+        "#############",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_test_navigation_02.wad",
+      "sha256": "b6bab4193cc32d9c00334371b8399db6bbd3292d56b191a5c5ed2f4f7884cc66",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_test_navigation_03",
+      "split": "test",
+      "task": "navigation",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 20003,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 11,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 9
+      },
+      "player_angle": 90,
+      "grid": [
+        "###########",
+        "####......#",
+        "####..##E.#",
+        "####..##..#",
+        "#####.....#",
+        "#####.#####",
+        "###...#####",
+        "###.#.#####",
+        "###..P#####",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_test_navigation_03.wad",
+      "sha256": "12752babc9594ee759ca29cef9ecfa8db0bf9c28def77e317cb8d50bc4f901c5",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_test_unlocked_door_00",
+      "split": "test",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 21000,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 5
+      },
+      "player_angle": 270,
+      "grid": [
+        "############",
+        "############",
+        "##..E#######",
+        "##...#######",
+        "##...#######",
+        "####D#######",
+        "####.P..####",
+        "####....####",
+        "############",
+        "############",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_test_unlocked_door_00.wad",
+      "sha256": "0558ddde21823457196d379198964f84dc87fa2baecc027ef51f82675d57d4f4",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_test_unlocked_door_01",
+      "split": "test",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 21001,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 12,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 11
+      },
+      "player_angle": 0,
+      "grid": [
+        "############",
+        "############",
+        "###E.#######",
+        "###..#######",
+        "###...D....#",
+        "########...#",
+        "########.#.#",
+        "########.P.#",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_test_unlocked_door_01.wad",
+      "sha256": "bbdaaa02c2a83ea9aa894b33caee730f2ff83fac3b0104c592dd816f058b8d4f",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_test_unlocked_door_02",
+      "split": "test",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 21003,
+      "params": {
+        "grid_h": 9,
+        "grid_w": 12,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 11
+      },
+      "player_angle": 270,
+      "grid": [
+        "############",
+        "#####....###",
+        "#####P....##",
+        "#########D##",
+        "#########..#",
+        "####.......#",
+        "####....#..#",
+        "####...E#..#",
+        "############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_test_unlocked_door_02.wad",
+      "sha256": "d4ee3e32aa1060d761cc4a5480a5923910d5d9083d955fa1bd8e184995dce0d4",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_test_unlocked_door_03",
+      "split": "test",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 21004,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 11,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 7
+      },
+      "player_angle": 0,
+      "grid": [
+        "###########",
+        "###########",
+        "#E..D..####",
+        "#.#.#..####",
+        "#...#.#####",
+        "#####P.####",
+        "#####..####",
+        "#####..####",
+        "#####..####",
+        "###########",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_test_unlocked_door_03.wad",
+      "sha256": "12e67c1e8ad23fcabeb91673f0bedabf93398fd08402c0cf332b1bd583b39ab0",
+      "sampling_weight": 1.0
+    },
+    {
+      "name": "proc_test_progression_00",
+      "split": "test",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 22000,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 13,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 6,
+        "key_color": "yellow",
+        "key_dist": 2
+      },
+      "player_angle": 90,
+      "grid": [
+        "#############",
+        "######.E..###",
+        "###.P#..#.###",
+        "###y.Y....###",
+        "#############",
+        "#############",
+        "#############",
+        "#############",
+        "#############",
+        "#############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_test_progression_00.wad",
+      "sha256": "d119f1b685d02d7d9e251799d2f2e908199041ab4b42b0bf046fb008a6e3da7f",
+      "sampling_weight": 1.0,
+      "key_color": "yellow"
+    },
+    {
+      "name": "proc_test_progression_01",
+      "split": "test",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 22001,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 11,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 5,
+        "key_color": "blue",
+        "key_dist": 4
+      },
+      "player_angle": 0,
+      "grid": [
+        "###########",
+        "#####b.####",
+        "#####..####",
+        "#####..####",
+        "#####.P####",
+        "#####B#.###",
+        "#####....##",
+        "#####....##",
+        "#####E...##",
+        "###########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_test_progression_01.wad",
+      "sha256": "ec5726f71b764b49177c657333dac4cb45a81aaf2d582098627e6df0ed9e1bff",
+      "sampling_weight": 1.0,
+      "key_color": "blue"
+    },
+    {
+      "name": "proc_test_progression_02",
+      "split": "test",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 22002,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 14,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 16,
+        "key_color": "red",
+        "key_dist": 8
+      },
+      "player_angle": 90,
+      "grid": [
+        "##############",
+        "######.##...##",
+        "####...##P#.##",
+        "####E..##...##",
+        "######.###.###",
+        "######.###.###",
+        "######.###.###",
+        "######..R...##",
+        "#########r..##",
+        "##############",
+        "##############"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_test_progression_02.wad",
+      "sha256": "dc25330159e4e524234bbfcbade966e1b2dd6d0b56ad60e6b5c3c6261556ce52",
+      "sampling_weight": 1.0,
+      "key_color": "red"
+    },
+    {
+      "name": "proc_test_progression_03",
+      "split": "test",
+      "task": "progression",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 22003,
+      "params": {
+        "grid_h": 11,
+        "grid_w": 10,
+        "num_rooms": 2,
+        "tier": 1,
+        "route_len": 6,
+        "key_color": "blue",
+        "key_dist": 4
+      },
+      "player_angle": 90,
+      "grid": [
+        "##########",
+        "####.E####",
+        "####..####",
+        "#####B####",
+        "#####.####",
+        "###b...###",
+        "###....###",
+        "###..P.###",
+        "###....###",
+        "##########",
+        "##########"
+      ],
+      "things": [],
+      "wad_path": "training/procedural/maps/proc_test_progression_03.wad",
+      "sha256": "9ff9d1216c5e53d057cf1d534bee3106d5ff839234cb962ccba4b1cb8d75b2cf",
+      "sampling_weight": 1.0,
+      "key_color": "blue"
+    },
+    {
+      "name": "proc_test_combat_00",
+      "split": "test",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 23000,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 13,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 9,
+        "enemies": 1,
+        "has_door": true
+      },
+      "player_angle": 90,
+      "grid": [
+        "#############",
+        "#############",
+        "#############",
+        "######....###",
+        "####.D....###",
+        "####.#.P#.###",
+        "##...#....###",
+        "##E..########",
+        "#############",
+        "#############"
+      ],
+      "things": [
+        {
+          "r": 6,
+          "c": 2,
+          "type": 3004,
+          "angle": 270
+        },
+        {
+          "r": 4,
+          "c": 7,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 6,
+          "c": 7,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_test_combat_00.wad",
+      "sha256": "52b1452d455ab80bc9aae5bc72da1167b285caa1c2f65a9114966d457d3d9447",
+      "sampling_weight": 1.0,
+      "enemies": 1,
+      "has_door": true
+    },
+    {
+      "name": "proc_test_combat_01",
+      "split": "test",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 23001,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 11,
+        "num_rooms": 2,
+        "tier": 0,
+        "route_len": 4,
+        "enemies": 1,
+        "has_door": false
+      },
+      "player_angle": 90,
+      "grid": [
+        "###########",
+        "###########",
+        "####..#####",
+        "####..#####",
+        "####..#####",
+        "###.P..####",
+        "######.####",
+        "######E...#",
+        "######....#",
+        "###########"
+      ],
+      "things": [
+        {
+          "r": 8,
+          "c": 9,
+          "type": 3004,
+          "angle": 270
+        },
+        {
+          "r": 4,
+          "c": 4,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 5,
+          "c": 3,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_test_combat_01.wad",
+      "sha256": "7f11aa7ebf7a8bbc3edee8ff09aeb52365f49936f2c8dc03010421dd2aaee1dd",
+      "sampling_weight": 1.0,
+      "enemies": 1,
+      "has_door": false
+    },
+    {
+      "name": "proc_test_combat_02",
+      "split": "test",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 23002,
+      "params": {
+        "grid_h": 12,
+        "grid_w": 12,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 11,
+        "enemies": 2,
+        "has_door": true
+      },
+      "player_angle": 180,
+      "grid": [
+        "############",
+        "############",
+        "############",
+        "###....#####",
+        "###.P#.#####",
+        "###.##.#E.##",
+        "###....#..##",
+        "###....D..##",
+        "########..##",
+        "############",
+        "############",
+        "############"
+      ],
+      "things": [
+        {
+          "r": 5,
+          "c": 9,
+          "type": 3004,
+          "angle": 0
+        },
+        {
+          "r": 6,
+          "c": 9,
+          "type": 3004,
+          "angle": 0
+        },
+        {
+          "r": 3,
+          "c": 4,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 4,
+          "c": 3,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_test_combat_02.wad",
+      "sha256": "89dd4eb5733377f1e174eef52f6c0bbf89efb363f7637aa3b558636bc30c6d46",
+      "sampling_weight": 1.0,
+      "enemies": 2,
+      "has_door": true
+    },
+    {
+      "name": "proc_test_combat_03",
+      "split": "test",
+      "task": "combat",
+      "map_name": "MAP01",
+      "generator_version": "proc_v1",
+      "seed": 23003,
+      "params": {
+        "grid_h": 10,
+        "grid_w": 14,
+        "num_rooms": 3,
+        "tier": 1,
+        "route_len": 15,
+        "enemies": 1,
+        "has_door": false
+      },
+      "player_angle": 180,
+      "grid": [
+        "##############",
+        "#...........##",
+        "#....####...##",
+        "#....####..P##",
+        "###.##########",
+        "##..E#########",
+        "##...#########",
+        "##...#########",
+        "##...#########",
+        "##############"
+      ],
+      "things": [
+        {
+          "r": 8,
+          "c": 2,
+          "type": 3004,
+          "angle": 0
+        },
+        {
+          "r": 2,
+          "c": 11,
+          "type": 2007,
+          "angle": 0
+        },
+        {
+          "r": 3,
+          "c": 10,
+          "type": 2011,
+          "angle": 0
+        }
+      ],
+      "wad_path": "training/procedural/maps/proc_test_combat_03.wad",
+      "sha256": "83e6a14cc9f0919c368e0a04ee3a2cf6e6afa1a37dfdd8cca7db57bd48fa5253",
+      "sampling_weight": 1.0,
+      "enemies": 1,
+      "has_door": false
+    }
+  ]
+}

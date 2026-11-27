@@ -31,6 +31,8 @@ NUM_RAY_HIT_TYPES = len(RAY_HIT_TYPES)  # 6
 NUM_VITALS = len(VITALS_FIELDS)  # 17
 NUM_ACTIONS = len(BUTTONS)  # 9
 INPUT_DIM = NUM_RAYS + NUM_RAYS * NUM_RAY_HIT_TYPES + NUM_VITALS  # 64 + 384 + 17 = 465
+VISIBLE_ENTITY_DIM = 17
+INPUT_DIM_V2 = INPUT_DIM + VISIBLE_ENTITY_DIM  # 482
 # Indices of the 6 official binary key flags inside the 465-d encoded observation.
 KEY_FLAGS_START = NUM_RAYS + NUM_RAYS * NUM_RAY_HIT_TYPES + 8
 KEY_FLAGS_END = KEY_FLAGS_START + 6
@@ -68,6 +70,77 @@ def encode_observation(obs: dict) -> np.ndarray:
     vitals = np.asarray(obs["vitals"], dtype=np.float32) / VITALS_SCALE
     vec = np.concatenate([distances, one_hot, vitals], axis=0)
     return vec.astype(np.float32, copy=False)
+
+
+def encode_visible_entities(obs: dict) -> np.ndarray:
+    """Encode nearest visible enemy, nearest visible pickup/key, and enemy count (17 floats)."""
+    out = np.zeros(VISIBLE_ENTITY_DIM, dtype=np.float32)
+    ve = obs.get("visible_entities")
+    if ve is None:
+        return out
+    mask = np.asarray(ve["mask"], dtype=np.int8) > 0
+    if not np.any(mask):
+        return out
+    etype = np.asarray(ve["entity_type"], dtype=np.int64)
+    feats = np.asarray(ve["features"], dtype=np.float32)
+
+    enemy_idx = np.flatnonzero(mask & np.isin(etype, (1, 2, 3)))
+    if len(enemy_idx) > 0:
+        i = int(enemy_idx[0])
+        f = feats[i]
+        t = int(etype[i])
+        out[0:9] = [
+            1.0,
+            float(f[0]),
+            float(f[1]),
+            float(f[2]),
+            float(f[3]) / 50.0,
+            float(f[4]) / 50.0,
+            float(t == 1),
+            float(t == 2),
+            float(t == 3),
+        ]
+
+    item_idx = np.flatnonzero(mask & np.isin(etype, (5, 6, 7, 8, 9)))
+    if len(item_idx) > 0:
+        i = int(item_idx[0])
+        f = feats[i]
+        t = int(etype[i])
+        out[9:16] = [
+            1.0,
+            float(f[0]),
+            float(f[1]),
+            float(f[2]),
+            float(t == 9),
+            float(t in (5, 6)),
+            float(t in (7, 8)),
+        ]
+
+    out[16] = min(len(enemy_idx), 8) / 8.0
+    return out
+
+
+def encode_observation_v2(obs: dict) -> np.ndarray:
+    """Encode rays, vitals, and compact visible_entities summary into a 482-element float32 vector."""
+    return np.concatenate([encode_observation(obs), encode_visible_entities(obs)], axis=0).astype(
+        np.float32, copy=False
+    )
+
+
+def input_dim_for_version(obs_version: str = "v1") -> int:
+    if obs_version == "v1":
+        return INPUT_DIM
+    if obs_version == "v2":
+        return INPUT_DIM_V2
+    raise ValueError(f"Unsupported obs_version: {obs_version!r}")
+
+
+def encode_observation_for_version(obs: dict, obs_version: str = "v1") -> np.ndarray:
+    if obs_version == "v1":
+        return encode_observation(obs)
+    if obs_version == "v2":
+        return encode_observation_v2(obs)
+    raise ValueError(f"Unsupported obs_version: {obs_version!r}")
 
 
 class ActorCritic(nn.Module):

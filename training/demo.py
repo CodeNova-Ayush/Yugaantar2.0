@@ -12,7 +12,8 @@ def main():
     p.add_argument('--map',type=Path,default=Path('maps/two_rooms.wad'))
     p.add_argument('--map-name',default='MAP01');p.add_argument('--weights',type=Path)
     p.add_argument('--seed',type=int,default=0);p.add_argument('--policy-seed',type=int,default=1000)
-    p.add_argument('--show',action='store_true');p.add_argument('--record',type=Path)
+    p.add_argument('--show',action='store_true');p.add_argument('--end-pause',type=float,default=1.5)
+    p.add_argument('--record',type=Path)
     a=p.parse_args()
     if a.record and a.record.exists():raise FileExistsError(a.record)
     if a.record:a.record.parent.mkdir(parents=True,exist_ok=True)
@@ -34,7 +35,11 @@ def main():
             if a.show:
                 time.sleep(max(0., 4 / 35 - (time.monotonic() - started)))
         st=env.privileged_state()
+        outcome='EXIT REACHED' if st['exit_reached'] else ('DEAD' if st['dead'] else 'TIMEOUT')
+        print(f'Episode finished: {outcome} in {steps} decisions (kills={st["kills"]}, damage={st["damage_taken"]:.0f}).')
         print({'decisions':steps,'exit':st['exit_reached'],'dead':st['dead'],'timeout':st['timeout'],'kills':st['kills']})
+        if a.show and a.end_pause>0:
+            time.sleep(a.end_pause)
     except KeyboardInterrupt:
         print('Demo stopped. This interrupted episode is not a measured win or loss.')
     finally:

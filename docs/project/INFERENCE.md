@@ -14,8 +14,8 @@ no additional submission dependencies are required.
 .venv/bin/python validate.py --device cpu
 # Headless live agent demonstration
 .venv/bin/python -m training.demo --record /tmp/doom-demo.lmp
-# Native ViZDoom window; no OpenCV installation needed
-.venv/bin/python -m training.demo --show
+# Native ViZDoom window; no OpenCV installation needed (pauses 1.5s at end by default)
+.venv/bin/python -m training.demo --show --end-pause 1.5
 # Repeatable 20-episode gameplay comparison; use a new output directory
 .venv/bin/python training/eval_two_rooms.py --weights submission/weights/ppo_pilot.pt --out-dir /tmp/doom-final-eval
 ```

@@ -31,16 +31,24 @@ class PPOConfig:
     kill_reward: float = 0.0
     damage_penalty: float = 0.0
     exploration_reward: float = 0.0
+    unlocked_door_reward: float = 0.0
+    door_reversal_penalty: float = 0.0
     seed: int = 42
     num_threads: int = 1
+    env_cache_size: int = 16
     arch: str = "mlp"
+    obs_version: str = "v1"
     seq_len: int = 64
 
     def __post_init__(self) -> None:
-        if min(self.kill_reward, self.damage_penalty, self.exploration_reward) < 0:
+        if min(self.kill_reward, self.damage_penalty, self.exploration_reward, self.unlocked_door_reward, self.door_reversal_penalty) < 0:
             raise ValueError("Task reward coefficients must be nonnegative")
         if self.arch not in ("mlp", "gru", "key_mem"):
             raise ValueError(f"arch must be 'mlp', 'gru', or 'key_mem', got {self.arch!r}")
+        if self.obs_version not in ("v1", "v2"):
+            raise ValueError(f"obs_version must be 'v1' or 'v2', got {self.obs_version!r}")
+        if self.env_cache_size <= 0:
+            raise ValueError(f"env_cache_size must be > 0, got {self.env_cache_size}")
         if self.seq_len <= 0:
             raise ValueError(f"seq_len must be > 0, got {self.seq_len}")
         if self.key_reward < 0 or self.door_passable_reward < 0:

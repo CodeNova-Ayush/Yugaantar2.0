@@ -14,13 +14,13 @@ import torch
 
 from doom_env import CONTRACT_VERSION
 from submission.model import (
-    INPUT_DIM,
     NUM_ACTIONS,
     VITALS_SCALE,
     KeyMemoryActorCritic,
     RecurrentActorCritic,
     build_model_from_checkpoint,
-    encode_observation,
+    encode_observation_for_version,
+    input_dim_for_version,
 )
 
 SUBMISSION_DIR = Path(__file__).resolve().parent
@@ -69,11 +69,14 @@ class DoomAgent:
                 f"Incompatible checkpoint {path}: contract_version={ckpt['contract_version']!r} "
                 f"!= {CONTRACT_VERSION!r}"
             )
-        if int(ckpt["input_dim"]) != INPUT_DIM or int(ckpt["num_actions"]) != NUM_ACTIONS:
+        obs_version = str(ckpt.get("obs_version", "v1"))
+        expected_input_dim = input_dim_for_version(obs_version)
+        if int(ckpt["input_dim"]) != expected_input_dim or int(ckpt["num_actions"]) != NUM_ACTIONS:
             raise ValueError(
-                f"Incompatible checkpoint {path}: expected input_dim={INPUT_DIM}, num_actions={NUM_ACTIONS}, "
+                f"Incompatible checkpoint {path}: expected input_dim={expected_input_dim}, num_actions={NUM_ACTIONS}, "
                 f"got input_dim={ckpt['input_dim']}, num_actions={ckpt['num_actions']}"
             )
+        self.obs_version = obs_version
         ckpt_scale = np.asarray(ckpt["vitals_scale"], dtype=np.float32)
         if ckpt_scale.shape != VITALS_SCALE.shape or not np.allclose(ckpt_scale, VITALS_SCALE):
             raise ValueError(f"Incompatible checkpoint {path}: vitals_scale mismatch")
@@ -98,7 +101,11 @@ class DoomAgent:
     @torch.no_grad()
     def act(self, observation: dict) -> np.ndarray:
         """Return a MultiBinary action: int8 array of shape (9,) with values in {0, 1}."""
-        x = torch.from_numpy(encode_observation(observation)).unsqueeze(0).to(self.device)
+        x = (
+            torch.from_numpy(encode_observation_for_version(observation, self.obs_version))
+            .unsqueeze(0)
+            .to(self.device)
+        )
         if self.is_recurrent:
             if self.is_key_mem and self.clear_memory_each_step:
                 h, mem = self.hidden_state

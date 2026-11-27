@@ -1,0 +1,1228 @@
+{
+  "version": 2,
+  "task_probabilities": {
+    "navigation": 0.15,
+    "unlocked_door": 0.2,
+    "progression": 0.35,
+    "combat_rooms": 0.3
+  },
+  "note": "Curriculum v2 with D4-separated unlocked_door and multi-room combat_rooms layouts; no cross-split reuse.",
+  "maps": [
+    {
+      "name": "train_straight_short_e",
+      "wad_path": "training/curriculum/maps/train_straight_short_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "straight_5x2",
+      "sha256": "db44ca8045f8582c84a33011bced71a1529b1792483a9022045b4da3c1699cf0",
+      "grid": [
+        "#######",
+        "#P...E#",
+        "#....E#",
+        "#######"
+      ],
+      "player_angle": 0,
+      "task": "navigation",
+      "sampling_weight": 0.012499999999999999
+    },
+    {
+      "name": "train_straight_long_w",
+      "wad_path": "training/curriculum/maps/train_straight_long_w.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "straight_8x2",
+      "sha256": "5a540f5f29fb97a87f6d614b1fa4b867975b6b7f06a94d4da3cd6e55a3b5d924",
+      "grid": [
+        "##########",
+        "#E......P#",
+        "#E.......#",
+        "##########"
+      ],
+      "player_angle": 180,
+      "task": "navigation",
+      "sampling_weight": 0.012499999999999999
+    },
+    {
+      "name": "train_wide_hall_n",
+      "wad_path": "training/curriculum/maps/train_wide_hall_n.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "wide_hall_4x5",
+      "sha256": "5380d38da35845c91b2099e7ef8fa3a7ea6a18c14984420ad127bf87dbfd4872",
+      "grid": [
+        "######",
+        "#EEEE#",
+        "#....#",
+        "#....#",
+        "#....#",
+        "#..P.#",
+        "######"
+      ],
+      "player_angle": 90,
+      "task": "navigation",
+      "sampling_weight": 0.012499999999999999
+    },
+    {
+      "name": "train_bend_left_90_e",
+      "wad_path": "training/curriculum/maps/train_bend_left_90_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "l_bend_5x4",
+      "sha256": "268f23480ecad05531653caf07888a3f2b2582ed293e3a34d23cb77ca481245e",
+      "grid": [
+        "#######",
+        "###EEE#",
+        "###...#",
+        "#P....#",
+        "#.....#",
+        "#######"
+      ],
+      "player_angle": 0,
+      "task": "navigation",
+      "sampling_weight": 0.012499999999999999
+    },
+    {
+      "name": "train_bend_right_90_s",
+      "wad_path": "training/curriculum/maps/train_bend_right_90_s.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "l_bend_5x4",
+      "sha256": "40eb72204f7fbed567242b1936828af087c944413b3082eed86f6521a3e38eb4",
+      "grid": [
+        "#######",
+        "###.P.#",
+        "###...#",
+        "#E....#",
+        "#E....#",
+        "#######"
+      ],
+      "player_angle": 270,
+      "task": "navigation",
+      "sampling_weight": 0.012499999999999999
+    },
+    {
+      "name": "train_bend_wide_left_n",
+      "wad_path": "training/curriculum/maps/train_bend_wide_left_n.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "l_bend_wide_3cell",
+      "sha256": "adf9b11e31af8f4593aab01f7a8afb2d3001ecfd67211a7ed733f80c8e1973ad",
+      "grid": [
+        "########",
+        "#E.....#",
+        "#E.....#",
+        "#E.....#",
+        "####...#",
+        "####.P.#",
+        "########"
+      ],
+      "player_angle": 90,
+      "task": "navigation",
+      "sampling_weight": 0.012499999999999999
+    },
+    {
+      "name": "train_s_curve_e",
+      "wad_path": "training/curriculum/maps/train_s_curve_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "s_curve_compact",
+      "sha256": "df1efdc1b29cd2ed7903458893ac1cd05adc24e2f8fabe61e023cf820bf4863e",
+      "grid": [
+        "#########",
+        "###....E#",
+        "###....E#",
+        "#P...####",
+        "#....####",
+        "#########"
+      ],
+      "player_angle": 0,
+      "task": "navigation",
+      "sampling_weight": 0.012499999999999999
+    },
+    {
+      "name": "train_s_curve_long_s",
+      "wad_path": "training/curriculum/maps/train_s_curve_long_s.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "s_curve_long",
+      "sha256": "4f565af51a0e24244cf1856c6d84247a8b7824acee5e4b51f7efa17123153922",
+      "grid": [
+        "#######",
+        "#P.####",
+        "#..####",
+        "#.....#",
+        "#.....#",
+        "####..#",
+        "####EE#",
+        "#######"
+      ],
+      "player_angle": 270,
+      "task": "navigation",
+      "sampling_weight": 0.012499999999999999
+    },
+    {
+      "name": "train_u_turn_e",
+      "wad_path": "training/curriculum/maps/train_u_turn_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "u_turn_2cell",
+      "sha256": "7be0cebb8c6522b14d7ef9c1d9ae13f8b24f16a20c4628830c31b1db91e1b15c",
+      "grid": [
+        "#######",
+        "#E....#",
+        "#E....#",
+        "###...#",
+        "#P....#",
+        "#.....#",
+        "#######"
+      ],
+      "player_angle": 0,
+      "task": "navigation",
+      "sampling_weight": 0.012499999999999999
+    },
+    {
+      "name": "train_t_junction_n",
+      "wad_path": "training/curriculum/maps/train_t_junction_n.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "t_junction_deadend",
+      "sha256": "35ee3891abff929efef2e3c3ca828ea7c992fbfa7779732796fc53381733c445",
+      "grid": [
+        "#########",
+        "#..#....#",
+        "#..#...E#",
+        "#......E#",
+        "###..####",
+        "###P.####",
+        "#########"
+      ],
+      "player_angle": 90,
+      "task": "navigation",
+      "sampling_weight": 0.012499999999999999
+    },
+    {
+      "name": "train_staggered_rooms_e",
+      "wad_path": "training/curriculum/maps/train_staggered_rooms_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "two_rooms_chokepoint",
+      "sha256": "7e641704175693378cb8f0a73324947d795a7a2fa0c78e226c0b7567f4fc14e2",
+      "grid": [
+        "#########",
+        "#...#..E#",
+        "#P......#",
+        "#...#...#",
+        "#########"
+      ],
+      "player_angle": 0,
+      "task": "navigation",
+      "sampling_weight": 0.012499999999999999
+    },
+    {
+      "name": "train_stepped_stair_n",
+      "wad_path": "training/curriculum/maps/train_stepped_stair_n.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "geometry_family": "stepped_stair_3turn",
+      "sha256": "0ca0f7b9190f6d4480c4350765dbbde159d21f1cbc17d4fbdd0f3e8793262659",
+      "grid": [
+        "########",
+        "####..E#",
+        "####..E#",
+        "##....##",
+        "##....##",
+        "#..#####",
+        "#P.#####",
+        "########"
+      ],
+      "player_angle": 90,
+      "task": "navigation",
+      "sampling_weight": 0.012499999999999999
+    },
+    {
+      "name": "val_narrow_long_n",
+      "wad_path": "training/curriculum/maps/val_narrow_long_n.wad",
+      "map_name": "MAP01",
+      "split": "val",
+      "geometry_family": "narrow_1cell_7",
+      "sha256": "6ed39c476009bef6b2f05412db932fa7982b3bb4219cc688ef6c6b09d90f6dfb",
+      "grid": [
+        "###",
+        "#E#",
+        "#.#",
+        "#.#",
+        "#.#",
+        "#.#",
+        "#.#",
+        "#P#",
+        "###"
+      ],
+      "player_angle": 90,
+      "task": "navigation",
+      "sampling_weight": 0.0375
+    },
+    {
+      "name": "val_l_asymmetric_w",
+      "wad_path": "training/curriculum/maps/val_l_asymmetric_w.wad",
+      "map_name": "MAP01",
+      "split": "val",
+      "geometry_family": "l_asymmetric_3x6",
+      "sha256": "c88adf3100a589766617c2d16b3b019d7b4bc1f865888ce02891d6cbfe72a15a",
+      "grid": [
+        "#####",
+        "#..P#",
+        "#...#",
+        "#..##",
+        "#..##",
+        "#..##",
+        "#EE##",
+        "#####"
+      ],
+      "player_angle": 180,
+      "task": "navigation",
+      "sampling_weight": 0.0375
+    },
+    {
+      "name": "val_pillar_bypass_e",
+      "wad_path": "training/curriculum/maps/val_pillar_bypass_e.wad",
+      "map_name": "MAP01",
+      "split": "val",
+      "geometry_family": "pillar_bypass_loop",
+      "sha256": "57a3a7a5c713add481a21c0f7c4444c1eb1ca08cdd5275de86777287cd496ffb",
+      "grid": [
+        "########",
+        "#......#",
+        "#P.##.E#",
+        "#..##.E#",
+        "#......#",
+        "########"
+      ],
+      "player_angle": 0,
+      "task": "navigation",
+      "sampling_weight": 0.0375
+    },
+    {
+      "name": "val_hook_chamber_s",
+      "wad_path": "training/curriculum/maps/val_hook_chamber_s.wad",
+      "map_name": "MAP01",
+      "split": "val",
+      "geometry_family": "hook_chamber_3x2",
+      "sha256": "9a67131db93a7d0cd9064ca174a83f5afc3540433eb648d94ef88f25c3e3d5b3",
+      "grid": [
+        "#######",
+        "####.P#",
+        "####..#",
+        "#..#..#",
+        "#E....#",
+        "#.....#",
+        "#######"
+      ],
+      "player_angle": 270,
+      "task": "navigation",
+      "sampling_weight": 0.0375
+    },
+    {
+      "name": "test_chicane_e",
+      "wad_path": "training/curriculum/maps/test_chicane_e.wad",
+      "map_name": "MAP01",
+      "split": "test",
+      "geometry_family": "double_chicane",
+      "sha256": "9823d4ba8539e04ec690c6554a8fc55dfd5326bee22835ecbfaae53848b4f64a",
+      "grid": [
+        "##########",
+        "###....###",
+        "###.##.###",
+        "#P..##..E#",
+        "#...##..E#",
+        "##########"
+      ],
+      "player_angle": 0,
+      "task": "navigation",
+      "sampling_weight": 0.0375
+    },
+    {
+      "name": "test_l_narrow_to_wide_s",
+      "wad_path": "training/curriculum/maps/test_l_narrow_to_wide_s.wad",
+      "map_name": "MAP01",
+      "split": "test",
+      "geometry_family": "l_narrow_to_wide",
+      "sha256": "7567eb0fbb244a4a35b2b8a58b8ecc351829bfd36c70e1018cc76bd420e52518",
+      "grid": [
+        "#######",
+        "#P#####",
+        "#.#####",
+        "#.#####",
+        "#....E#",
+        "#....E#",
+        "#....E#",
+        "#######"
+      ],
+      "player_angle": 270,
+      "task": "navigation",
+      "sampling_weight": 0.0375
+    },
+    {
+      "name": "test_fork_deadend_w",
+      "wad_path": "training/curriculum/maps/test_fork_deadend_w.wad",
+      "map_name": "MAP01",
+      "split": "test",
+      "geometry_family": "fork_deadend_y",
+      "sha256": "f59c1a7efd025d2c6298141e94ce59ff21f62d053d4b759ea5daf50cfa07d9d2",
+      "grid": [
+        "########",
+        "#..#####",
+        "#......#",
+        "####..P#",
+        "#E.....#",
+        "#E.#####",
+        "########"
+      ],
+      "player_angle": 180,
+      "task": "navigation",
+      "sampling_weight": 0.0375
+    },
+    {
+      "name": "test_spiral_inward_n",
+      "wad_path": "training/curriculum/maps/test_spiral_inward_n.wad",
+      "map_name": "MAP01",
+      "split": "test",
+      "geometry_family": "spiral_inward",
+      "sha256": "af4ed704f501c3f6b0efe8d469e713b8015c25a4a53ec9bc73c4f9c9413e6615",
+      "grid": [
+        "#######",
+        "#.....#",
+        "#.##..#",
+        "#.#E..#",
+        "#.#.#.#",
+        "#P..#.#",
+        "#######"
+      ],
+      "player_angle": 90,
+      "task": "navigation",
+      "sampling_weight": 0.0375
+    },
+    {
+      "name": "prog_train_inline_red_e",
+      "wad_path": "training/progression/maps/prog_train_inline_red_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "key_color": "red",
+      "door_occluded_at_key": false,
+      "sha256": "9771064bc89b9efefb501860719b9d9593c9db350e87cdeb973a372b0e221a81",
+      "grid": [
+        "###########",
+        "#P.....R.E#",
+        "#..r...####",
+        "###########"
+      ],
+      "player_angle": 0,
+      "task": "progression",
+      "sampling_weight": 0.05833333333333333
+    },
+    {
+      "name": "prog_train_side_north_e",
+      "wad_path": "training/progression/maps/prog_train_side_north_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "key_color": "red",
+      "door_occluded_at_key": true,
+      "sha256": "2c0b7604e05eca888ace7f7e7a0beb7614cb94dc2aff0f1beef27242e0a4ac25",
+      "grid": [
+        "#########",
+        "#..r#####",
+        "#..######",
+        "#P..R..E#",
+        "#...#####",
+        "#########"
+      ],
+      "player_angle": 0,
+      "task": "progression",
+      "sampling_weight": 0.05833333333333333
+    },
+    {
+      "name": "prog_train_side_south_w",
+      "wad_path": "training/progression/maps/prog_train_side_south_w.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "key_color": "blue",
+      "door_occluded_at_key": true,
+      "sha256": "5608062d5ea6f5490a1b2b1bd5fd71b52683702a970343c333d46f1151e18c4d",
+      "grid": [
+        "##########",
+        "#E..B...P#",
+        "#####....#",
+        "#####..###",
+        "#####b.###",
+        "##########"
+      ],
+      "player_angle": 180,
+      "task": "progression",
+      "sampling_weight": 0.05833333333333333
+    },
+    {
+      "name": "prog_train_hook_yellow_n",
+      "wad_path": "training/progression/maps/prog_train_hook_yellow_n.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "key_color": "yellow",
+      "door_occluded_at_key": false,
+      "sha256": "2393b6503c5758a859b613be98b5c4e4796d6a0deded30bda3ca8ddba474f603",
+      "grid": [
+        "########",
+        "#E######",
+        "#Y######",
+        "#...####",
+        "#P.....#",
+        "####..y#",
+        "########"
+      ],
+      "player_angle": 90,
+      "task": "progression",
+      "sampling_weight": 0.05833333333333333
+    },
+    {
+      "name": "prog_train_wide_hall_red_s",
+      "wad_path": "training/progression/maps/prog_train_wide_hall_red_s.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "key_color": "red",
+      "door_occluded_at_key": false,
+      "sha256": "9656e41655b0327b768a1027f5169c5d1a502d0ce8549c3cf66e4a189332da14",
+      "grid": [
+        "#########",
+        "#r.######",
+        "#..######",
+        "#....P..#",
+        "#.......#",
+        "####R####",
+        "####E####",
+        "#########"
+      ],
+      "player_angle": 270,
+      "task": "progression",
+      "sampling_weight": 0.05833333333333333
+    },
+    {
+      "name": "prog_train_deep_branch_blue_e",
+      "wad_path": "training/progression/maps/prog_train_deep_branch_blue_e.wad",
+      "map_name": "MAP01",
+      "split": "train",
+      "key_color": "blue",
+      "door_occluded_at_key": true,
+      "sha256": "df1ef492368b231953c70482589e22d9e8e694091a7e38c8222d65502084fa89",
+      "grid": [
+        "############",
+        "#b.....#####",
+        "######.#####",
+        "######.#####",
+        "#P......B.E#",
+        "#.......####",
+        "############"
+      ],
+      "player_angle": 0,
+      "task": "progression",
+      "sampling_weight": 0.05833333333333333
+    },
+    {
+      "name": "prog_val_t_branch_e",
+      "wad_path": "training/progression/maps/prog_val_t_branch_e.wad",
+      "map_name": "MAP01",
+      "split": "val",
+      "key_color": "blue",
+      "door_occluded_at_key": true,
+      "sha256": "e73fcb8930493b0b8fa2e606bb2ac7ebe31c7b6a19e7185f33d052bdb0e324ef",
+      "grid": [
+        "############",
+        "###b..######",
+        "#####.######",
+        "#####.######",
+        "#P......B.E#",
+        "############"
+      ],
+      "player_angle": 0,
+      "task": "progression",
+      "sampling_weight": 0.175
+    },
+    {
+      "name": "prog_val_u_detour_s",
+      "wad_path": "training/progression/maps/prog_val_u_detour_s.wad",
+      "map_name": "MAP01",
+      "split": "val",
+      "key_color": "yellow",
+      "door_occluded_at_key": true,
+      "sha256": "b5e8ca0cfc13718d6af8507ec628107f00bfe71bcbfdb23a849a1261420a2df4",
+      "grid": [
+        "#########",
+        "#####..y#",
+        "#P..#...#",
+        "#.......#",
+        "#..######",
+        "#Y#######",
+        "#E#######",
+        "#########"
+      ],
+      "player_angle": 270,
+      "task": "progression",
+      "sampling_weight": 0.175
+    },
+    {
+      "name": "prog_test_cross_branch_w",
+      "wad_path": "training/progression/maps/prog_test_cross_branch_w.wad",
+      "map_name": "MAP01",
+      "split": "test",
+      "key_color": "red",
+      "door_occluded_at_key": true,
+      "sha256": "fd8450ef3dc030850ecd4d6f53a102cab4d7516e6d329d37865a68c834f1662f",
+      "grid": [
+        "###########",
+        "#E.R....P.#",
+        "######...##",
+        "######.####",
+        "######...r#",
+        "###########"
+      ],
+      "player_angle": 180,
+      "task": "progression",
+      "sampling_weight": 0.175
+    },
+    {
+      "name": "prog_test_long_loop_n",
+      "wad_path": "training/progression/maps/prog_test_long_loop_n.wad",
+      "map_name": "MAP01",
+      "split": "test",
+      "key_color": "blue",
+      "door_occluded_at_key": true,
+      "sha256": "126160c22a3d66f7e9bec94bccdfc0cd1f98ef70ed6b3b57c4fa6e8b12b7d6fe",
+      "grid": [
+        "##########",
+        "#####E####",
+        "#####B####",
+        "#....P...#",
+        "#.########",
+        "#.########",
+        "#.....b###",
+        "##########"
+      ],
+      "player_angle": 90,
+      "task": "progression",
+      "sampling_weight": 0.175
+    },
+    {
+      "name": "udoor_train_two_room_e",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "###########",
+        "#P...#....#",
+        "#....D...E#",
+        "#....#....#",
+        "###########"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_train_two_room_e.wad",
+      "sha256": "a6cb1d8a780d1c8ad8bf2dfcfc499b5745779543704c0d34a7acdf74ef0ab687",
+      "sampling_weight": 0.025
+    },
+    {
+      "name": "udoor_train_offset_ne",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "############",
+        "#P....#....#",
+        "#.....#....#",
+        "#.....D...E#",
+        "#.....#....#",
+        "############"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_train_offset_ne.wad",
+      "sha256": "43b11134c7656cd67982e5d43c208bc35b2648988b3934f44bbb340ced105e78",
+      "sampling_weight": 0.025
+    },
+    {
+      "name": "udoor_train_wide_w",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 180,
+      "grid": [
+        "###########",
+        "#E..#.....#",
+        "#...D....P#",
+        "#...D.....#",
+        "#...#.....#",
+        "###########"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_train_wide_w.wad",
+      "sha256": "69df57079b021a9424732cc9d870e0716c925972b5b2be58f16a35d0dca1e9e3",
+      "sampling_weight": 0.025
+    },
+    {
+      "name": "udoor_train_north_l",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 90,
+      "grid": [
+        "#########",
+        "#E......#",
+        "#..######",
+        "#.......#",
+        "###D#####",
+        "#......P#",
+        "#.......#",
+        "#########"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_train_north_l.wad",
+      "sha256": "73059800d983742f61403673b675ed12125c74137e94fab12c7dd81b372dd91b",
+      "sampling_weight": 0.025
+    },
+    {
+      "name": "udoor_train_south_pillar",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 270,
+      "grid": [
+        "#########",
+        "#P......#",
+        "#..#....#",
+        "####D####",
+        "#.......#",
+        "#...#..E#",
+        "#########"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_train_south_pillar.wad",
+      "sha256": "60d74d0aa07f5066cde1af555c31181e733dbfa2d6d429b8544e8b70b3d5fa75",
+      "sampling_weight": 0.025
+    },
+    {
+      "name": "udoor_train_double_door_e",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "#############",
+        "#P..#...#...#",
+        "#...D...D..E#",
+        "#...#...#...#",
+        "#############"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_train_double_door_e.wad",
+      "sha256": "8cb95a536ee92c9477a394967507b52d8e4ade9f4e282f0e686179bbe954ad4c",
+      "sampling_weight": 0.025
+    },
+    {
+      "name": "udoor_train_corner_sw",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 180,
+      "grid": [
+        "##########",
+        "#....#..P#",
+        "#....D...#",
+        "#....#...#",
+        "#E..######",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_train_corner_sw.wad",
+      "sha256": "042592fdb9676f6a9cc3cbba11121170e20fe3e158d21c4ffb9bb65fdf6c47fe",
+      "sampling_weight": 0.025
+    },
+    {
+      "name": "udoor_train_zig_n",
+      "split": "train",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 90,
+      "grid": [
+        "##########",
+        "#......E.#",
+        "#####D####",
+        "#........#",
+        "#P.......#",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_train_zig_n.wad",
+      "sha256": "f253f1a8acb4ae6e6c69e2d4a61bbd23981857922346a96a986127ac7619f0e7",
+      "sampling_weight": 0.025
+    },
+    {
+      "name": "udoor_val_offset_e",
+      "split": "val",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "############",
+        "#....#.....#",
+        "#....D....E#",
+        "#P...#.....#",
+        "#....#..#..#",
+        "############"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_val_offset_e.wad",
+      "sha256": "613b8bd495ef13a1b2b2de25226031931c707356047bfb9d2d71767f4fbefd33",
+      "sampling_weight": 0.06666666666666667
+    },
+    {
+      "name": "udoor_val_south_w",
+      "split": "val",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 180,
+      "grid": [
+        "##########",
+        "#....#..P#",
+        "#....D...#",
+        "#....#...#",
+        "#.########",
+        "#E.......#",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_val_south_w.wad",
+      "sha256": "109990a816b11e1269980b2d2f7a398f1af194d490a69681dc6353634be99302",
+      "sampling_weight": 0.06666666666666667
+    },
+    {
+      "name": "udoor_val_wide_n",
+      "split": "val",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 90,
+      "grid": [
+        "##########",
+        "#E.......#",
+        "#........#",
+        "###DD#####",
+        "#.......P#",
+        "#........#",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_val_wide_n.wad",
+      "sha256": "3b4f5c3be9872978658569c57d3cb6b857f0417fb3cf979ba52c3b1a226cd4f0",
+      "sampling_weight": 0.06666666666666667
+    },
+    {
+      "name": "udoor_test_two_room_e",
+      "split": "test",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "#############",
+        "#P...#......#",
+        "#....D..#...#",
+        "#....#.....E#",
+        "#....#......#",
+        "#############"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_test_two_room_e.wad",
+      "sha256": "dd6962599ea22dcc35cfc8b29bc0a9d3ba8ef88d1e2125f9b086d1f63e561f6b",
+      "sampling_weight": 0.06666666666666667
+    },
+    {
+      "name": "udoor_test_north_pillar_w",
+      "split": "test",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 180,
+      "grid": [
+        "##########",
+        "#E..#....#",
+        "#........#",
+        "######D###",
+        "#.......P#",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_test_north_pillar_w.wad",
+      "sha256": "755e51bef1e4584326dec659e917473a09c64ad1223fdb60b8310925a7dd8ed5",
+      "sampling_weight": 0.06666666666666667
+    },
+    {
+      "name": "udoor_test_south_e",
+      "split": "test",
+      "task": "unlocked_door",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "##########",
+        "#P.......#",
+        "#....#...#",
+        "##D#######",
+        "#.......E#",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/udoor_test_south_e.wad",
+      "sha256": "9c28554ea75bfbb441e1a52619e6a33b72ec2a2aafbfaa5abf5541cd6ac321f8",
+      "sampling_weight": 0.06666666666666667
+    },
+    {
+      "name": "combat_udoor_train_two_room_e",
+      "split": "train",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "###########",
+        "#P...#....#",
+        "#....D...E#",
+        "#....#....#",
+        "###########"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_train_two_room_e.wad",
+      "sha256": "c1ed1265e74e76078d677bf63a63fbcd413036289c81110bf865d20bf0651efd",
+      "enemies": 1,
+      "has_door": true,
+      "sampling_weight": 0.03
+    },
+    {
+      "name": "combat_udoor_train_offset_ne",
+      "split": "train",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "############",
+        "#P....#....#",
+        "#.....#....#",
+        "#.....D...E#",
+        "#.....#....#",
+        "############"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_train_offset_ne.wad",
+      "sha256": "73ea90ee07ebeda5aa71b62f302a7f20da8c5762da21fd18f76795168d4aa17c",
+      "enemies": 2,
+      "has_door": true,
+      "sampling_weight": 0.03
+    },
+    {
+      "name": "combat_udoor_train_wide_w",
+      "split": "train",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 180,
+      "grid": [
+        "###########",
+        "#E..#.....#",
+        "#...D....P#",
+        "#...D.....#",
+        "#...#.....#",
+        "###########"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_train_wide_w.wad",
+      "sha256": "8f0bbe05a6e80ef379fd06b178e2a764852a716375c932a0a4ffba4a5f4cdfb5",
+      "enemies": 1,
+      "has_door": true,
+      "sampling_weight": 0.03
+    },
+    {
+      "name": "combat_udoor_train_north_l",
+      "split": "train",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 90,
+      "grid": [
+        "#########",
+        "#E......#",
+        "#..######",
+        "#.......#",
+        "###D#####",
+        "#......P#",
+        "#.......#",
+        "#########"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_train_north_l.wad",
+      "sha256": "e70d1f0149228ebc41aa0746716e63c65482213594163b656f180aa7b807461d",
+      "enemies": 2,
+      "has_door": true,
+      "sampling_weight": 0.03
+    },
+    {
+      "name": "combat_udoor_train_south_pillar",
+      "split": "train",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 270,
+      "grid": [
+        "#########",
+        "#P......#",
+        "#..#....#",
+        "####D####",
+        "#.......#",
+        "#...#..E#",
+        "#########"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_train_south_pillar.wad",
+      "sha256": "09c678d9e2c3c705a0ebca1a30ead295654843153bc8bac3e2d7ee06cdc71f97",
+      "enemies": 1,
+      "has_door": true,
+      "sampling_weight": 0.03
+    },
+    {
+      "name": "combat_udoor_train_double_door_e",
+      "split": "train",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "#############",
+        "#P..#...#...#",
+        "#...D...D..E#",
+        "#...#...#...#",
+        "#############"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_train_double_door_e.wad",
+      "sha256": "fd1199b499bb02b74b26a65dbba557b352d5c8461013a3d1ef757207a690299b",
+      "enemies": 2,
+      "has_door": true,
+      "sampling_weight": 0.03
+    },
+    {
+      "name": "combat_udoor_train_corner_sw",
+      "split": "train",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 180,
+      "grid": [
+        "##########",
+        "#....#..P#",
+        "#....D...#",
+        "#....#...#",
+        "#E..######",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_train_corner_sw.wad",
+      "sha256": "ecc143f61327d40065d14d4f44e2f3054808770ba368f11552811603c7bac44d",
+      "enemies": 1,
+      "has_door": true,
+      "sampling_weight": 0.03
+    },
+    {
+      "name": "combat_udoor_train_zig_n",
+      "split": "train",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 90,
+      "grid": [
+        "##########",
+        "#......E.#",
+        "#####D####",
+        "#........#",
+        "#P.......#",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_train_zig_n.wad",
+      "sha256": "67b4f50038eac93f3a0594cacca7a26b3788425d2391c81e9ff7111c9ad54dfb",
+      "enemies": 2,
+      "has_door": true,
+      "sampling_weight": 0.03
+    },
+    {
+      "name": "combat_udoor_val_offset_e",
+      "split": "val",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "############",
+        "#....#.....#",
+        "#....D....E#",
+        "#P...#.....#",
+        "#....#..#..#",
+        "############"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_val_offset_e.wad",
+      "sha256": "43c40a04082824cc7acb4271724f1bc40d38abd24ed2ed308fcbc388da7aaf82",
+      "enemies": 1,
+      "has_door": true,
+      "sampling_weight": 0.075
+    },
+    {
+      "name": "combat_udoor_val_south_w",
+      "split": "val",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 180,
+      "grid": [
+        "##########",
+        "#....#..P#",
+        "#....D...#",
+        "#....#...#",
+        "#.########",
+        "#E.......#",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_val_south_w.wad",
+      "sha256": "ff1ed385ddcb2f3b7daf8ea3e97c003f8c865fc2a948fd6310a1e13fa9905bb0",
+      "enemies": 2,
+      "has_door": true,
+      "sampling_weight": 0.075
+    },
+    {
+      "name": "combat_udoor_val_wide_n",
+      "split": "val",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 90,
+      "grid": [
+        "##########",
+        "#E.......#",
+        "#........#",
+        "###DD#####",
+        "#.......P#",
+        "#........#",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_val_wide_n.wad",
+      "sha256": "54486522efddfaa52c633239897a97589e996ccd54abc0cdd3e4bc223d299051",
+      "enemies": 1,
+      "has_door": true,
+      "sampling_weight": 0.075
+    },
+    {
+      "name": "combat_udoor_test_two_room_e",
+      "split": "test",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "#############",
+        "#P...#......#",
+        "#....D..#...#",
+        "#....#.....E#",
+        "#....#......#",
+        "#############"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_test_two_room_e.wad",
+      "sha256": "503c0e1ac43ed074e0fd5544429b0513472cb6f3c02f769fc6885c55b0e2404b",
+      "enemies": 2,
+      "has_door": true,
+      "sampling_weight": 0.075
+    },
+    {
+      "name": "combat_udoor_test_north_pillar_w",
+      "split": "test",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 180,
+      "grid": [
+        "##########",
+        "#E..#....#",
+        "#........#",
+        "######D###",
+        "#.......P#",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_test_north_pillar_w.wad",
+      "sha256": "88076aef57de172dd24ca71f9d1f58bdb655ac7e2eb3a0bddce1a4469bacc766",
+      "enemies": 1,
+      "has_door": true,
+      "sampling_weight": 0.075
+    },
+    {
+      "name": "combat_udoor_test_south_e",
+      "split": "test",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "##########",
+        "#P.......#",
+        "#....#...#",
+        "##D#######",
+        "#.......E#",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat_udoor_test_south_e.wad",
+      "sha256": "2fdec26ac941570b67d29d50588df539dd25b88dff2ccb916ba51faea7732f99",
+      "enemies": 2,
+      "has_door": true,
+      "sampling_weight": 0.075
+    },
+    {
+      "name": "combat1r_train_straight_short_e",
+      "split": "train",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "#######",
+        "#P...E#",
+        "#....E#",
+        "#######"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat1r_train_straight_short_e.wad",
+      "sha256": "6c49c9db6daaa24325cae648fd541463f20575b87b0bfb6c6a577ffd895ffff2",
+      "enemies": 1,
+      "has_door": false,
+      "sampling_weight": 0.03
+    },
+    {
+      "name": "combat1r_train_straight_long_w",
+      "split": "train",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 180,
+      "grid": [
+        "##########",
+        "#E......P#",
+        "#E.......#",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat1r_train_straight_long_w.wad",
+      "sha256": "a1ca315b5bf021b0b60fedeb2fdb8c9c6dfc4fcb362fd9ecded25fdbdfa18ccb",
+      "enemies": 2,
+      "has_door": false,
+      "sampling_weight": 0.03
+    },
+    {
+      "name": "combat1r_val_narrow_long_n",
+      "split": "val",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 90,
+      "grid": [
+        "###",
+        "#E#",
+        "#.#",
+        "#.#",
+        "#.#",
+        "#.#",
+        "#.#",
+        "#P#",
+        "###"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat1r_val_narrow_long_n.wad",
+      "sha256": "5e83d7b804b83b7e901c8b9cb6f93f49f656d05f163893175c2c2dfb6364c4c0",
+      "enemies": 1,
+      "has_door": false,
+      "sampling_weight": 0.075
+    },
+    {
+      "name": "combat1r_test_chicane_e",
+      "split": "test",
+      "task": "combat_rooms",
+      "map_name": "MAP01",
+      "player_angle": 0,
+      "grid": [
+        "##########",
+        "###....###",
+        "###.##.###",
+        "#P..##..E#",
+        "#...##..E#",
+        "##########"
+      ],
+      "wad_path": "training/mixed_v2/maps/combat1r_test_chicane_e.wad",
+      "sha256": "4b5e7c3c80cacf325f61c870d84b34970b5239cac3e23d21522296500d7a2467",
+      "enemies": 1,
+      "has_door": false,
+      "sampling_weight": 0.075
+    }
+  ]
+}

@@ -6,6 +6,7 @@ Never touches validation or test maps during training.
 
 from __future__ import annotations
 
+from collections import OrderedDict
 import argparse
 import csv
 import hashlib
@@ -28,13 +29,13 @@ if str(ROOT) not in sys.path:
 from doom_env import CONTRACT_VERSION, make_env  # noqa: E402
 from doom_env.spaces import FRAME_SKIP, VITALS_INDEX  # noqa: E402
 from submission.model import (  # noqa: E402
-    INPUT_DIM,
     NUM_ACTIONS,
     VITALS_SCALE,
     ActorCritic,
     KeyMemoryActorCritic,
     RecurrentActorCritic,
-    encode_observation,
+    encode_observation_for_version,
+    input_dim_for_version,
 )
 from training.task_rewards import TaskRewardTracker
 from training.ppo import PPOConfig, compute_gae, ppo_update  # noqa: E402
@@ -97,8 +98,9 @@ def save_checkpoint(
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "arch": model.arch,
+        "obs_version": cfg.obs_version,
         "model_state_dict": model.state_dict(),
-        "input_dim": INPUT_DIM,
+        "input_dim": input_dim_for_version(cfg.obs_version),
         "hidden_dim": model.hidden_dim,
         "num_actions": NUM_ACTIONS,
         "vitals_scale": VITALS_SCALE.tolist(),
@@ -137,6 +139,7 @@ def save_resumable_state(
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "arch": model.arch,
+        "obs_version": cfg.obs_version,
         "model_state_dict": model.state_dict(),
         "optimizer_state_dict": optimizer.state_dict(),
         "torch_rng_state": torch.get_rng_state(),
@@ -144,7 +147,7 @@ def save_resumable_state(
         "np_rng_state": np_rng.bit_generator.state,
         "map_rng_state": map_rng.bit_generator.state,
         "config": asdict(cfg),
-        "input_dim": INPUT_DIM,
+        "input_dim": input_dim_for_version(cfg.obs_version),
         "hidden_dim": model.hidden_dim,
         "num_actions": NUM_ACTIONS,
         "vitals_scale": VITALS_SCALE.tolist(),
@@ -182,6 +185,7 @@ def train(
     overwrite: bool = False,
     checkpoint_every: int = 0,
     resume_from: Path | None = None,
+    init_weights: Path | None = None,
 ) -> dict:
     if resume_from is not None:
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -208,15 +212,25 @@ def train(
         raise ValueError("Map sampling weights must be finite and positive")
     map_probs /= map_probs.sum()
 
+    input_dim = input_dim_for_version(cfg.obs_version)
     model: ActorCritic | RecurrentActorCritic | KeyMemoryActorCritic
     if cfg.arch == "gru":
-        model = RecurrentActorCritic()
+        model = RecurrentActorCritic(input_dim=input_dim)
     elif cfg.arch == "key_mem":
-        model = KeyMemoryActorCritic()
+        model = KeyMemoryActorCritic(input_dim=input_dim)
     else:
-        model = ActorCritic()
+        model = ActorCritic(input_dim=input_dim)
     is_recurrent = isinstance(model, (RecurrentActorCritic, KeyMemoryActorCritic))
     is_key_mem = isinstance(model, KeyMemoryActorCritic)
+    if init_weights is not None:
+        if resume_from is not None:
+            raise ValueError("Choose either warm start or resume")
+        parent = torch.load(init_weights, map_location="cpu", weights_only=True)
+        if (parent["arch"], parent.get("obs_version", "v1"), parent["contract_version"]) != (cfg.arch, cfg.obs_version, CONTRACT_VERSION):
+            raise ValueError("Incompatible initial policy")
+        if not np.allclose(parent["vitals_scale"], VITALS_SCALE):
+            raise ValueError("Initial policy vitals scaling mismatch")
+        model.load_state_dict(parent["model_state_dict"])
     optimizer = torch.optim.Adam(model.parameters(), lr=cfg.lr, eps=1e-5)
     initial_params = {k: v.clone() for k, v in model.state_dict().items()}
 
@@ -237,7 +251,9 @@ def train(
             )
         if str(ckpt.get("arch")) != cfg.arch:
             raise ValueError(f"Resume arch mismatch: {ckpt.get('arch')!r} != {cfg.arch!r}")
-        if int(ckpt.get("input_dim", -1)) != INPUT_DIM or int(ckpt.get("num_actions", -1)) != NUM_ACTIONS:
+        if str(ckpt.get("obs_version", "v1")) != cfg.obs_version:
+            raise ValueError(f"Resume obs_version mismatch: {ckpt.get('obs_version', 'v1')!r} != {cfg.obs_version!r}")
+        if int(ckpt.get("input_dim", -1)) != input_dim or int(ckpt.get("num_actions", -1)) != NUM_ACTIONS:
             raise ValueError("Resume input_dim/num_actions mismatch")
         ckpt_scale = np.asarray(ckpt.get("vitals_scale", []), dtype=np.float32)
         if ckpt_scale.shape != VITALS_SCALE.shape or not np.allclose(ckpt_scale, VITALS_SCALE):
@@ -267,11 +283,15 @@ def train(
             "kill_reward",
             "damage_penalty",
             "exploration_reward",
+            "unlocked_door_reward",
+            "door_reversal_penalty",
+            "obs_version",
             "episode_ticks",
             "seed",
             "seq_len",
         ):
-            if ckpt_cfg.get(k, 0.0) != cur_cfg.get(k):
+            default_val = "v1" if k == "obs_version" else 0.0
+            if ckpt_cfg.get(k, default_val) != cur_cfg.get(k):
                 raise ValueError(f"Resume config mismatch on {k!r}: {ckpt_cfg.get(k)!r} != {cur_cfg.get(k)!r}")
         if cfg.total_decisions < int(ckpt["decisions_done"]):
             raise ValueError(
@@ -292,17 +312,40 @@ def train(
         completed_episodes = list(ckpt["completed_episodes"])
         update_logs = list(ckpt["update_logs"])
 
-    envs = [
-        make_env(ROOT / m["wad_path"], m["map_name"], episode_ticks=cfg.episode_ticks, render_buffers=False)
-        for m in train_maps
-    ]
+    class _BoundedEnvCache:
+        """Lazy LRU cache of ViZDoom environments to bound memory usage."""
+
+        def __init__(self, maps: list[dict], episode_ticks: int, max_size: int) -> None:
+            self.maps = maps
+            self.episode_ticks = episode_ticks
+            self.max_size = max(1, int(max_size))
+            self._cache: OrderedDict[int, object] = OrderedDict()
+
+        def get(self, idx: int):
+            if idx in self._cache:
+                self._cache.move_to_end(idx)
+                return self._cache[idx]
+            if len(self._cache) >= self.max_size:
+                _, oldest = self._cache.popitem(last=False)
+                oldest.close()
+            m = self.maps[idx]
+            env = make_env(ROOT / m["wad_path"], m["map_name"], episode_ticks=self.episode_ticks, render_buffers=False)
+            self._cache[idx] = env
+            return env
+
+        def close_all(self) -> None:
+            while self._cache:
+                _, env = self._cache.popitem(last=False)
+                env.close()
+
+    env_cache = _BoundedEnvCache(train_maps, cfg.episode_ticks, cfg.env_cache_size)
 
     # On fresh start or resume, start a fresh episode (ViZDoom C++ state is not serialized).
     cur_map_idx = int(map_rng.choice(len(train_maps), p=map_probs))
-    cur_env = envs[cur_map_idx]
+    cur_env = env_cache.get(cur_map_idx)
     cur_seed = cfg.seed + episode_idx
     obs, _ = cur_env.reset(seed=cur_seed)
-    obs_vec = encode_observation(obs)
+    obs_vec = encode_observation_for_version(obs, cfg.obs_version)
     h_state = model.initial_state(1, "cpu") if is_recurrent else None
 
     def _new_tracker(map_meta: dict, env_obj) -> ProgressionEventTracker | None:
@@ -314,7 +357,7 @@ def train(
 
     cur_tracker = _new_tracker(train_maps[cur_map_idx], cur_env)
     task_tracker = TaskRewardTracker(cur_env.privileged_state())
-    task_totals = dict(kill_bonus=0., damage_cost=0., exploration_bonus=0.)
+    task_totals = dict(kill_bonus=0., damage_cost=0., exploration_bonus=0., unlocked_door_bonus=0., door_reversal_cost=0.)
     ep_decisions = 0
     ep_env_reward = 0.0
     ep_train_reward = 0.0
@@ -327,7 +370,7 @@ def train(
 
     try:
         for update in range(start_update, num_updates + 1):
-            b_obs = np.zeros((cfg.rollout_steps, INPUT_DIM), dtype=np.float32)
+            b_obs = np.zeros((cfg.rollout_steps, input_dim), dtype=np.float32)
             b_actions = np.zeros((cfg.rollout_steps, NUM_ACTIONS), dtype=np.float32)
             b_log_probs = np.zeros(cfg.rollout_steps, dtype=np.float32)
             b_rewards = np.zeros(cfg.rollout_steps, dtype=np.float32)
@@ -399,7 +442,14 @@ def train(
                         "terminal_bonus": term_b,
                         "total": cfg.step_cost + term_b,
                     }
-                task_comps = task_tracker.step(cur_env.privileged_state(), cfg.kill_reward, cfg.damage_penalty, cfg.exploration_reward)
+                task_comps = task_tracker.step(
+                    cur_env.privileged_state(),
+                    cfg.kill_reward,
+                    cfg.damage_penalty,
+                    cfg.exploration_reward,
+                    cfg.unlocked_door_reward,
+                    cfg.door_reversal_penalty,
+                )
                 for key, value in task_comps.items():
                     task_totals[key] += value
                 tr_r = comps["total"] + sum(task_comps.values())
@@ -451,15 +501,15 @@ def train(
                     )
                     episode_idx += 1
                     cur_map_idx = int(map_rng.choice(len(train_maps), p=map_probs))
-                    cur_env = envs[cur_map_idx]
+                    cur_env = env_cache.get(cur_map_idx)
                     cur_seed = cfg.seed + episode_idx
                     obs, _ = cur_env.reset(seed=cur_seed)
-                    obs_vec = encode_observation(obs)
+                    obs_vec = encode_observation_for_version(obs, cfg.obs_version)
                     cur_tracker = _new_tracker(train_maps[cur_map_idx], cur_env)
                     if is_recurrent:
                         h_state = model.initial_state(1, "cpu")
                     task_tracker = TaskRewardTracker(cur_env.privileged_state())
-                    task_totals = dict(kill_bonus=0., damage_cost=0., exploration_bonus=0.)
+                    task_totals = dict(kill_bonus=0., damage_cost=0., exploration_bonus=0., unlocked_door_bonus=0., door_reversal_cost=0.)
                     ep_decisions = 0
                     ep_env_reward = 0.0
                     ep_train_reward = 0.0
@@ -469,7 +519,7 @@ def train(
                     ep_step_cost = 0.0
                 else:
                     obs = next_obs
-                    obs_vec = encode_observation(obs)
+                    obs_vec = encode_observation_for_version(obs, cfg.obs_version)
                     if is_recurrent and next_h is not None:
                         if is_key_mem:
                             h_state = (next_h[0].detach(), next_h[1].detach())
@@ -574,8 +624,7 @@ def train(
                     wall_seconds=prior_wall_seconds + elapsed,
                 )
     finally:
-        for e in envs:
-            e.close()
+        env_cache.close_all()
 
     session_wall = time.perf_counter() - t_start
     total_wall = prior_wall_seconds + session_wall
@@ -646,6 +695,7 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
     ap.add_argument("--arch", choices=("mlp", "gru", "key_mem"), default="mlp")
+    ap.add_argument("--obs-version", choices=("v1", "v2"), default="v1")
     ap.add_argument("--seq-len", type=int, default=64)
     ap.add_argument("--total-decisions", type=int, default=51200)
     ap.add_argument("--rollout-steps", type=int, default=512)
@@ -657,10 +707,14 @@ def main() -> None:
     ap.add_argument("--kill-reward", type=float, default=0.0)
     ap.add_argument("--damage-penalty", type=float, default=0.0)
     ap.add_argument("--exploration-reward", type=float, default=0.0)
+    ap.add_argument("--unlocked-door-reward", type=float, default=0.0)
+    ap.add_argument("--door-reversal-penalty", type=float, default=0.0)
     ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--env-cache-size", type=int, default=16)
     ap.add_argument("--out-dir", type=Path, required=True)
     ap.add_argument("--save-weights", type=Path, default=None)
     ap.add_argument("--checkpoint-every", type=int, default=0)
+    ap.add_argument("--init-weights", type=Path, help="Start fresh PPO rollouts and optimizer from an existing policy")
     ap.add_argument("--resume", type=Path, default=None)
     ap.add_argument("--overwrite", action="store_true")
     args = ap.parse_args()
@@ -676,8 +730,12 @@ def main() -> None:
         kill_reward=args.kill_reward,
         damage_penalty=args.damage_penalty,
         exploration_reward=args.exploration_reward,
+        unlocked_door_reward=args.unlocked_door_reward,
+        door_reversal_penalty=args.door_reversal_penalty,
         seed=args.seed,
+        env_cache_size=args.env_cache_size,
         arch=args.arch,
+        obs_version=args.obs_version,
         seq_len=args.seq_len,
     )
     summary = train(
@@ -688,6 +746,7 @@ def main() -> None:
         overwrite=args.overwrite,
         checkpoint_every=args.checkpoint_every,
         resume_from=args.resume,
+        init_weights=args.init_weights,
     )
     print(json.dumps(summary, indent=2))
 
